@@ -1,27 +1,21 @@
-import React from 'react';
-import './main.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-
-const TodoListTemplate = ({form, children}) => {
-  return (
-    <main className="todo-list-template">
-      <Navbar expand="lg" variant="light" bg="light">
-      <Container>
-        <Navbar.Brand href="#">Navbar</Navbar.Brand>
-      </Container>
-      </Navbar>
-      <div className="title">
-        오늘 할 일
-      </div>
-      <section className="form-wrapper">
-        {form}
-      </section>
-      <section className="todos-wrapper">
-        { children }
-      </section>
-    </main>
-  );
-};
-
-export default TodoListTemplate;
+// new Chart(document.getElementById("radar-chart"), {
+//             type: 'radar',
+//             data: {
+//               labels: ["감정1", "감정2", "감정3", "감정4", "감정5", "감정6"],
+//                   datasets: [
+//                 {
+//               label: "최종 결과",
+//               fill: true,
+//               backgroundColor: "rgba(179,181,198,0.2)",
+//               borderColor: "rgba(179,181,198,1)",
+//               pointBorderColor: "#fff",
+//               pointBackgroundColor: "rgba(179,181,198,1)",
+//               data: [8.77,55.61,21.69,6.62,6.82,7.14]
+//             }]},
+//         options: {
+//           title: {
+//             display: true,
+//             text: '감정 분석 결과입니다.'
+//           }
+//         }
+//         });
