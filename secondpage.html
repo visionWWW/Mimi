@@ -9,7 +9,9 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U" ></script>
     <style>
     #button{text-align: center; margin-left: auto; margin-left: auto;}
-    #img_food{text-align: center; margin-left: auto; margin-left: auto;}
+    #img_food1{text-align: center; margin-left: auto; margin-left: auto;}
+    #img_food2{text-align: center; margin-left: auto; margin-left: auto;}
+    #img_food3{text-align: center; margin-left: auto; margin-left: auto;}
     #map{margin-left: 40%; margin-left: 40%; width: 400px; height: 400px;};
     </style>
 </head>
@@ -17,19 +19,54 @@
 <body>
     <img src = "./image/logo.png" width = "150px" height="150px"> 
     <h2 style="text-align:center;">음 식 점 추 천</h2>
+
+    <script>
+    $(function() { 
+    $('#first').click(function(){
+        $('#img_food1').show();
+        $('#img_food2').hide();
+        $('#img_food3').hide();
+    });
+    $('#second').click(function(){
+        $('#img_food1').hide();
+        $('#img_food2').show();
+        $('#img_food3').hide();
+    });
+    $('#third').click(function(){
+        $('#img_food1').hide();
+        $('#img_food2').hide();
+        $('#img_food3').show();
+    });
+    })
+    </script>
+
     <div id = "button">
     <form action ="">
-      <input type='button' value ="음식점이름|추천음식">
-      <input type="button" value = "음식점이름|추천음식">
-      <input type="button" value = "음식점이름|추천음식">
+      <input type="button" id = "first"  value = "음식점이름|추천음식">
+      <input type="button" id = "second" value = "음식점이름|추천음식">
+      <input type="button" id = "third" value = "음식점이름|추천음식">
     </form>
     </div>
 
-    <div id = "img_food"> 
+    <div id = "img_food1"> 
     <img src = "음식사진1" width="300px" height="300px">
     <img src = "음식사진2" width="300px" height="300px">
     <img src = "음식사진3" width="300px" height="300px">
     <img src = "음식사진4" width="300px" height="300px">
+    </div>
+
+    <div id = "img_food2" style="display:none"> 
+    <img src = "음식사진a" width="300px" height="300px">
+    <img src = "음식사진b" width="300px" height="300px">
+    <img src = "음식사진c" width="300px" height="300px">
+    <img src = "음식사진d" width="300px" height="300px">
+    </div>
+
+    <div id = "img_food3" style="display:none"> 
+    <img src = "음식사진A" width="300px" height="300px">
+    <img src = "음식사진B" width="300px" height="300px">
+    <img src = "음식사진C" width="300px" height="300px">
+    <img src = "음식사진D" width="300px" height="300px">
     </div>
     
     <div id="map"></div>
