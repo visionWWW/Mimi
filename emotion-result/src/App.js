@@ -1,8 +1,49 @@
 import React, { Component } from 'react';
-import main from './components/main';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import { Radar } from "react-chartjs-2";
+
+const data = {
+  labels: [
+    '감정1',
+    '감정2',
+    '감정3',
+    '감정4',
+    '감정5',
+    '감정6',
+  ],
+  datasets: [{
+    label: '감정 분석 결과',
+    data: [65, 92, 90, 81, 100, 90],
+    fill: true,
+    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    borderColor: 'rgb(255, 99, 132)',
+    pointBackgroundColor: 'rgb(255, 99, 132)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(255, 99, 132)'
+  }]
+};
+
+
+const options = {
+ plugins:{
+         legend:{
+            display:false
+         }
+      },
+  responsive: false,
+  scales: {
+    yAxes: [
+      {
+        ticks: {
+          beginAtZero: true,
+        },
+      },
+    ],
+  },
+};
 
 class App extends Component {
   render() {
@@ -20,11 +61,11 @@ class App extends Component {
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">검사하기</Nav.Link>
-          <Nav.Link href="#pricing">감정진단결과</Nav.Link>
+          <Nav.Link href="../survey/src/survey.html">검사하기</Nav.Link>
+          <Nav.Link href="">감정진단결과</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">음식점 보기</Nav.Link>
+          <Nav.Link href="../secondpage/src/secondpage.html">음식점 보기</Nav.Link>
         </Nav>
       </Navbar.Collapse>
 
@@ -34,6 +75,7 @@ class App extends Component {
     </Navbar>
     
     <h1>감정분석결과</h1>
+    <Radar className="chart" data={data} options={options} style={{ height:"35%", width: "35%" }} />
 </div>
     );
   }
