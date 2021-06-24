@@ -83,6 +83,14 @@
             position: b1,
             map: map,
         });
+        var contentString = '<div style = "width:100px; height:50px;">비일</div>'
+        var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                size: new google.maps.Size(200,100)
+            });
+        google.maps.event.addListener(marker, 'mouseover', function() {
+            infowindow.open(map, marker);
+        });
       }
     </script>
 </body>
