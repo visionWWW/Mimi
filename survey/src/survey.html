@@ -9,7 +9,20 @@
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		
+	<style>
+			.test-question{
+				text-align : center;
+			}
+			.options{
+				text-align : center; 
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#submit{
+				text-align : center;
+			}
+		</style>
 	</head>
 	<body>
 <!-- 네비게이션 바 -->
@@ -50,32 +63,32 @@
 			</div>
 			<div class="radiogroup">
 				<div class="options">
-					<div role="radio" aria-label="disagree max" data-index="0" class="option disagree max" aria-checked="false">
-						
-					</div>
-					<div role="radio" aria-label="disagree med" data-index="1" class="option disagree med" aria-checked="false">
-						
-					</div>
-					<div role="radio" aria-label="disagree min" data-index="2" class="option disagree min" aria-checked="false">
-						
-					</div>
-					<div role="radio" aria-label="neutral" data-index="3" class="option neutral" aria-checked="false">
-						
-					</div>
-					<div role="radio" aria-label="agree min" data-index="4" class="option agree min" aria-checked="false">
-						
-					</div>
-					<div role="radio" aria-label="agree med" data-index="5" class="option agree med" aria-checked="false">
-						
-					</div>
-					<div role="radio" aria-label="agree max" data-index="6" class="option agree max" aria-checked="false">
-						
-					</div>
+					<span role="radio" aria-label="disagree max" data-index="0" class="option disagree max" aria-checked="false">
+						<input type="image" src="red circle.png" role="radio" width="50px" height="50px">
+					</span>
+					<span role="radio" aria-label="disagree med" data-index="1" class="option disagree med" aria-checked="false">
+						<input type="image" src="red circle.png" role="radio" width="45px" height="45px">
+					</span>
+					<span role="radio" aria-label="disagree min" data-index="2" class="option disagree min" aria-checked="false">
+						<input type="image" src="red circle.png" role="radio" width="40px" height="40px">
+					</span>
+					<span role="radio" aria-label="neutral" data-index="3" class="option neutral" aria-checked="false">
+						<input type="image" src="gray circle.png" role="radio" width="28px" height="28px">
+					</span>
+					<span role="radio" aria-label="agree min" data-index="4" class="option agree min" aria-checked="false">
+						<input type="image" src="green circle.png" role="radio" width="40px" height="40px">
+					</span>
+					<span role="radio" aria-label="agree med" data-index="5" class="option agree med" aria-checked="false">
+						<input type="image" src="green circle.png" role="radio" width="45px" height="45px">
+					</span>
+					<span role="radio" aria-label="agree max" data-index="6" class="option agree max" aria-checked="false">
+						<input type="image" src="green circle.png" role="radio" width="50px" height="50px">
+					</span>
 				</div>
 			</div>
 			<div class="decision">
-				<div class="caption disagree">비동의</div>
-				<div class="caption agree">동의</div>
+				<span class="caption disagree">비동의</span>
+				<span class="caption agree">동의</span>
 			</div>
 		</div>
 		
