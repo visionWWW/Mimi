@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import './App.css';
 import { Radar } from "react-chartjs-2";
 
@@ -44,7 +46,8 @@ const options = {
     ],
   },
 };
-
+const element = document.getElementById("chart");
+console.log(element);
 class App extends Component {
   render() {
     return (
@@ -71,11 +74,46 @@ class App extends Component {
 
       <Navbar.Collapse className="justify-content-end">
         <Nav.Link href="#pricing" className="ha">회원가입</Nav.Link>
-      </Navbar.Collapse>
-    </Navbar>
+      </Navbar.Collapse></Navbar>
     
     <h1>감정분석결과</h1>
-    <Radar className="chart" data={data} options={options} style={{ height:"35%", width: "35%" }} />
+    <div className="wrap">
+    <Radar className="chart" data={data} options={options} style={{ height:"25%", width: "25%", display:"inline-block"}} />
+        <div className="text">감정결과가 나타날 곳입니다. <br></br><br></br><br></br><br></br><br></br><br></br><a href="#">자세히 보기</a></div>
+        </div>
+    
+    <h1 className="recwrap">추천성분</h1>
+    <div className="wrap">
+    <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body> </Card> 
+    <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body> </Card> 
+    <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body> </Card> </div>
 </div>
     );
   }
