@@ -83,7 +83,16 @@
             position: b1,
             map: map,
         });
-        var contentString = '<div style = "width:100px; height:50px;">비일</div>'
+        var contentString =[
+            '<div class="iw_inner">',
+            '   <h3>b1(비일)</h3>',
+            '   <p>서울특별시 용산구 청파동2가 71-74 <br>',
+            '       연락처: 010-2711-7174<br>',
+            '       <a href="https://goo.gl/maps/8rQkbakiN9ba8UmG6" target="https://goo.gl/maps/8rQkbakiN9ba8UmG6</a>',
+            '   </p>',
+            '</div>'
+        ].join('');
+
         var infowindow = new google.maps.InfoWindow({
                 content: contentString,
                 size: new google.maps.Size(200,100)
