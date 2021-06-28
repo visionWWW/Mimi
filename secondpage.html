@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>음식점추천</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U" ></script>
+
     <style>
     #button{text-align: center; margin-left: auto; margin-left: auto;}
     #img_food1{text-align: center; margin-left: auto; margin-left: auto;}
     #img_food2{text-align: center; margin-left: auto; margin-left: auto;}
     #img_food3{text-align: center; margin-left: auto; margin-left: auto;}
-    #map{margin-left: 40%; margin-left: 40%; width: 400px; height: 400px;};
+    #box{margin-left: 30%; margin-left: 30%;}
+    #map{width: 400px; height: 400px; float:left;}
+    #info_1{display:inline-block; margin-left: 5%; float:left;}
     </style>
 </head>
 
 <body>
-    <img src = "./image/logo.png" width = "150px" height="150px"> 
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img id="logo" src="./logo.png" width="100" height="100"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">검사하기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">감정 진단 결과</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="./main2.html">음식점 보기</a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">회원가입</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">로그인</a>
+        </li>
+      </ul>
+        
+	  </div>
+	</div>
+</nav>
+
     <h2 style="text-align:center;">음 식 점 추 천</h2>
 
     <script>
@@ -41,35 +81,34 @@
     </script>
 
     <div id = "button">
-    <form action ="">
       <input type="button" id = "first"  value = "음식점이름|추천음식">
       <input type="button" id = "second" value = "음식점이름|추천음식">
       <input type="button" id = "third" value = "음식점이름|추천음식">
-    </form>
     </div>
 
     <div id = "img_food1"> 
-    <img src = "음식사진1" width="300px" height="300px">
-    <img src = "음식사진2" width="300px" height="300px">
-    <img src = "음식사진3" width="300px" height="300px">
-    <img src = "음식사진4" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
     </div>
 
     <div id = "img_food2" style="display:none"> 
-    <img src = "음식사진a" width="300px" height="300px">
-    <img src = "음식사진b" width="300px" height="300px">
-    <img src = "음식사진c" width="300px" height="300px">
-    <img src = "음식사진d" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
     </div>
 
     <div id = "img_food3" style="display:none"> 
-    <img src = "음식사진A" width="300px" height="300px">
-    <img src = "음식사진B" width="300px" height="300px">
-    <img src = "음식사진C" width="300px" height="300px">
-    <img src = "음식사진D" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
+    <img src = "" width="300px" height="300px">
     </div>
     
-    <div id="map"></div>
+    <div id = box>
+    <div id="map">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U&callback=initMap&region=kr"></script>
     <script>
       function initMap() {
@@ -102,4 +141,16 @@
         });
       }
     </script>
+    </div>
+
+    <div id = "info_1">
+    <p>
+    평점: <br> 
+    메뉴: <br> 
+    가격: <br> 
+    #키워드 #키워드 #키워드 
+    </p>
+    </div>
+    </div>
+
 </body>
