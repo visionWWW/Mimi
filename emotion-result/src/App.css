@@ -51,3 +51,15 @@ a{
   transform-style: preserve-3d;
   position: relative;
 }
+.ttokbokki{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+}
+.ramen{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+}

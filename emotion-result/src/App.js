@@ -136,6 +136,20 @@ class App extends Component {
                     </div>
                 </div></div>
         </div>
+    
+    <div className="wrap">   
+        <h1 className="food">추천음식</h1>
+        <span className="ttokbokki">
+            <img className="ttokbokki" src="https://lh3.googleusercontent.com/proxy/LWP1VTIpHTD5e2DvS5H42v_RKHPec2Nlf9-PDsNmhPZCQ32xdxweYFNqfu2iCcETw_51BuH7eQhGXRRXPR26CRk24R0Tp_PQzRYpnMFCRLw"></img>
+            <h5>떡볶이</h5>
+        </span>
+        <span className="ramen">
+            <img className="ramen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Nongshim_Yukejang_Bowl_Noodle_Soup_20201111_002.jpg/227px-Nongshim_Yukejang_Bowl_Noodle_Soup_20201111_002.jpg"></img>
+           <h5 className="ramen">육개장</h5> 
+        </span>
+        
+        
+    </div> 
 </div>
     );
   }
