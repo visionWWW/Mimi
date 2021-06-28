@@ -5,6 +5,10 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import './App.css';
 import { Radar } from "react-chartjs-2";
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Image from 'react-bootstrap/Image'
 
 const data = {
   labels: [
@@ -139,17 +143,23 @@ class App extends Component {
     
     <div className="wrap">   
         <h1 className="food">추천음식</h1>
-        <span className="ttokbokki">
-            <img className="ttokbokki" src="https://lh3.googleusercontent.com/proxy/LWP1VTIpHTD5e2DvS5H42v_RKHPec2Nlf9-PDsNmhPZCQ32xdxweYFNqfu2iCcETw_51BuH7eQhGXRRXPR26CRk24R0Tp_PQzRYpnMFCRLw"></img>
-            <h5>떡볶이</h5>
-        </span>
-        <span className="ramen">
-            <img className="ramen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Nongshim_Yukejang_Bowl_Noodle_Soup_20201111_002.jpg/227px-Nongshim_Yukejang_Bowl_Noodle_Soup_20201111_002.jpg"></img>
-           <h5 className="ramen">육개장</h5> 
-        </span>
+        <Container>
+          <Row>
+            <Col xs={6} md={6}>
+              <Image src="https://lh3.googleusercontent.com/proxy/_0M4LkogF2ssyN5mJe1nhSptv3V41N-LNCsuflJH-YNLqoGWHKWQ1lmViVoNaJ1K-PvSHOl1w_O9oH5HrkLPBzuHo5GG01wnMRWaNiHdrRM" rounded style={{ width: '18rem', display:'inline-block' }}/>
+                <h6 className="ttokbokki">떡볶이</h6>
+            </Col>
+            <Col xs={6} md={6}>
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Nongshim_Yukejang_Bowl_Noodle_Soup_20201111_002.jpg/227px-Nongshim_Yukejang_Bowl_Noodle_Soup_20201111_002.jpg" rounded style={{ width: '18rem', display:'inline-block' }}/>
+                <h6 className="ramen">육개장</h6>
+            </Col>
+          </Row>
+        </Container>
         
-        
-    </div> 
+    </div>
+    
+    
+    <Button className="button" variant="outline-primary">🍽 음식점 추천 받기 🍽</Button>{' '}
 </div>
     );
   }
