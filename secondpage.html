@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <ling rel = "stylesheet" href = "css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
@@ -18,9 +19,9 @@
     #img_food1{text-align: center; margin-left: auto; margin-left: auto;}
     #img_food2{text-align: center; margin-left: auto; margin-left: auto;}
     #img_food3{text-align: center; margin-left: auto; margin-left: auto;}
-    #box{margin-left: 30%; margin-left: 30%;}
-    #map{width: 400px; height: 400px; float:left;}
-    #info_1{display:inline-block; margin-left: 5%; float:left;}
+    .container{display:flex; flex-wrap: wrap; margin-left: 27.5%; margin-right: 27.5%;}
+    #map{width: 400px; height: 400px; float:left; margin-right: 2.5%;}
+    #info_1{width: 400px; height: 400px; display:inline-block;  margin-left: 2.5%; float:left;}
     </style>
 </head>
 
@@ -85,9 +86,10 @@
       <input type="button" id = "second" value = "음식점이름|추천음식">
       <input type="button" id = "third" value = "음식점이름|추천음식">
     </div>
+    <br>
 
     <div id = "img_food1"> 
-    <img src = "" width="300px" height="300px">
+    <img src = "http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ" width="300px" height="300px">
     <img src = "" width="300px" height="300px">
     <img src = "" width="300px" height="300px">
     <img src = "" width="300px" height="300px">
@@ -106,51 +108,86 @@
     <img src = "" width="300px" height="300px">
     <img src = "" width="300px" height="300px">
     </div>
+    <br>
     
-    <div id = box>
-    <div id="map">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U&callback=initMap&region=kr"></script>
-    <script>
-      function initMap() {
-        var b1 = { lat: 37.54470265978464 ,lng: 126.9685829979388 };
-        var map = new google.maps.Map(
-            document.getElementById('map'), {
-            zoom: 15,
-            center: b1
-        });
-        const marker = new google.maps.Marker({
-            position: b1,
-            map: map,
-        });
-        var contentString =[
-            '<div class="iw_inner">',
-            '   <h3>b1(비일)</h3>',
-            '   <p>서울특별시 용산구 청파동2가 71-74 <br>',
-            '       연락처: 010-2711-7174<br>',
-            '       <a href="https://goo.gl/maps/8rQkbakiN9ba8UmG6" target="https://goo.gl/maps/8rQkbakiN9ba8UmG6</a>',
-            '   </p>',
-            '</div>'
-        ].join('');
+    <h2 style="text-align:center;">음 식 점 정 보</h2>
 
-        var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                size: new google.maps.Size(200,100)
+    <div class ="container">
+      <div id ="map">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U&callback=initMap&region=kr"></script>
+        <script>
+          function initMap() {
+            var b1 = { lat: 37.54470265978464 ,lng: 126.9685829979388 };
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                zoom: 15,
+                center: b1
             });
-        google.maps.event.addListener(marker, 'mouseover', function() {
-            infowindow.open(map, marker);
-        });
-      }
-    </script>
-    </div>
+            const marker = new google.maps.Marker({
+                position: b1,
+                map: map,
+            });
+            var contentString =[
+                '<div class="iw_inner">',
+                '   <h3>b1(비일)</h3>',
+                '   <p>서울특별시 용산구 청파동2가 71-74 <br>',
+                '       연락처: 010-2711-7174<br>',
+                '       <a href="https://goo.gl/maps/8rQkbakiN9ba8UmG6" target="https://goo.gl/maps/8rQkbakiN9ba8UmG6</a>',
+                '   </p>',
+                '</div>'
+            ].join('');
 
-    <div id = "info_1">
-    <p>
-    평점: <br> 
-    메뉴: <br> 
-    가격: <br> 
-    #키워드 #키워드 #키워드 
-    </p>
-    </div>
-    </div>
+            var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    size: new google.maps.Size(200,100)
+                });
+            google.maps.event.addListener(marker, 'mouseover', function() {
+                infowindow.open(map, marker);
+            });
+          }
+        </script>
+      </div>
 
+      <div id = "info_1">
+        <p>평점: <br> 
+        메뉴: <br> 
+        가격: <br> 
+        #키워드 #키워드 #키워드</p>
+        </div>
+    </div>
+    
+
+    <br>
+    <br>
+    <h2 style="text-align:center;">리 뷰 보 기</h2>
+    <div class="card-group" style="margin-left: 15%; margin-right: 15%;">
+  <div class="card" style="width: 18rem;">
+  <img src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+    <!-- 부트스트랩 js 사용 --> 
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="/js/bootstrap.js"></script>    
 </body>
