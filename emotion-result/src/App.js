@@ -94,15 +94,24 @@ class App extends Component {
                         <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
                           <Card.Img variant="top" src="holder.js/100px180" />
                           <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>앞면</Card.Title>
+                            <Card.Text>
+                              Some quick example text to build on the card title and make up the bulk of
+                              the card's content.
+                            </Card.Text>
+                          </Card.Body> </Card> 
+                    </div>
+                    <div className="back">
+                        <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
+                          <Card.Img variant="top" src="holder.js/100px180" />
+                          <Card.Body>
+                            <Card.Title>뒷면</Card.Title>
                             <Card.Text>
                               Some quick example text to build on the card title and make up the bulk of
                               the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
-                          </Card.Body> </Card> 
-                    </div>
-                    <div className="back">
+                          </Card.Body> </Card>
                     </div>
                 </div></div>
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
@@ -111,15 +120,25 @@ class App extends Component {
                         <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
                           <Card.Img variant="top" src="holder.js/100px180" />
                           <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>앞면</Card.Title>
+                            <Card.Text>
+                              Some quick example text to build on the card title and make up the bulk of
+                              the card's content.
+                            </Card.Text>
+                          </Card.Body> </Card> 
+                    </div>
+                    <div className="back">
+                        <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
+                          <Card.Img variant="top" src="holder.js/100px180" />
+                          <Card.Body>
+                            <Card.Title>뒷면</Card.Title>
                             <Card.Text>
                               Some quick example text to build on the card title and make up the bulk of
                               the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
-                          </Card.Body> </Card> 
-                    </div>
-                    <div className="back">
+                          </Card.Body> </Card>
+                        
                     </div>
                 </div></div>
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
@@ -128,15 +147,24 @@ class App extends Component {
                         <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
                           <Card.Img variant="top" src="holder.js/100px180" />
                           <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>앞면</Card.Title>
+                            <Card.Text>
+                              Some quick example text to build on the card title and make up the bulk of
+                              the card's content.
+                            </Card.Text>
+                          </Card.Body> </Card> 
+                    </div>
+                    <div className="back">
+                        <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
+                          <Card.Img variant="top" src="holder.js/100px180" />
+                          <Card.Body>
+                            <Card.Title>뒷면</Card.Title>
                             <Card.Text>
                               Some quick example text to build on the card title and make up the bulk of
                               the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
-                          </Card.Body> </Card> 
-                    </div>
-                    <div className="back">
+                          </Card.Body> </Card>
                     </div>
                 </div></div>
         </div>
@@ -146,7 +174,7 @@ class App extends Component {
         <Container>
           <Row>
             <Col xs={6} md={6}>
-              <Image src="https://lh3.googleusercontent.com/proxy/_0M4LkogF2ssyN5mJe1nhSptv3V41N-LNCsuflJH-YNLqoGWHKWQ1lmViVoNaJ1K-PvSHOl1w_O9oH5HrkLPBzuHo5GG01wnMRWaNiHdrRM" rounded style={{ width: '18rem', display:'inline-block' }}/>
+              <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQy82vhXGHn0j7xvGPnzQGRt8jfrR4KNCMaA&usqp=CAU" rounded style={{ width: '18rem', display:'inline-block' }}/>
                 <h6 className="ttokbokki">떡볶이</h6>
             </Col>
             <Col xs={6} md={6}>
@@ -159,7 +187,7 @@ class App extends Component {
     </div>
     
     
-    <Button className="button" variant="outline-primary">🍽 음식점 추천 받기 🍽</Button>{' '}
+    <Button className="button" variant="outline-primary" style={{ marginBottom: '30px', marginLeft:'auto', marginRight:'auto', display:'block'}}>🍽 음식점 추천 받기 🍽</Button>{' '}
 </div>
     );
   }
