@@ -1,0 +1,24 @@
+{
+  "name": "mimi",
+  "version": "1.0.0",
+  "description": "![001](https://user-images.githubusercontent.com/60427387/122770837-d0a65100-d2e0-11eb-96de-086469214146.png)",
+  "main": "index.js",
+  "dependencies": {
+    "chart.js": "^3.3.2",
+    "react-chartjs-2": "^3.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visionWWW/Mimi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/visionWWW/Mimi/issues"
+  },
+  "homepage": "https://github.com/visionWWW/Mimi#readme"
+}
