@@ -24,6 +24,51 @@
   color: white;
 }
 
+#button{ 
+  text-align: center; 
+  }
+
+#img_food1{
+  text-align: center;
+}
+
+#img_food2
+{
+  text-align: center;
+}
+
+#img_food3{
+  text-align: center;
+}
+
+#review{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%
+}
+
+.container{
+  display:flex; 
+  flex-wrap: wrap; 
+  margin-left: 27.5%; 
+  margin-right: 27.5%;
+}
+
+#map{
+  width: 400px; 
+  height: 400px; 
+  float:left; 
+  margin-right: 2.5%;
+}
+
+#info_1{
+  width: 400px; 
+  height: 400px; 
+  display:inline-block;  
+  margin-left: 2.5%; 
+  float:left;
+}
+
 .App-link {
   color: #61dafb;
 }
