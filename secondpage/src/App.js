@@ -1,13 +1,17 @@
 import React, {component} from 'react';
 import './App.css';
+//import '../../googlemap';
+//import GoogleApiMap from "./GoogleApiMap";
+//import MapContainer from "./MapContainer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {CardGroup} from "react-bootstrap";
 import {Card} from "react-bootstrap";
 import {Button} from "react-bootstrap";
-import {GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
+//import {GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
+//import { AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U } from "../../googlemap";
+//import GoogleApi from './GoogleApiMap';
 import Reacts from "react";
-import { AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U } from "../../googlemap";
-
+import Preview from "./Preview";
 
 function App() {
   return (
@@ -42,10 +46,12 @@ function App() {
     </div>
     
     <h2>음식점정보</h2>
-    
-    
-    
+  
+
     <div id = "info_1">
+    <div className="Map">
+      <Preview/>
+    </div>
         <p>평점: </p>
         <p>메뉴: </p>
         <p>가격: </p> 
