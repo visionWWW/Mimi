@@ -1,4 +1,4 @@
-import React, {component} from 'react';
+import React, {component} from 'react';  // eslint-disable-line no-unused-vars
 import './App.css';
 //import '../../googlemap';
 //import GoogleApiMap from "./GoogleApiMap";
@@ -10,53 +10,31 @@ import {Button} from "react-bootstrap";
 //import {GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
 //import { AIzaSyC4avBeOZV9CvBnJh7aF7oIEqZ14GCnc1U } from "../../googlemap";
 //import GoogleApi from './GoogleApiMap';
-import Reacts from "react";
 import Preview from "./Preview";
+import FoodImg from './FoodImg1';
+import FoodImg2 from './FoodImg2';
+import Button1 from './Button1';
+import Button2 from './Button2';
+import Button3 from './Button3';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h2>음식점추천</h2>
-        <div id = "button">
-      <input type="button" id = "first"  value = "음식점이름|추천음식"></input>
-      <input type="button" id = "second" value = "음식점이름|추천음식"></input>
-      <input type="button" id = "third" value = "음식점이름|추천음식"></input>
-    </div>
 
-    <div id = "img_food1"> 
-    <img src = "http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
+    <div id = "button">
+      <Button1/> 
+      <Button2/> 
+      <Button3/>
     </div>
-
-    <div id = "img_food2" style={{display: 'none'}}> 
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    </div>
-
-    <div id = "img_food3" style={{display: 'none'}}> 
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    <img src = "" width="300px" height="300px" alt="profile"/>
-    </div>
+    <br/>
     
     <h2>음식점정보</h2>
-  
-
-    <div id = "info_1">
-    <div className="Map">
+    <div>
       <Preview/>
     </div>
-        <p>평점: </p>
-        <p>메뉴: </p>
-        <p>가격: </p> 
-        <p>#키워드 #키워드 #키워드</p> 
-    </div>
+    <br/>
     
     <div id = "review">
     <CardGroup>
