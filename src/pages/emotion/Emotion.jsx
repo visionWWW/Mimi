@@ -3,54 +3,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-// import { Radar } from "react-chartjs-2";
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image'x
+import './emotion.css';
+import Radar from './radar.js'
+import Result from './emotionResult.js'
 
-const data = {
-  labels: [
-    '감정1',
-    '감정2',
-    '감정3',
-    '감정4',
-    '감정5',
-    '감정6',
-  ],
-  datasets: [{
-    label: '감정 분석 결과',
-    data: [65, 92, 90, 81, 100, 90],
-    fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
-    pointBorderColor: '#fff',
-    pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
-  }]
-};
-
-
-const options = {
-  plugins:{
-    legend:{
-      display:false
-    }
-  },
-  responsive: false,
-  scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-    ],
-  },
-};
-const element = document.getElementById("chart");
-console.log(element);
 
 class Emotion extends React.Component {
   render() {
@@ -82,25 +42,27 @@ class Emotion extends React.Component {
 
         <h1>감정분석결과</h1>
         <div className="wrap">
-          {/*<Radar className="chart" data={data} options={options} style={{ height:"25%", width: "25%", display:"inline-block"}} />*/}
-          <div className="text">감정결과가 나타날 곳입니다. <br></br><br></br><br></br><br></br><br></br><br></br><a href="#">자세히 보기</a></div>
+          <Radar className="chart"/>
+        <div className="text"><Result/></div>    
         </div>
 
         <h1 className="recwrap">추천성분</h1>
+            
+            
         <div className="wrap">
-          <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
             <div className="flipper">
               <div className="front">
                 <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
                   <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
-                    <Card.Title>앞면</Card.Title>
+                    <Card.Title>다시...</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of
-                      the card's content.
+                        시도해볼게요ㅠㅠ
                     </Card.Text>
                   </Card.Body> </Card>
-              </div>
+              
+            </div>
               <div className="back">
                 <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
                   <Card.Img variant="top" src="holder.js/100px180" />
@@ -113,7 +75,8 @@ class Emotion extends React.Component {
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body> </Card>
               </div>
-            </div></div>
+            </div>
+            </div> 
           <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
             <div className="flipper">
               <div className="front">
@@ -167,6 +130,11 @@ class Emotion extends React.Component {
                   </Card.Body> </Card>
               </div>
             </div></div>
+        
+            
+            
+            
+            
         </div>
 
         <div className="wrap">
