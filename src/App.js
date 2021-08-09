@@ -14,6 +14,7 @@ function App() {
           <Route exact path="/" component={Main}></Route>
           <Route path="/emotion" component={Emotion}></Route>
           <Route path="/young" component={Young}></Route>
+          <Route path="/restaurant" component={Restaurant}></Route>
         </Switch>
       </BrowserRouter>
     </>
