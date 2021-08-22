@@ -13,6 +13,26 @@
     font-size: calc(10px + 2vmin);
     color:black;
   }
+
+
+  .button1{
+    flex:1;
+    width: 30%;
+    box-sizing: border-box;
+  }
+
+  .button2{ 
+    flex:1;
+    margin: 0px 5%;
+    width:30%;
+    box-sizing: border-box;
+  }
+
+  .button3{
+    flex:1;
+    width:30%;
+    box-sizing: border-box;
+  }
   
   #img_food1{
     text-align: center;
@@ -33,11 +53,8 @@
     margin-right: 10%
   }
   
-  #map{
-    width: 400px; 
-    height: 400px; 
-    float:left; 
-    margin-right: 2.5%;
+  .map{
+    text-align: center;
   }
   
   .App-link {

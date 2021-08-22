@@ -7,11 +7,7 @@ import {CardGroup} from "react-bootstrap";
 import {Card} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import Preview from "./Preview";
-import Foodimg1 from './Foodimg1.js';
-import Foodimg2 from './Foodimg2';
-import Button1 from './Button1';
-import Button2 from './Button2';
-import Button3 from './Button3';
+import RestButton from './RestButton';
 import { GoogleApiWrapper } from 'google-maps-react';
 import MapContainer from './MapContainer';
 import ReviewCard from './ReviewCard';
@@ -36,7 +32,7 @@ function App() {
               <Nav.Link href="">감정진단결과</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="../secondpage/src/secondpage.html">음식점 보기</Nav.Link>
+              <Nav.Link href="../restaurant">음식점 보기</Nav.Link>
             </Nav>
           </Navbar.Collapse>
 
@@ -46,22 +42,18 @@ function App() {
 
 
         <h2>음식점추천</h2>
-
-        
-    <div>
-      <Button1/> 
-      <Button2/> 
-      <Button3/>
-    </div>
-    <br/>    
+        <RestButton/>
+        <br/>    
 
     <h2>음식점정보</h2>
 
-    <div id="map">
+    <div className="warp">
+    <div className="map">
     <Preview/>
     <MapContainer/>
     </div>
-
+    </div>
+    
     <div>
     <ReviewCard/>
     </div>
