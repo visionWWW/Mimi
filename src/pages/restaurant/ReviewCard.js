@@ -10,9 +10,9 @@ class ReviewCard extends Component {
         <div id = "review">
         <CardGroup>
     <Card>
-    <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ" />
+    <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ"width="300px" height="300px" />
     <Card.Body>
-      <Card.Title>비일</Card.Title>
+      <Card.Title>포돈</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This content is a little bit longer.
@@ -24,9 +24,9 @@ class ReviewCard extends Component {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src = "http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" width="300px" height="300px"/>
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>고씨네</Card.Title>
       <Card.Text>
         This card has supporting text below as a natural lead-in to additional
         content.{' '}
@@ -38,9 +38,9 @@ class ReviewCard extends Component {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1z18J_fnHBvtCnjSluv0oLwxLkFsB2OzZ" width="300px" height="300px"/>
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>빨봉분식</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This card has even longer content than the first to

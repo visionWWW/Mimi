@@ -15,7 +15,7 @@ import ReviewCard from './ReviewCard';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
       <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
           <Navbar.Brand href="#home">
             <img
@@ -41,22 +41,25 @@ function App() {
           </Navbar.Collapse></Navbar>
 
 
-        <h2>음식점추천</h2>
+        <h2>음 식 점 추천</h2> <br/>
+        <div className= "parent">
         <RestButton/>
-        <br/>    
+        </div>
+        <br/><br/><br/>
 
-    <h2>음식점정보</h2>
+    <h2>음 식 점 정 보</h2> <br/>
 
-    <div className="warp">
-    <div className="map">
-    <Preview/>
-    <MapContainer/>
-    </div>
+    <div className= "warp">
+    <div className="preview"> <Preview/> </div>
+    <div className="map"> <MapContainer/> </div>
     </div>
     
-    <div>
+    
+    
+    <h2>리 뷰</h2><br/>
     <ReviewCard/>
-    </div>
+    
+    
     </header>
     </div>
   );
