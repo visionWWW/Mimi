@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Find from './find.js'
@@ -14,6 +14,7 @@ const Review = () => (
               width="100"
               height="100"
               className="d-inline-block align-top"
+              alt="logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

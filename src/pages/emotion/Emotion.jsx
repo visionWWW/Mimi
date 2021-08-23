@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Card from 'react-bootstrap/Card'
@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Image from 'react-bootstrap/Image'x
+import Image from 'react-bootstrap/Image'
 import './emotion.css';
 import Radar from './radar.js'
 import Result from './emotionResult.js'
@@ -23,6 +23,7 @@ class Emotion extends React.Component {
               width="100"
               height="100"
               className="d-inline-block align-top"
+              alt="logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

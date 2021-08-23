@@ -1,7 +1,7 @@
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
-import './see.js';
+import See from './see.js';
 import './re_main.css';
 
 const Review = () => (
@@ -17,7 +17,10 @@ const Review = () => (
               🔍
             </Button>
          </InputGroup>
-            <a href="#" id="see">내가 작성한 리뷰 보러가기</a>
+
+            <See></See>
+
+
     </div>
   </>
 );

@@ -17,3 +17,18 @@
     width: 200px;
     margin: auto;
 }
+.review-go{
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+#in{
+    width: 200px;
+    margin-right: 10px;
+}
+#bt2{
+    width: 100px;
+    text-align:center;
+    display: block;
+    margin: auto;
+}
