@@ -17,7 +17,7 @@ const Review = () => (
               🔍
             </Button>
          </InputGroup>
-            <a href="#" id="see">내가 작성한 리뷰 보러가기</a>
+            <a href="/review" id="see">내가 작성한 리뷰 보러가기</a>
     </div>
   </>
 );
