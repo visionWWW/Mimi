@@ -17,6 +17,7 @@ function Result() {
               width="100"
               height="100"
               className="d-inline-block align-top"
+              alt="profile"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

@@ -3,12 +3,8 @@ import './rst.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {CardGroup} from "react-bootstrap";
-import {Card} from "react-bootstrap";
-import {Button} from "react-bootstrap";
 import Preview from "./Preview";
 import RestButton from './RestButton';
-import { GoogleApiWrapper } from 'google-maps-react';
 import MapContainer from './MapContainer';
 import ReviewCard from './ReviewCard';
 
@@ -23,12 +19,13 @@ function App() {
               width="100"
               height="100"
               className="d-inline-block align-top"
+              alt="profile"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="../survey/src/survey.html">검사하기</Nav.Link>
+              <Nav.Link href="../survey">검사하기</Nav.Link>
               <Nav.Link href="../emotion">감정진단결과</Nav.Link>
             </Nav>
             <Nav>
@@ -53,8 +50,6 @@ function App() {
     <div className="preview"> <Preview/> </div>
     <div className="map"> <MapContainer/> </div>
     </div>
-    
-    
     
     <h2>리 뷰</h2><br/>
     <ReviewCard/>

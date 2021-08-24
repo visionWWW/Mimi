@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Foodimg1 from "./Foodimg1";
 import Foodimg2 from "./Foodimg2";
 import Foodimg3 from "./Foodimg3";
-import { Button } from "antd";
 import './rst.css';
 
 class RestButton extends Component {
@@ -25,9 +24,9 @@ class RestButton extends Component {
         <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
         <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
         <br/><br/>
-        {this.state.button1State==true && <Foodimg1/>}
-        {this.state.button2State==true && <Foodimg2/>}
-        {this.state.button3State==true && <Foodimg3/>}
+        {this.state.button1State===true && <Foodimg1/>}
+        {this.state.button2State===true && <Foodimg2/>}
+        {this.state.button3State===true && <Foodimg3/>}
       </div>
     )
   }
