@@ -20,16 +20,16 @@ const Review = () => (
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="../survey/src/survey.html">검사하기</Nav.Link>
-              <Nav.Link href="">감정진단결과</Nav.Link>
+              <Nav.Link href="/survey">검사하기</Nav.Link>
+              <Nav.Link href="/emotion">감정진단결과</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="../secondpage/src/secondpage.html">음식점 보기</Nav.Link>
+              <Nav.Link href="/restaurant">음식점 보기</Nav.Link>
             </Nav>
           </Navbar.Collapse>
 
           <Navbar.Collapse className="justify-content-end">
-            <Nav.Link href="#pricing" className="ha">회원가입</Nav.Link>
+            <Nav.Link href="/review" className="ha">리뷰 작성하기</Nav.Link>
           </Navbar.Collapse></Navbar>
         <h3 className="title"><b>리뷰를 남겨주세요</b></h3>
         <Find></Find>
