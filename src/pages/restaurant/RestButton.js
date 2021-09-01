@@ -32,14 +32,41 @@ class RestButton extends Component {
   }
   
   toggleState1() {
-  	this.setState({ button1State: !this.state.button1State })
+      if(this.state.button2State = true){
+        this.setState({button2State: !this.state.button2State})
+      }
+      if (this.state.button3State = true) {
+        this.setState({button3State: !this.state.button3State})
+      }
+      {
+        this.setState({button1State: !this.state.button1State})
+      }
+    }
+  
+   toggleState2() {
+    if(this.state.button1State = true){
+      this.setState({button1State: !this.state.button1State})
+    }
+    if (this.state.button3State = true) {
+      this.setState({button3State: !this.state.button3State})
+    }
+    {
+     this.setState({button2State: !this.state.button2State})
+    }
   }
-  toggleState2() {
-  	this.setState({ button2State: !this.state.button2State })
-  }
+
   toggleState3() {
-  	this.setState({ button3State: !this.state.button3State })
+    if(this.state.button1State = true){
+      this.setState({button1State: !this.state.button1State})
+    }
+    if (this.state.button2State = true) {
+      this.setState({button2State: !this.state.button2State})
+    }
+    {
+     this.setState({button3State: !this.state.button3State})
+    }
   }
+
 }
 
 export default RestButton;
