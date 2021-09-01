@@ -48,8 +48,8 @@ class Main extends React.Component {
                             <NavLink to="./survey/src/survey.html" >
                                 <img
                                     className="d-block w-100"
-                                    src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a89fdd4b-63d9-49e7-a637-993b7e2e38ce/004.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210825%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210825T141124Z&X-Amz-Expires=86400&X-Amz-Signature=3998cf1fc66b7deba08305f0c9e22d0f7266682fcde14a5b19ff25c70c6d1e02&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22004.png%22"
-                                    alt="First slide"
+                                    src={process.env.PUBLIC_URL + '/images/002.png'}
+									alt="First slide"
                                 />
                             </NavLink>
                         </Carousel.Item>
@@ -57,7 +57,7 @@ class Main extends React.Component {
                             <NavLink to="./secondpage/src/secondpage.html" >{/* 두번째 링크 수정필요 */}
                                 <img
                                     className="d-block w-100"
-                                    src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4c4f502d-8052-4c14-83cd-5d36c1de65b3/002.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210825%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210825T135546Z&X-Amz-Expires=86400&X-Amz-Signature=6a2ea81b651b9edb937f97232089d8bf87ec54d107e343ab527e5c2a4bc0ad47&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22002.png%22"
+                                    src={process.env.PUBLIC_URL + '/images/004.png'}
                                     alt="Second slide"
                                 />
                             </NavLink>
@@ -66,7 +66,7 @@ class Main extends React.Component {
                             <NavLink to="./secondpage/src/secondpage.html" >
                                 <img
                                     className="d-block w-100"
-                                    src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/424649c8-23e5-496c-beeb-e88fbcee40fe/007.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210825%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210825T141146Z&X-Amz-Expires=86400&X-Amz-Signature=b9b677dc50c5a409c6dd26494b3025e3f4673fe732868750503cc93a16862310&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22007.png%22"
+                                    src={process.env.PUBLIC_URL + '/images/007.png'}
                                     alt="Third slide"
                                 />
                             </NavLink>
