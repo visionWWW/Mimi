@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import {Carousel} from 'react-bootstrap'
 import logo from '../logo.svg';
 import {NavLink} from 'react-router-dom'
-import mainImg from './mainImg'
 
 class Main extends React.Component {
     render() {
