@@ -27,6 +27,9 @@ const Young = () => {
 		width:'100px',
 		margin: 'auto'
 	}
+	
+	
+  
   return (
 	  <div className="container">
 	  <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
@@ -84,7 +87,8 @@ const Young = () => {
 				  />
 				  여
 				</label>
-				
+				</form>
+			  <form>
 				<label style={introWrap}>
 				나이를 선택해주세요 
 				</label>
@@ -133,11 +137,11 @@ const Young = () => {
 				  />
 				  50대
 				</label>
-				
+				</form>
 				<label style={introWrap}>
 				감정의 만족도에 대한 척도를 체크 해주세요.
 				</label>
-				
+				<form>
 				<label style={introWrap}>
 				1. 나는 현재 즐거운 감정을 느끼고 있다. 
 				</label>
@@ -211,7 +215,8 @@ const Young = () => {
 				  />
 				  7    
 				</label>
-
+				</form>
+			  <form>
 				<label style={introWrap}>
 				2. 나는 현재 편안한 감정을 느끼고 있다. 
 				</label>
@@ -285,7 +290,8 @@ const Young = () => {
 				  />
 				  7    
 				</label>
-
+				</form>
+			  <form>
 				<label style={introWrap}>
 				3. 나는 현재 행복한 감정을 느끼고 있다. 
 				</label>
@@ -359,7 +365,9 @@ const Young = () => {
 				  />
 				  7    
 				</label>
-
+				</form>
+			  <form>
+			  
 				<label style={introWrap}>
 				4. 나는 현재 부정적인 감정을 느끼고 있다. 
 				</label>
@@ -433,7 +441,8 @@ const Young = () => {
 				  />
 				  7    
 				</label>
-
+				</form>
+			  <form>
 				<label style={introWrap}>
 				5. 나는 현재 짜증나는 감정을 느끼고 있다. 
 				</label>
@@ -507,9 +516,9 @@ const Young = () => {
 				  />
 				  7    
 				</label>
-
+				</form>
 				
-            </form>
+            
 			  <Button as="input" type="submit" value="Submit" />{' '}
           </div>
         </div>
