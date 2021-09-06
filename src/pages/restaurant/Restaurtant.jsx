@@ -50,6 +50,7 @@ function App() {
     <div className="preview"> <Preview/> </div>
     <div className="map"> <MapContainer/> </div>
     </div>
+
     
     <h2>리 뷰</h2><br/>
     <ReviewCard/>

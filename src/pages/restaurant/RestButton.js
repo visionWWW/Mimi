@@ -32,10 +32,10 @@ class RestButton extends Component {
   }
   
   toggleState1() {
-      if(this.state.button2State = true){
+      if((this.state.button2State = true)){
         this.setState({button2State: !this.state.button2State})
       }
-      if (this.state.button3State = true) {
+      if ((this.state.button3State = true)) {
         this.setState({button3State: !this.state.button3State})
       }
       {
@@ -44,10 +44,10 @@ class RestButton extends Component {
     }
   
    toggleState2() {
-    if(this.state.button1State = true){
+    if((this.state.button1State = true)){
       this.setState({button1State: !this.state.button1State})
     }
-    if (this.state.button3State = true) {
+    if ((this.state.button3State = true)) {
       this.setState({button3State: !this.state.button3State})
     }
     {
@@ -56,10 +56,10 @@ class RestButton extends Component {
   }
 
   toggleState3() {
-    if(this.state.button1State = true){
+    if((this.state.button1State = true)){
       this.setState({button1State: !this.state.button1State})
     }
-    if (this.state.button2State = true) {
+    if ((this.state.button2State = true)) {
       this.setState({button2State: !this.state.button2State})
     }
     {
