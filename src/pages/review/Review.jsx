@@ -31,7 +31,7 @@ const Review = () => (
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link href="/review" className="ha">리뷰 작성하기</Nav.Link>
           </Navbar.Collapse></Navbar>
-        <h3 className="title"><b>리뷰를 남겨주세요</b></h3>
+        <h3 className="title">리뷰를 남겨주세요</h3>
         <Find></Find>
         
         
