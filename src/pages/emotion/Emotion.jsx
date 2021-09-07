@@ -7,10 +7,11 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Image from 'react-bootstrap/Image'
+
 import './emotion.css';
 import Radar from './radar.js'
 import Result from './emotionResult.js'
-
+import RecommendCard from "./recommendCard";
 
 class Emotion extends React.Component {
   render() {
@@ -59,7 +60,7 @@ class Emotion extends React.Component {
                   <Card.Body>
                     <Card.Title>다시...</Card.Title>
                     <Card.Text>
-                        시도해볼게요ㅠㅠ
+                        <RecommendCard></RecommendCard>
                     </Card.Text>
                   </Card.Body> </Card>
               

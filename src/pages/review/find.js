@@ -12,13 +12,12 @@ const Review = () => (
             <SearchBox></SearchBox>
 
          </InputGroup>
+
         <Button variant="outline-secondary" id="button-addon2">
-        🔍
+        리뷰 보러 가기 👀
         </Button>
 
-            <See></See>
-
-
+        <See></See>
     </div>
   </>
 );
