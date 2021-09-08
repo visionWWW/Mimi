@@ -1,9 +1,10 @@
 import React from 'react';
+import ResultText from "./resultText";
 
 const Result = () => (
   <>
     <div>
-        아 이 텍스트만 따로 빼는 방법이 없나요?
+        <ResultText></ResultText>
         <br></br><br></br><br></br><br></br><br></br><br></br>
         <a href="/emotion">자세히 보기</a>
     </div>

@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.12",
+    "axios": "^0.21.4",
     "bootstrap": "^5.0.2",
     "chart.js": "^3.5.0",
     "chartjs": "^0.3.24",
@@ -20,6 +21,7 @@
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-search-box": "^2.0.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
