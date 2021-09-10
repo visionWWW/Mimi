@@ -13,7 +13,7 @@ const Review = () => (
 
          </InputGroup>
 
-        <Button variant="outline-secondary" id="button-addon2">
+        <Button variant="outline-secondary" id="button-addon2" href="/review-see" style={{ width: '10rem' }}>
         리뷰 보러 가기 👀
         </Button>
 

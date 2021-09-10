@@ -33,9 +33,6 @@ const Review = () => (
           </Navbar.Collapse></Navbar>
         <h3 className="title">리뷰를 남겨주세요</h3>
         <Find></Find>
-        
-        
-        
     </div>
   </>
 );
