@@ -7,10 +7,10 @@ import {Button} from "react-bootstrap";
 class ReviewCard extends Component {
     render(){
         return(
-        <div id = "review">
+        <div id = "reviewcard">
         <CardGroup>
     <Card>
-    <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ"width="300px" height="300px" />
+    <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ" width="300px" height="300px" />
     <Card.Body>
       <Card.Title>포돈</Card.Title>
       <Card.Text>

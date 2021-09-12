@@ -30,7 +30,7 @@
     text-align: center;
   }
   
-  #review{
+  #reviewcard{
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -60,9 +60,5 @@
     width:40%;
     box-sizing: border-box;
   }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
+    
   
