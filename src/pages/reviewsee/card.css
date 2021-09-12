@@ -1,0 +1,11 @@
+h3{
+    text-align: center;
+}
+
+.card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px;
+}

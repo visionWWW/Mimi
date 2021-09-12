@@ -157,7 +157,7 @@ class Emotion extends React.Component {
         </div>
 
 
-        <Button className="button" variant="outline-primary" style={{ marginBottom: '30px', marginLeft:'auto', marginRight:'auto', display:'block'}}>🍽 음식점 추천 받기 🍽</Button>{' '}
+        <Button className="button" variant="outline-primary" href={"/restaurant"} style={{ marginBottom: '30px', marginLeft:'auto', marginRight:'auto', display:'block', width:"300px"}}>🍽 음식점 추천 받기 🍽</Button>{' '}
       </div>
     );
   }

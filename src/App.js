@@ -7,6 +7,7 @@ import Young from "./pages/young/Young";
 import Review from "./pages/review/Review";
 import Restaurant from "./pages/restaurant/Restaurtant";
 import Allresults from "./pages/allresults/Result";
+import Reviewsee from "./pages/reviewsee/Reviewsee";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/survey" component={Young}></Route>
           <Route path="/restaurant" component={Restaurant}></Route>
           <Route path="/allresults" component={Allresults}></Route>
+          <Route path="/review-see" component={Reviewsee}></Route>
         </Switch>
       </BrowserRouter>
     </>
