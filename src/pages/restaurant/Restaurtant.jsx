@@ -54,8 +54,6 @@ function App() {
     
     <h2>리 뷰</h2><br/>
     <ReviewCard/>
-    
-    
     </header>
     </div>
   );

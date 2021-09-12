@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ButtonName from "./ButtonName";
 import Foodimg1 from "./Foodimg1";
 import Foodimg2 from "./Foodimg2";
 import Foodimg3 from "./Foodimg3";
@@ -20,7 +21,7 @@ class RestButton extends Component {
   render() {
     return (
       <div>                
-        <button className="button1" onClick={this.toggleState1}>음식점이름 | 추천음식</button>
+        <button className="button1" onClick={this.toggleState1}><ButtonName/></button>
         <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
         <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
         <br/><br/>
