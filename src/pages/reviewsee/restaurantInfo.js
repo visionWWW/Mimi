@@ -1,19 +1,24 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import Card from 'react-bootstrap/Card';
 
-const RestraurantInfo = () => (
+const Info = () => (
     <>
-        <h1>식당명</h1>
-        <img
-            src="https://lh3.googleusercontent.com/proxy/I7ckn7wDJO9hCL7-tr_sAsrJxw5YZd-mMUMkQ_SkIF7_2F2VDaJ68UmqRamPri0P5npXEmLT6Km8XE1W5iYjjbym-17k-6ILlzKmyTA9_7isPxx4Uj0RRzoyB1k"
-            width="100"
-            height="100"
-            className="d-inline-block align-top"
-            alt="profile">
-        </img>
-
+        <Card>
+            <Card.Header>가게 이름</Card.Header>
+            <Card.Body>
+                <blockquote className="blockquote mb-0">
+                    <p>
+                        {' '}
+                        가게 설명
+                        {' '}
+                    </p>
+                    <footer className="blockquote-footer">
+                        별점
+                    </footer>
+                </blockquote>
+            </Card.Body>
+        </Card>
     </>
 );
 
-export default RestraurantInfo;
+export default Info;

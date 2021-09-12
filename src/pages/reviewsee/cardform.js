@@ -4,6 +4,11 @@ import "./card.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+const carouselWrap = {
+    width: '1000px',
+    margin: 'auto'
+}
+
 const Cardform = () => (
     <>
         <div>

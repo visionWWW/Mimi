@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Cardform from "./cardform";
+import RestaurantImg from "./restaurantImg";
+import Info from "./restaurantInfo";
 
 const Review = () => (
     <>
@@ -31,8 +33,8 @@ const Review = () => (
                     <Nav.Link href="/review" className="ha">리뷰 작성하기</Nav.Link>
                 </Navbar.Collapse></Navbar>
         </div>
-            <h3> 식당소개 </h3>
-
+            <RestaurantImg></RestaurantImg>
+            <Info></Info>
             <h3> 리뷰 작성창이 필요하다 </h3>
             <h3> ---------------------- </h3>
             <h3>최근 올라온 리뷰 확인하기</h3>
