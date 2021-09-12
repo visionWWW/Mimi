@@ -31,16 +31,16 @@ class Main extends React.Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="./survey/src/survey.html">검사하기</Nav.Link>
-                                <Nav.Link href="">감정진단결과</Nav.Link>
+                                <Nav.Link href="../survey">검사하기</Nav.Link>
+                                <Nav.Link href="../emotion">감정진단결과</Nav.Link>
                             </Nav>
                             <Nav>
-                                <Nav.Link href="./secondpage/src/secondpage.html">음식점 보기</Nav.Link>
+                                <Nav.Link href="../restaurant">음식점 보기</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
 
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link href="#pricing" className="ha">회원가입</Nav.Link>
+                        <Nav.Link href="../review" className="ha">리뷰 작성하기</Nav.Link>
                         </Navbar.Collapse></Navbar>
 
                     <Carousel style={carouselWrap}>
@@ -54,7 +54,7 @@ class Main extends React.Component {
                             </NavLink>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <NavLink to="./secondpage/src/secondpage.html" >{/* 두번째 링크 수정필요 */}
+                            <NavLink to="../restaurant">{/* 두번째 링크 수정필요 */}
                                 <img
                                     className="d-block w-100"
                                     src={process.env.PUBLIC_URL + '/images/004.png'}
@@ -63,7 +63,7 @@ class Main extends React.Component {
                             </NavLink>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <NavLink to="./secondpage/src/secondpage.html" >
+                            <NavLink to="../review" >
                                 <img
                                     className="d-block w-100"
                                     src={process.env.PUBLIC_URL + '/images/007.png'}
