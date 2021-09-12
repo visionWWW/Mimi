@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ButtonName from "./ButtonName";
+import ButtonName from "./button_name";
 import Foodimg1 from "./Foodimg1";
 import Foodimg2 from "./Foodimg2";
 import Foodimg3 from "./Foodimg3";
