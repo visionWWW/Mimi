@@ -13,8 +13,8 @@ const Review = () => (
 
          </InputGroup>
 
-        <Button variant="outline-secondary" id="button-addon2" href="/review-see" style={{ width: '10rem' }}>
-        리뷰 보러 가기 👀
+        <Button variant="outline-secondary" id="button-addon2" href="/review/see" style={{ width: '10rem' }}>
+        리뷰 쓰러 가기 ✍🏻
         </Button>
 
         <See></See>

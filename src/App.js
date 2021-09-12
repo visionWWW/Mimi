@@ -21,7 +21,7 @@ function App() {
           <Route path="/survey" component={Young}></Route>
           <Route path="/restaurant" component={Restaurant}></Route>
           <Route path="/allresults" component={Allresults}></Route>
-          <Route path="/review-see" component={Reviewsee}></Route>
+          <Route path="/review/:see" component={Reviewsee}></Route>
         </Switch>
       </BrowserRouter>
     </>

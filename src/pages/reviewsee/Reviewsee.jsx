@@ -31,7 +31,8 @@ const Review = () => (
                     <Nav.Link href="/review" className="ha">리뷰 작성하기</Nav.Link>
                 </Navbar.Collapse></Navbar>
         </div>
-            <h3> 여기에는 식당소개와 태그, 별점이 필요하다 </h3>
+            <h3> 식당소개 </h3>
+
             <h3> 리뷰 작성창이 필요하다 </h3>
             <h3> ---------------------- </h3>
             <h3>최근 올라온 리뷰 확인하기</h3>
