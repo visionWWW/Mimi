@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {Carousel} from 'react-bootstrap'
-import logo from '../logo.svg';
 import {NavLink} from 'react-router-dom'
 
 class Main extends React.Component {
@@ -31,7 +30,7 @@ class Main extends React.Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="../surveyIntro">검사하기</Nav.Link>
+                                <Nav.Link href="../survey">검사하기</Nav.Link>
                                 <Nav.Link href="../emotion">감정진단결과</Nav.Link>
                             </Nav>
                             <Nav>
@@ -48,7 +47,7 @@ class Main extends React.Component {
                             <NavLink to="./survey/src/survey.html" >
                                 <img
                                     className="d-block w-100"
-                                    src={process.env.PUBLIC_URL + '/images/002.png'}
+                                    src={process.env.PUBLIC_URL + '/images/mainImg.png'}
 									alt="First slide"
                                 />
                             </NavLink>
