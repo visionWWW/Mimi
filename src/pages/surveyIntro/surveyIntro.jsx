@@ -53,7 +53,7 @@ const Young = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="../survey">검사하기</Nav.Link>
+              <Nav.Link href="../surveyIntro">검사하기</Nav.Link>
               <Nav.Link href="../emotion">감정진단결과</Nav.Link>
             </Nav>
             <Nav>
