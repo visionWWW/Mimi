@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const wrap = {
-    width:"600px",
+    width:"800px",
     margin: 'auto'
 }
 

@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Cardform from "./cardform";
 import RestaurantImg from "./restaurantImg";
 import Info from "./restaurantInfo";
+import Button from "react-bootstrap/Button";
 
 const Review = () => (
     <>
@@ -33,12 +34,15 @@ const Review = () => (
                     <Nav.Link href="/review" className="ha">리뷰 작성하기</Nav.Link>
                 </Navbar.Collapse></Navbar>
         </div>
+        <div>
             <RestaurantImg></RestaurantImg>
             <Info></Info>
-            <h3> 리뷰 작성창이 필요하다 </h3>
-            <h3> ---------------------- </h3>
-            <h3>최근 올라온 리뷰 확인하기</h3>
+            <Button style={{display:"block",margin:"auto",marginTop:"-10px"}}>리뷰 폼 어떻게 구성해야 될 지 모르겠읍니다</Button>
+            <hr></hr>
+            <h4 style={{textAlign:"center", marginTop:"50px"}}>최근 리뷰보기 👀</h4>
             <Cardform></Cardform>
+        </div>
+
     </>
 );
 

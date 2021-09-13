@@ -1,9 +1,21 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import StarRatingComponent from 'react-star-rating-component';
+
+const wrap = {
+    width:"500px",
+    float:"center",
+    clear:"both",
+    marginLeft: 'auto',
+    marginRight:'auto',
+    marginTop: '-50px'
+}
+
+const { rating } = 1;
 
 const Info = () => (
     <>
-        <Card>
+        <Card style={wrap}>
             <Card.Header>가게 이름</Card.Header>
             <Card.Body>
                 <blockquote className="blockquote mb-0">
@@ -13,7 +25,15 @@ const Info = () => (
                         {' '}
                     </p>
                     <footer className="blockquote-footer">
-                        별점
+                        <div>
+                            <StarRatingComponent
+                                name="star"
+                                editing={false}
+                                renderStarIcon={() => <span>★</span>}
+                                starCount={5}
+                                value={2}
+                            />
+                        </div>
                     </footer>
                 </blockquote>
             </Card.Body>
