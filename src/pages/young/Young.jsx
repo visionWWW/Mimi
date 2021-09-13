@@ -8,6 +8,7 @@ import {Carousel} from 'react-bootstrap'
 // import logo from '../logo.svg';
 import {NavLink} from 'react-router-dom'
 import List from './list.js'
+import Chart from './chart.js'
 
 const Young = () => {
 	const totallWrap={
@@ -28,7 +29,13 @@ const Young = () => {
 		margin: 'auto'
 	}
 	
-	
+	const main = {
+		backgroundColor: 'whitesmoke',
+		width: '80%',
+		textAlign: 'center',
+		borderRadius: '20px'
+	  }
+
   
   return (
 	  <div className="container">
@@ -45,7 +52,7 @@ const Young = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="../survey">검사하기</Nav.Link>
+              <Nav.Link href="../surveyIntro">검사하기</Nav.Link>
               <Nav.Link href="../emotion">감정진단결과</Nav.Link>
             </Nav>
             <Nav>
@@ -57,470 +64,72 @@ const Young = () => {
             <Nav.Link href="../review" className="ha">리뷰 작성하기</Nav.Link>
           </Navbar.Collapse></Navbar>
 	  
-				  <div className="App">
-					
-					  
-				  </div>
+		  <div class="container">
+    
+    <section id="qna">
+      <div class="status mx-auto mt-5">
+        <div class="statusBar">
+        </div>
+      </div>
+      <div class="qBox my-5 py-3 mx-auto">
+
+      </div>
+      <div class="answerBox">
+
+      </div>
+    </section>
+
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+  </div>
+	  
         <div className="row mt-5">
           <div className="col-sm-12" style={totallWrap}>
-            <form>
-				<label style={introWrap}>
-				성별을 선택해주세요 
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-sex"
-				  />
-				  남
-				</label>
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-sex"
-				  />
-				  여
-				</label>
-				</form>
-			  <form>
-				<label style={introWrap}>
-				나이를 선택해주세요 
-				</label>
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-age"
-				  />
-				  10대
-				</label>
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-age"
-				  />
-				  20대
-				</label>
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option3"
-					className="form-check-input-age"
-				  />
-				  30대
-				</label>
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option4"
-					className="form-check-input-age"
-				  />
-				  40대
-				</label>
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option5"
-					className="form-check-input-age"
-				  />
-				  50대
-				</label>
-				</form>
-				<label style={introWrap}>
-				감정의 만족도에 대한 척도를 체크 해주세요.
-				</label>
+            
 				<form>
 				<label style={introWrap}>
 				1. 나는 현재 즐거운 감정을 느끼고 있다. 
 				</label>
-				
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-1"
-				  />
-				  1
-				</label>
-
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-1"
-				  />
-				  2     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option3"
-					className="form-check-input-1"
-				  />
-				  3     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option4"
-					className="form-check-input-1"
-				  />
-				  4     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option5"
-					className="form-check-input-1"
-				  />
-				  5     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-1"
-				  />
-				  6     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-1"
-				  />
-				  7    
-				</label>
+				<Chart></Chart>
 				</form>
 			  <form>
 				<label style={introWrap}>
 				2. 나는 현재 편안한 감정을 느끼고 있다. 
 				</label>
-				
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-1"
-				  />
-				  1
-				</label>
-
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-2"
-				  />
-				  2     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option3"
-					className="form-check-input-2"
-				  />
-				  3     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option4"
-					className="form-check-input-2"
-				  />
-				  4     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option5"
-					className="form-check-input-2"
-				  />
-				  5     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-2"
-				  />
-				  6     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-2"
-				  />
-				  7    
-				</label>
+				<Chart></Chart>
 				</form>
 			  <form>
 				<label style={introWrap}>
 				3. 나는 현재 행복한 감정을 느끼고 있다. 
 				</label>
-				
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-3"
-				  />
-				  1
-				</label>
-
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-3"
-				  />
-				  2     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option3"
-					className="form-check-input-3"
-				  />
-				  3     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option4"
-					className="form-check-input-3"
-				  />
-				  4     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option5"
-					className="form-check-input-3"
-				  />
-				  5     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-3"
-				  />
-				  6     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-3"
-				  />
-				  7    
-				</label>
+				<Chart></Chart>
 				</form>
 			  <form>
 			  
 				<label style={introWrap}>
 				4. 나는 현재 부정적인 감정을 느끼고 있다. 
 				</label>
-				
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-4"
-				  />
-				  1
-				</label>
-
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-4"
-				  />
-				  2     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option3"
-					className="form-check-input-4"
-				  />
-				  3     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option4"
-					className="form-check-input-4"
-				  />
-				  4     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option5"
-					className="form-check-input-4"
-				  />
-				  5     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-4"
-				  />
-				  6     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-4"
-				  />
-				  7    
-				</label>
+				<Chart></Chart>
 				</form>
 			  <form>
 				<label style={introWrap}>
 				5. 나는 현재 짜증나는 감정을 느끼고 있다. 
 				</label>
-				
-				<label style={surveyWrap}>
-				  <input 
-					type="radio"
-					name="react-tips"
-					value="option1"
-					className="form-check-input-5"
-				  />
-				  1
-				</label>
+				<Chart></Chart>
+				</form>
 
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option2"
-					className="form-check-input-5"
-				  />
-				  2     
+				<form>
+				<label style={introWrap}>
+				6. 나는 현재 무기력한 감정을 느끼고 있다. 
 				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option3"
-					className="form-check-input-5"
-				  />
-				  3     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option4"
-					className="form-check-input-5"
-				  />
-				  4     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option5"
-					className="form-check-input-5"
-				  />
-				  5     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-5"
-				  />
-				  6     
-				</label>
-				
-				<label style={surveyWrap}>
-				  <input
-					type="radio"
-					name="react-tips"
-					value="option6"
-					className="form-check-input-5"
-				  />
-				  7    
-				</label>
+				<Chart></Chart>
 				</form>
 				
-            
+		
 			  <Button as="input" type="submit" value="Submit" />{' '}
           </div>
         </div>
+
       </div>
   );
 };
