@@ -1,6 +1,7 @@
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
-import {NavLink} from 'react-router-dom';
+import {Carousel} from 'react-bootstrap'
+import logo from '../logo.svg';
+import {NavLink} from 'react-router-dom'
 import NaviagtionBar from './navbar';
 
 class Main extends React.Component {
@@ -18,9 +19,10 @@ class Main extends React.Component {
             return (
                 <div>
                     <NaviagtionBar/>
+
                     <Carousel style={carouselWrap}>
                         <Carousel.Item>
-                            <NavLink to="../surveyIntro" >
+                            <NavLink to="./survey/src/survey.html" >
                                 <img
                                     className="d-block w-100"
                                     src={process.env.PUBLIC_URL + '/images/002.png'}

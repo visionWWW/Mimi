@@ -23,6 +23,7 @@
     "react-scripts": "^4.0.3",
     "react-search-box": "^2.0.2",
     "react-star-rating-component": "^1.4.1",
+    "react-tabs": "^3.2.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
