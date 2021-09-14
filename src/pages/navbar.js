@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -27,7 +27,7 @@ class NaviagtionBar extends Component {
             </Navbar.Collapse>
   
             <Navbar.Collapse className="justify-content-end">
-              <Nav.Link href="../review" className="ha">회원가입</Nav.Link>
+              <Nav.Link href="../review" className="ha">리뷰 작성하기</Nav.Link>
             </Navbar.Collapse></Navbar>
         )
     }
