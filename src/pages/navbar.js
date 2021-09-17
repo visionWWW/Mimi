@@ -19,7 +19,7 @@ class NaviagtionBar extends Component {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link href="../surveyIntro">검사하기</Nav.Link>
-                <Nav.Link href="../emotion">감정진단결과</Nav.Link>
+                <Nav.Link href="../allresults">감정진단결과</Nav.Link>
               </Nav>
               <Nav>
                 <Nav.Link href="../restaurant">음식점 보기</Nav.Link>
