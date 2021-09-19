@@ -6,8 +6,8 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Image from 'react-bootstrap/Image'
 import NaviagtionBar from '../navbar';
+import ResultCard from "./card";
 import './emotion.css';
-import Radar from './radar.js'
 import Result from './emotionResult.js'
 import RecommendCard from "./recommendCard";
 
@@ -18,8 +18,9 @@ class Emotion extends React.Component {
         <NaviagtionBar/>
 
         <h1>감정분석결과</h1>
+        <ResultCard></ResultCard>
         <div className="wrap">
-          <Radar className="chart"/>
+
         <div className="text"><Result/></div>    
         </div>
 
