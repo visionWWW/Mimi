@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
-import {Carousel} from 'react-bootstrap'
-// import logo from '../logo.svg';
-import {NavLink} from 'react-router-dom'
 import Start from './start.js'
 import NaviagtionBar from '../navbar.js';
 
@@ -45,7 +42,6 @@ const Young = () => {
     <section id="main" class="mx-auto my-5 py-5 px-3">
       <h1>나의 감정에 맞는 음식은?</h1>
       <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-        {/*<img src="./img/main.png" alt="mainImage" class="img-fluid">*/}
       </div>
       <p class={surveyWrap}>
         감정검사 사이트입니다! <br />
@@ -54,8 +50,6 @@ const Young = () => {
       </p>
       <Start></Start>
     </section>
-    <script src="./js/data.js" charset="utf-8"></script>
-    <script src="./js/start.js" charset="utf-8"></script>
   </div>
 
       </div>

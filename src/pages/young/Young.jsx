@@ -3,8 +3,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from "react-bootstrap/Button";
 import Chart from './chart.js'
+import buttonCheck from './buttonCheck.js';
+import { Component } from "react";
+import { height } from 'dom-helpers';
 
-const Young = () => {
+class Young extends Component {
+  render(){
 	const totallWrap={
 		width: '800px',
 		margin: 'auto'
@@ -30,8 +34,15 @@ const Young = () => {
 		borderRadius: '20px'
 	  }
 
-  
+	  const satis_qna = {
+		  backgroundColor : 'whitesmoke',
+		  height: '300px',
+		  margin: 'auto',
+		  textAlign:"center", 
+		  marginTop:"50px"
+	  }
   return (
+	  
 	  <div className="container">
 		  <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
           <Navbar.Brand href="../">
@@ -59,34 +70,44 @@ const Young = () => {
           </Navbar.Collapse></Navbar>
 	  
 		  <div class="container">
-    
-    <section id="qna">
-      <div class="status mx-auto mt-5">
-        <div class="statusBar">
-        </div>
-      </div>
-      <div class="qBox my-5 py-3 mx-auto">
-
-      </div>
-      <div class="answerBox">
-
-      </div>
-    </section>
-
-    <script src="./js/data.js" charset="utf-8"></script>
-    <script src="./js/start.js" charset="utf-8"></script>
   </div>
 	  
         <div className="row mt-5">
           <div className="col-sm-12" style={totallWrap}>
-            
+			<div style={satis_qna}>
+			<label >
+				만족감질문입니다
+			</label>
+			<form>
+				<label style={introWrap}>
+				1. 나는 내 삶의 개인적인 측면에 대해 만족한다.
+				</label>
+				<Chart></Chart>
+				</form>
+				<form>
+				<label style={introWrap}>
+				2. 나는 내 삶의 관계적 측면에 대해 만족한다. 
+				</label>
+				<Chart></Chart>
+				</form>
+				<form>
+				<label style={introWrap}>
+				3. 나는 내가 속한 집단에 대해 만족한다. 
+				</label>
+				<Chart></Chart>
+				</form>
+			</div>
+			<div className="emo_qna">
+            <label>
+				감정질문입니다
+			</label>
 				<form>
 				<label style={introWrap}>
 				1. 나는 현재 즐거운 감정을 느끼고 있다. 
 				</label>
 				<Chart></Chart>
 				</form>
-			  <form>
+			  <form >
 				<label style={introWrap}>
 				2. 나는 현재 편안한 감정을 느끼고 있다. 
 				</label>
@@ -99,7 +120,6 @@ const Young = () => {
 				<Chart></Chart>
 				</form>
 			  <form>
-			  
 				<label style={introWrap}>
 				4. 나는 현재 부정적인 감정을 느끼고 있다. 
 				</label>
@@ -118,14 +138,15 @@ const Young = () => {
 				</label>
 				<Chart></Chart>
 				</form>
-				
+				</div>
 		
-			  <Button as="input" type="submit" value="Submit" />{' '}
+			  <Button as="input" type="submit" value="Submit"/>{' '}
           </div>
         </div>
 
       </div>
   );
 };
+}
 
 export default Young;
