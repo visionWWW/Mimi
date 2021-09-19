@@ -11,18 +11,19 @@ class Main extends React.Component {
         {
             const Wrap = {
                 width: '1000px',
-                margin: 'auto',
-                
+                margin: 'auto'
             }
             const CarouselHeight = {
+                width: '1000px',
+                margin: 'auto',
                 padding:'50px'
             }
 
             return (
-                <div style={Wrap}>
+                <div>
                     <NaviagtionBar/>
 
-                    <Carousel>
+                    <Carousel style={Wrap}>
                         <Carousel.Item>
                             <NavLink to="./survey/src/survey.html" >
                                 <img
@@ -54,7 +55,7 @@ class Main extends React.Component {
                     </Carousel>
 
 
-                    <Tabs style={Wrap, CarouselHeight}>
+                    <Tabs style={CarouselHeight}>
                         <TabList>
                             <Tab>프로젝트 소개</Tab>
                             <Tab>개발배경</Tab>
