@@ -10,7 +10,7 @@ import { Button } from "react-bootstrap";
 import ResName from './res_name';
 import ReviewText from './reviewtext';
 import NaviagtionBar from '../navbar';
-
+import { Map } from 'google-maps-react';
 
 function App() {
   return (
@@ -44,9 +44,6 @@ function App() {
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
           </Card>
           <Card>
             <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" width="300px" height="300px" />
@@ -58,9 +55,6 @@ function App() {
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
           </Card>
           <Card>
             <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1z18J_fnHBvtCnjSluv0oLwxLkFsB2OzZ" width="300px" height="300px" />
@@ -73,9 +67,6 @@ function App() {
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
           </Card>
         </CardGroup>
         </div>
