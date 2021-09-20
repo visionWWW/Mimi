@@ -10,6 +10,7 @@ import Allresults from "./pages/allresults/Result";
 import Reviewsee from "./pages/reviewsee/Reviewsee";
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
+import ReviewCheck from "./pages/reviewcheck/reviewCheck";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/survey" component={Young}></Route>
           <Route path="/restaurant" component={Restaurant}></Route>
           <Route path="/allresults" component={Allresults}></Route>
+          <Route path="/review/check" component={ReviewCheck}></Route>
           <Route exact path="/review/:see" component={Reviewsee}></Route>
           <Route path="/review/see/form" component={ReviewForm}></Route>
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
