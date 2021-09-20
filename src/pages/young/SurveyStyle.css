@@ -1,11 +1,18 @@
 .col-sm-12{
     width:800px;
     margin:auto;
+    text-align:center;
 }
 
 .satis_qna{
     background-color: whitesmoke;
-    height: 300px;
+    margin: auto;
+    text-align:center;
+    margin-top:50px;
+}
+
+.emo_qna{
+    background-color: cornflowerblue;
     margin: auto;
     text-align:center;
     margin-top:50px;
@@ -22,4 +29,18 @@
 	width: '1000px';
 	margin: 'auto';
 
+}
+form{
+    height : 100px;
+    margin-top: 50px;
+}
+h3{
+    margin-bottom: 30px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 30px;
+    margin-right: 70px;
 }
