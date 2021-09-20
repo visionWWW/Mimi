@@ -18,11 +18,11 @@ function Result() {
           <Row>
                 <Col xs={6} md={4}>
                 <Card className="card">
-                    <Card.Img variant="top" src="/images/cozy.png" />
+                    <Card.Img variant="top" src="/images/100.png" />
                     <Card.Body>
-                    <Card.Title>편안한</Card.Title>
+                    <Card.Title>기쁨 100%</Card.Title>
                     <Card.Text>
-                    감정상태 설명이 들어갑니다. 
+                    지금의 기쁨을 유지할 수 있도록 돕는 음식을 먹으면서 더 큰 행복감을 누리세요! 
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -31,11 +31,11 @@ function Result() {
 
                 <Col xs={6} md={4}>
                 <Card>
-                    <Card.Img variant="top" src="/images/annoying.png" />
+                    <Card.Img variant="top" src="/images/80.png" />
                     <Card.Body>
-                    <Card.Title>짜증난</Card.Title>
+                    <Card.Title>기쁨 80%</Card.Title>
                     <Card.Text>
-                        감정상태 설명이 들어갑니다. 
+                    더 큰 기쁨을 누릴 자격이 있는 당신입니다! 음식을 통해 더 큰 기쁨을 맛보아요!
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -44,11 +44,11 @@ function Result() {
 
                 <Col xs={6} md={4}>
                 <Card>
-                    <Card.Img variant="top" src="/images/enjoy.png" />
+                    <Card.Img variant="top" src="/images/65.png" />
                     <Card.Body>
-                    <Card.Title>즐거운</Card.Title>
+                    <Card.Title>기쁨 65%</Card.Title>
                     <Card.Text>
-                        감정상태 설명이 들어갑니다.
+                    정서적으로 안정되고 편안한 상태이시군요~
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -57,11 +57,11 @@ function Result() {
 
                 <Col xs={6} md={4}>
                 <Card>
-                    <Card.Img variant="top" src="/images/happy.png" />
+                    <Card.Img variant="top" src="/images/50.png" />
                     <Card.Body>
-                    <Card.Title>행복한</Card.Title>
+                    <Card.Title>기쁨 50%</Card.Title>
                     <Card.Text>
-                    감정상태 설명이 들어갑니다.
+                    맛있는 음식 먹고 기운내자고요! 화이팅!
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -70,11 +70,13 @@ function Result() {
 
                 <Col xs={6} md={4}>
                 <Card>
-                    <Card.Img variant="top" src="/images/lethargy.png" />
+                    <Card.Img variant="top" src="/images/25.png" />
                     <Card.Body>
-                    <Card.Title>무기력한</Card.Title>
+                    <Card.Title>고생했어요. 이 음식이 당신에게 위로가 됐으면 좋겠어요!</Card.Title>
                     <Card.Text>
-                    감정상태 설명이 들어갑니다.
+                    폭신한 구름빵에 뒹구는 순간처럼 행복한 당신! 
+음식을 먹으면서 누리는 기쁨 또한 느껴보아요! ♡
+이 음식을 먹으면 행복은 2배가 될거예요!
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -83,12 +85,11 @@ function Result() {
 
                 <Col xs={6} md={4}>
                 <Card>
-                    <Card.Img variant="top" src="/images/negative.png" />
+                    <Card.Img variant="top" src="/images/10.png" />
                     <Card.Body>
-                    <Card.Title>부정적인</Card.Title>
+                    <Card.Title>힘들죠? 오늘도 힘내줘서 고마워요 맛있는 음식 먹고 살아있음을 느껴봐요!</Card.Title>
                     <Card.Text>
-                    감정상태 설명이 들어갑니다.
-                    두 줄이 들어가면 이런 느낌.
+                    
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
