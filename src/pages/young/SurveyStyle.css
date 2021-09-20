@@ -1,0 +1,19 @@
+.col-sm-12{
+    width:800px;
+    margin:auto;
+}
+
+.satis_qna{
+    background-color: whitesmoke;
+    height: 300px;
+    margin: auto;
+    text-align:center;
+    margin-top:50px;
+}
+
+.intro{
+    background-color:#FFE650;
+    line-height: 20px;
+    width: 800px;
+    margin: auto;
+}
