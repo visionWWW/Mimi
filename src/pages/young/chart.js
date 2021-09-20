@@ -1,7 +1,7 @@
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
-import React, { Component } from "react";
+import React, { Component, useCallback } from "react";
 
 const LabelWrap = {
 	width: '1000px',
@@ -12,20 +12,29 @@ class Chart extends Component {
 	constructor() {
 		super();
 		this.state = {
-		  name: "React"
+		  name: "React",
+		  number : 0
 		};
 		this.onChangeValue = this.onChangeValue.bind(this);
 	  }
 	
 	  onChangeValue(event) {
 		console.log(event.target.value);
-	  }
+		this.state = {
+			number : 1
+	  };}
+	  
 
 	render(){
+		const {number} = this.state;
 		return(
 			<>
+			
 		<div onChange={this.onChangeValue}>
-		<label sytle={LabelWrap}>
+			<h1>{number}</h1> {/*+1 버튼 누를 때 마다 값이 증가하는걸 하고 싶었는데 누를때마다 새로고침 됨..*/}
+			<button onClick={()=>{console.log("선택한 "+{number})}}></button> {/* 콘솔에 뜨는 옵션value 확인하려고 만든건데 object라고 뜸 */}
+		<button onClick={()=>{this.setState({number : number +1});}}> +1 </button>
+		<label onChange={this.onChangeValue1}sytle={LabelWrap}>
 			<input 
 			type="radio"
 			name="react-tips"
