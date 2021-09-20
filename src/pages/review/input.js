@@ -5,6 +5,11 @@ import Card from 'react-bootstrap/Card';
 import './see.js';
 import './re_main.css';
 
+function alertClicked() {
+    alert('아직 지원하지 않는 기능입니다. 시범 페이지로 이동합니다.');
+}
+
+
 const Review = () => (
     <>
         <div>
@@ -27,8 +32,7 @@ const Review = () => (
                         />
                 </InputGroup>
 
-                <Button variant="outline-secondary" id="bt2">확인
-                </Button>
+                <Button onClick={alertClicked} variant="outline-secondary" id="bt2" href="/review/check">확인</Button>
             </Card>
         </div>
     </>

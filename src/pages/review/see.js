@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import './re_main.css';
 import Input from "./input";
 import Button from 'react-bootstrap/Button';
@@ -25,7 +25,6 @@ class See extends Component {
 
     toggleState() {
         this.setState({button1State: !this.state.button1State })
-        console.log(this.state.button1State)
         this.setState({button2State: this.state.button2State })
     }
 
