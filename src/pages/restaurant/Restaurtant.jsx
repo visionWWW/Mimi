@@ -1,16 +1,14 @@
-import React, { component } from 'react';  // eslint-disable-line no-unused-vars
+import React from 'react'; // eslint-disable-line no-unused-vars
 import './rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Preview from "./Preview";
 import RestButton from './RestButton';
 import MapContainer from './MapContainer';
-import { CardGroup } from "react-bootstrap";
-import { Card } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import {Button, Card, CardGroup} from "react-bootstrap";
 import ResName from './res_name';
 import ReviewText from './reviewtext';
 import NaviagtionBar from '../navbar';
-import { Map } from 'google-maps-react';
+import Footer from "../footer/Footer";
 
 function App() {
   return (
@@ -71,6 +69,7 @@ function App() {
         </CardGroup>
         </div>
       </header>
+      <Footer></Footer>
     </div>
   );
 }

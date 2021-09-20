@@ -1,0 +1,26 @@
+.footer {
+    height: 100px;
+    margin-top: auto;
+    background-color: snow;
+    text-align: center;
+}
+
+.contents {
+    background-color: snow;
+    width: 96%;
+    max-width: 1500px;
+    height: 100%;
+    display: inline;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footertitle {
+    background-color: snow;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 15px;
+}
+

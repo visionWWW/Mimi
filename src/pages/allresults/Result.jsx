@@ -1,8 +1,5 @@
 import React from 'react';
-import {Col} from "react-bootstrap";
-import {Row} from "react-bootstrap";
-import {Card} from "react-bootstrap";
-import {Button} from "react-bootstrap";
+import {Button, Card, Col, Row} from "react-bootstrap";
 import NaviagtionBar from '../navbar';
 import './result.css';
 
@@ -181,8 +178,7 @@ function Result() {
                 </Col>
             </Row>
             </div>
-
-    </header>
+        </header>
     </div>
   );
 }

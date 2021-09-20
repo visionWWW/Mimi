@@ -10,6 +10,7 @@ import ResultCard from "./card";
 import './emotion.css';
 import Result from './emotionResult.js'
 import RecommendCard from "./recommendCard";
+import Footer from "../footer/Footer";
 
 class Emotion extends React.Component {
   render() {
@@ -134,6 +135,7 @@ class Emotion extends React.Component {
 
 
         <Button className="button" variant="outline-primary" href={"/restaurant"} style={{ marginBottom: '30px', marginLeft:'auto', marginRight:'auto', display:'block', width:"300px"}}>🍽 음식점 추천 받기 🍽</Button>{' '}
+      <Footer></Footer>
       </div>
     );
   }

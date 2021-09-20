@@ -1,10 +1,9 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Cardform from "./cardform";
 import RestaurantImg from "./restaurantImg";
 import Info from "./restaurantInfo";
 import NaviagtionBar from '../navbar';
+import Footer from "../footer/Footer";
 
 const Review = () => (
     <>
@@ -18,7 +17,7 @@ const Review = () => (
             <h4 style={{textAlign:"center", marginTop:"50px"}}>최근 리뷰보기 👀</h4>
             <Cardform></Cardform>
         </div>
-
+            <Footer></Footer>
     </>
 );
 

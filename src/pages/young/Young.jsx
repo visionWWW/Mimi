@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Navbar from '../navbar';
 import Button from "react-bootstrap/Button";
 import './SurveyStyle.css';
+import Footer from "../footer/Footer";
 
 class Young extends Component {
 	state = {
@@ -272,7 +273,7 @@ class Young extends Component {
 		
 	</div>
     </div>
-
+	<Footer></Footer>
 	</>
   );
 };

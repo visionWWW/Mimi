@@ -4,6 +4,7 @@ import {NavLink} from 'react-router-dom'
 import NaviagationBar from './navbar';
 import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Footer from "./footer/Footer";
 
 class Main extends React.Component {
     render() {
@@ -127,6 +128,7 @@ class Main extends React.Component {
                             </p>
                         </TabPanel>
                     </Tabs>
+                    <Footer></Footer>
                 </div>
 
 
