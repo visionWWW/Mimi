@@ -1,6 +1,7 @@
 import React from 'react';
 import Start from './start.js'
 import NaviagtionBar from '../navbar.js';
+import Footer from "../footer/Footer";
 
 
 const Young = () => {
@@ -49,6 +50,7 @@ const Young = () => {
     		</section>
   		  </div>
       </div>
+		<Footer></Footer>
 	</>
   );
 };
