@@ -1,16 +1,18 @@
-import React, {Component} from "react";
+import React, {Component, useState} from "react";
 
 const LabelWrap = {
 	width: '1000px',
 	margin: 'auto',
 
 }
+
 class Chart extends Component {
+	/*
 	constructor() {
 		super();
 		this.state = {
 			name: "React",
-			number : 0
+			number : ""
 		};
 		this.onChangeValue = this.onChangeValue.bind(this);
 	}
@@ -18,25 +20,37 @@ class Chart extends Component {
 	onChangeValue(event) {
 		console.log(event.target.value);
 		this.state = {
-			number : 1
+			number : event.target.value
 		};}
-
+ */
+		constructor(props) {
+			super(props);
+			this.state = {};
+		  }
+		
+		  handleChange = e => {
+			const { name, value } = e.target;
+		
+			this.setState({
+			  [name]: value
+			});
+		  };
 
 	render(){
 		const {number} = this.state;
+
 		return(
 			<>
 
-				<div onChange={this.onChangeValue}>
-					<h1>{number}</h1> {/*+1 버튼 누를 때 마다 값이 증가하는걸 하고 싶었는데 누를때마다 새로고침 됨..*/}
+				<div>
 					<button onClick={()=>{console.log("선택한 "+{number})}}></button> {/* 콘솔에 뜨는 옵션value 확인하려고 만든건데 object라고 뜸 */}
-					<button onClick={()=>{this.setState({number : number +1});}}> +1 </button>
-					<label onChange={this.onChangeValue1}sytle={LabelWrap}>
+					<label sytle={LabelWrap}>
 						<input
 							type="radio"
 							name="react-tips"
-							value="option1"
+							value='1'
 							className="form-check-input-1"
+							onChange={this.onChangeValue}
 						/>
 						1
 					</label>
@@ -47,6 +61,7 @@ class Chart extends Component {
 							name="react-tips"
 							value="option2"
 							className="form-check-input-1"
+							onChange={this.onChangeValue}
 						/>
 						2
 					</label>

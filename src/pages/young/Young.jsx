@@ -9,7 +9,7 @@ class Young extends Component {
   return (
   	<>
 		<Navbar></Navbar>
-
+	
         <div className="row mt-5">
           <div className="col-sm-12">
 			<div className="satis_qna">
