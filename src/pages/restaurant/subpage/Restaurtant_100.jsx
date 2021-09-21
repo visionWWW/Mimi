@@ -38,9 +38,9 @@ class Restaurtant80 extends React.Component{
         <div className="parent">
         
         <div>                
-        <Button variant="outline-secondary" onClick={this.toggleState1}>버거인 | 지못미버거</Button>
-        <Button variant="outline-secondary" onClick={this.toggleState2}>효이다방</Button>
-        <Button variant="outline-secondary" onClick={this.toggleState3}>비일 | 뒥쉘</Button>
+        <Button variant="outline-secondary" className="button3" onClick={this.toggleState1}>버거인 | 지못미버거</Button>
+        <Button variant="outline-secondary" className="button3" onClick={this.toggleState2}>효이다방</Button>
+        <Button variant="outline-secondary" className="button3" onClick={this.toggleState3}>비일 | 뒥쉘</Button>
         <br/><br/>
         {this.state.button1State===true && <Foodimg_1001/>}
         {this.state.button2State===true && <Foodimg_1002/>}
