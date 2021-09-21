@@ -24,6 +24,17 @@ class Young extends Component {
 	  const{satis_1, satis_2, satis_3, emo_1, emo_2, emo_3, emo_4, emo_5, emo_6} = this.state;
 	  const result1 = parseInt(satis_1) + parseInt(satis_2) + parseInt(satis_3);
 	  const result2 = parseInt(emo_1) + parseInt(emo_2) + parseInt(emo_3) - parseInt(emo_4) - parseInt(emo_5) - parseInt(emo_6);
+	  const result = result1 + result2;
+
+	  function toResult(){
+		console.log(result);
+		if(result >= -15 && result <= -7) return "/emotion/10-happy";
+		else if(result >= -6 && result <= 2) return  "/emotion/25-happy";
+		else if(result >= 3 && result <= 11) return  "/emotion/half-happy";
+		else if(result >= 12 && result <= 20) return  "/emotion/65-happy";
+		else if(result >= 21 && result <= 29) return  "/emotion/80-happy";
+		else if(result >= 30 && result <= 39) return  "/emotion/full-happy";
+	  }
 
   return (
   	<>
@@ -266,8 +277,11 @@ class Young extends Component {
 		</form>
 	</div>
 	{/* 항목 선택 덜 했을 시 팝업창 띄우는 것 추가하면 좋을 듯 */}
-		<Button as="input" type="submit" value="Submit" 
-		onClick={()=> {if(isNaN(result1)||isNaN(result2)){console.log("Nan");}}}
+		<Button as="input" type="submit" value="Submit" href={toResult()}
+		onClick={()=> {
+			this.props.history.push(toResult())
+		}
+	}
 		style={{marginTop:'10px'}}
 		/>
 		
