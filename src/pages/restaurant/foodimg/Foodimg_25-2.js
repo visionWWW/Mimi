@@ -9,17 +9,17 @@ class Foodimg_252 extends Component {
             <div id = "img_food1"> 
             <Container>
             <Row>
-                <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+            <Col xs={6} md={3}>
+                <Image src="/images/ga1.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/ga2.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/ga3.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/ag4.png" alt="profile" thumbnail />
                 </Col>
             </Row>
             </Container>

@@ -10,16 +10,16 @@ class Foodimg_253 extends Component {
             <Container>
             <Row>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/po1.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/po2.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/po3.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" alt="profile" thumbnail />
+                <Image src="/images/po5.png" alt="profile" thumbnail />
                 </Col>
             </Row>
             </Container>

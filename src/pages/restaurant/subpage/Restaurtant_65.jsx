@@ -10,12 +10,6 @@ import ResName from '../res_name';
 import ReviewText from '../reviewtext';
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
-import Foodimg_101 from '../foodimg/Foodimg_10-1';
-import Foodimg_102 from '../foodimg/Foodimg_10-2';
-import Foodimg_103 from '../foodimg/Foodimg_10-3';
-import Map_101 from './map/Map_10-1.';
-import Map_102 from './map/Map_10-2';
-import Map_103 from './map/Map_10-3';
 import Foodimg_651 from '../foodimg/Foodimg_65-1';
 import Foodimg_652 from '../foodimg/Foodimg_65-2';
 import Foodimg_653 from '../foodimg/Foodimg_65-3';
@@ -79,7 +73,6 @@ class Restaurtant10 extends React.Component {
               {this.state.button1State === true && <Map_651 />}
               {this.state.button2State === true && <Map_652 />}
               {this.state.button3State === true && <Map_653 />}
-
             </div>
           </div>
 

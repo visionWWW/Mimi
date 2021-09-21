@@ -13,13 +13,13 @@ class Foodimg_1002 extends Component {
                 <Image src="/images/h1.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="/images/h2.png" alt="profile" thumbnail />
+                <Image src="/images/h5.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
                 <Image src="/images/h3.png" alt="profile" thumbnail />
                 </Col>
                 <Col xs={6} md={3}>
-                <Image src="/images/h5.png" alt="profile" thumbnail />
+                <Image src="/images/h2.png" alt="profile" thumbnail />
                 </Col>
             </Row>
             </Container>

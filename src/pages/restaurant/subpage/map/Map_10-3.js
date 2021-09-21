@@ -9,16 +9,16 @@ export class MapContainer extends Component {
       <Map
         google={this.props.google}
         style={{width: "40%", height: "60%", position: 'left'}}
-        zoom={15}
+        zoom={17}
         initialCenter={{
-            lat: 37.5440962078951, lng: 126.967357266383
+            lat: 37.5443602227289, lng: 126.96911390736
         }}
       >
         <Marker 
         icon={{image: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
           }}
           position={{
-            lat: 37.5440962078951, lng: 126.967357266383
+            lat: 37.5443602227289, lng: 126.96911390736
           }}
         />
       </Map>

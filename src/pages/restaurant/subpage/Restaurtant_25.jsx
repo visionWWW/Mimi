@@ -1,18 +1,11 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preview from "../Preview";
-import ButtonName from "../button_name";
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-import MapContainer from '../MapContainer';
 import { Button, Card, CardGroup } from "react-bootstrap";
 import ResName from '../res_name';
 import ReviewText from '../reviewtext';
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
-import Map_101 from './map/Map_10-1.';
-import Map_102 from './map/Map_10-2';
-import Map_103 from './map/Map_10-3';
 import Foodimg_253 from '../foodimg/Foodimg_25-3';
 import Foodimg_251 from '../foodimg/Foodimg_25-1';
 import Foodimg_252 from '../foodimg/Foodimg_25-2';
@@ -47,9 +40,9 @@ class Restaurtant25 extends React.Component {
           <div className="parent">
 
             <div>
-              <button className="button1" onClick={this.toggleState1}>음식점이름 | 추천음식</button>
-              <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
-              <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
+              <button className="button1" onClick={this.toggleState1}>작은도쿄 | 텐동</button>
+              <button className="button2" onClick={this.toggleState2}>가문의우동 | 냄비우동</button>
+              <button className="button3" onClick={this.toggleState3}>포35거리 | 쌀국수</button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_251/>}
               {this.state.button2State === true && <Foodimg_252/>}

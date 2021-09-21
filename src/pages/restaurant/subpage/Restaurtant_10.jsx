@@ -1,10 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preview from "../Preview";
-import ButtonName from "../button_name";
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-import MapContainer from '../MapContainer';
 import { Button, Card, CardGroup } from "react-bootstrap";
 import ResName from '../res_name';
 import ReviewText from '../reviewtext';
@@ -44,9 +40,9 @@ class Restaurtant10 extends React.Component {
           <div className="parent">
 
             <div>
-              <button className="button1" onClick={this.toggleState1}>음식점이름 | 추천음식</button>
-              <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
-              <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
+              <button className="button1" onClick={this.toggleState1}>사이공마켓 | 분짜</button>
+              <button className="button2" onClick={this.toggleState2}>갯마을칼국수 | 칼국수</button>
+              <button className="button3" onClick={this.toggleState3}>어바웃샤브 | 칼국수</button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_101 />}
               {this.state.button2State === true && <Foodimg_102 />}

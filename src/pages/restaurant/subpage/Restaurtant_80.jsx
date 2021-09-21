@@ -1,10 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preview from "../Preview";
-import ButtonName from "../button_name";
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-import MapContainer from '../MapContainer';
 import {Button, Card, CardGroup} from "react-bootstrap";
 import ResName from '../res_name';
 import ReviewText from '../reviewtext';
@@ -13,6 +9,9 @@ import Footer from "../../footer/Footer";
 import Foodimg_801 from '../foodimg/Foodimg_80-1';
 import Foodimg_802 from '../foodimg/Foodimg_80-2';
 import Foodimg_803 from '../foodimg/Foodimg_80-3';
+import Map_801 from './map/Map_80-1';
+import Map_802 from './map/Map_80-2';
+import Map_803 from './map/Map_80-3';
 
 const google = window.google;
 
@@ -66,8 +65,10 @@ class Restaurtant80 extends React.Component{
 
           </div>
           <div className="map">
-          <MapContainer/>
-          </div>
+              {this.state.button1State === true && <Map_801 />}
+              {this.state.button2State === true && <Map_802 />}
+              {this.state.button3State === true && <Map_803 />}
+            </div>
         </div>
 
 

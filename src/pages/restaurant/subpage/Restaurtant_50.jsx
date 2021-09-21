@@ -1,21 +1,17 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preview from "../Preview";
-import ButtonName from "../button_name";
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-import MapContainer from '../MapContainer';
 import { Button, Card, CardGroup } from "react-bootstrap";
 import ResName from '../res_name';
 import ReviewText from '../reviewtext';
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
-import Foodimg_101 from '../foodimg/Foodimg_10-1';
-import Foodimg_102 from '../foodimg/Foodimg_10-2';
-import Foodimg_103 from '../foodimg/Foodimg_10-3';
-import Map_101 from './map/Map_10-1.';
-import Map_102 from './map/Map_10-2';
-import Map_103 from './map/Map_10-3';
+import Map_501 from './map/Map_50-1';
+import Map_502 from './map/Map_50-2';
+import Map_503 from './map/Map_50-3';
+import Foodimg_501 from '../foodimg/Foodimg_50-1';
+import Foodimg_502 from '../foodimg/Foodimg_50-2';
+import Foodimg_503 from '../foodimg/Foodimg_50-3';
 
 
 const google = window.google;
@@ -44,13 +40,13 @@ class Restaurtant10 extends React.Component {
           <div className="parent">
 
             <div>
-              <button className="button1" onClick={this.toggleState1}>음식점이름 | 추천음식</button>
-              <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
-              <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
+              <button className="button1" onClick={this.toggleState1}>몬스터플레이스 | 블루베리 요거트</button>
+              <button className="button2" onClick={this.toggleState2}>디어파인 | 블루베리 요거트</button>
+              <button className="button3" onClick={this.toggleState3}>효이다방</button>
               <br /><br />
-              {this.state.button1State === true && <Foodimg_101 />}
-              {this.state.button2State === true && <Foodimg_102 />}
-              {this.state.button3State === true && <Foodimg_103 />}
+              {this.state.button1State === true && <Foodimg_501/>}
+              {this.state.button2State === true && <Foodimg_502/>}
+              {this.state.button3State === true && <Foodimg_503/>}
             </div>
 
           </div>
@@ -70,9 +66,9 @@ class Restaurtant10 extends React.Component {
 
             </div>
             <div className="map">
-              {this.state.button1State === true && <Map_101 />}
-              {this.state.button2State === true && <Map_102 />}
-              {this.state.button3State === true && <Map_103 />}
+              {this.state.button1State === true && <Map_501 />}
+              {this.state.button2State === true && <Map_502/>}
+              {this.state.button3State === true && <Map_503 />}
 
             </div>
           </div>

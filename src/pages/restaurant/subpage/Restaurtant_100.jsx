@@ -1,10 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preview from "../Preview";
-import ButtonName from "../button_name";
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-import MapContainer from '../MapContainer';
 import {Button, Card, CardGroup} from "react-bootstrap";
 import ResName from '../res_name';
 import ReviewText from '../reviewtext';
