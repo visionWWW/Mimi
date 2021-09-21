@@ -2,8 +2,6 @@ import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, CardGroup } from "react-bootstrap";
-import ResName from '../res_name';
-import ReviewText from '../reviewtext';
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
 import Foodimg_253 from '../foodimg/Foodimg_25-3';
@@ -12,6 +10,7 @@ import Foodimg_252 from '../foodimg/Foodimg_25-2';
 import Map_252 from './map/Map_25-2';
 import Map_253 from './map/Map_25-3';
 import Map_251 from './map/Map_25-1';
+import TopAlert from "../TopAlert";
 
 
 const google = window.google;
@@ -40,9 +39,9 @@ class Restaurtant25 extends React.Component {
           <div className="parent">
 
             <div>
-              <button className="button1" onClick={this.toggleState1}>작은도쿄 | 텐동</button>
-              <button className="button2" onClick={this.toggleState2}>가문의우동 | 냄비우동</button>
-              <button className="button3" onClick={this.toggleState3}>포35거리 | 쌀국수</button>
+              <Button variant="outline-secondary" onClick={this.toggleState1}>작은도쿄 | 텐동</Button>
+              <Button variant="outline-secondary" onClick={this.toggleState2}>가문의우동 | 냄비우동</Button>
+              <Button variant="outline-secondary" onClick={this.toggleState3}>포35거리 | 쌀국수</Button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_251/>}
               {this.state.button2State === true && <Foodimg_252/>}
@@ -58,10 +57,7 @@ class Restaurtant25 extends React.Component {
             <div className="preview">
 
               <div>
-                <p>평점: </p>
-                <p>메뉴: </p>
-                <p>가격: </p>
-                <p>#키워드 #키워드 #키워드</p>
+                <TopAlert/>
               </div>
 
             </div>
@@ -76,39 +72,15 @@ class Restaurtant25 extends React.Component {
 
           <h2>리 뷰</h2><br />
           <div className="reviewcard">
-            <CardGroup>
+          <CardGroup>
               <Card>
-                <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ" width="300px" height="300px" />
-                <Card.Body>
-                  <Card.Title> <ResName /> </Card.Title>
-                  <Card.Text>
-                    <ReviewText />
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                <TopAlert/>
               </Card>
               <Card>
-                <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" width="300px" height="300px" />
-                <Card.Body>
-                  <Card.Title>고씨네</Card.Title>
-                  <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                <TopAlert/>
               </Card>
               <Card>
-                <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1z18J_fnHBvtCnjSluv0oLwxLkFsB2OzZ" width="300px" height="300px" />
-                <Card.Body>
-                  <Card.Title>빨봉분식</Card.Title>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to
-                    show that equal height action.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                <TopAlert/>
               </Card>
             </CardGroup>
           </div>

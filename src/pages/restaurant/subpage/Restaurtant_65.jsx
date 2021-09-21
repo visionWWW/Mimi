@@ -1,13 +1,7 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preview from "../Preview";
-import ButtonName from "../button_name";
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-import MapContainer from '../MapContainer';
 import { Button, Card, CardGroup } from "react-bootstrap";
-import ResName from '../res_name';
-import ReviewText from '../reviewtext';
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
 import Foodimg_651 from '../foodimg/Foodimg_65-1';
@@ -16,6 +10,7 @@ import Foodimg_653 from '../foodimg/Foodimg_65-3';
 import Map_651 from './map/Map_65-1';
 import Map_652 from './map/Map_65-2';
 import Map_653 from './map/Map_65-3';
+import TopAlert from "../TopAlert";
 
 
 const google = window.google;
@@ -44,9 +39,9 @@ class Restaurtant10 extends React.Component {
           <div className="parent">
 
             <div>
-              <button className="button1" onClick={this.toggleState1}>신내떡 | 와우홀릭세트</button>
-              <button className="button2" onClick={this.toggleState2}>샤오찬 | 마라탕</button>
-              <button className="button3" onClick={this.toggleState3}>청파멘션 | 카페오렌지비앙코</button>
+              <Button variant="outline-secondary" onClick={this.toggleState1}>신내떡 | 와우홀릭세트</Button>
+              <Button variant="outline-secondary" onClick={this.toggleState2}>샤오찬 | 마라탕</Button>
+              <Button variant="outline-secondary" onClick={this.toggleState3}>청파멘션 | 카페오렌지비앙코</Button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_651 />}
               {this.state.button2State === true && <Foodimg_652/>}
@@ -62,10 +57,7 @@ class Restaurtant10 extends React.Component {
             <div className="preview">
 
               <div>
-                <p>평점: </p>
-                <p>메뉴: </p>
-                <p>가격: </p>
-                <p>#키워드 #키워드 #키워드</p>
+              <TopAlert/>
               </div>
 
             </div>
@@ -79,39 +71,15 @@ class Restaurtant10 extends React.Component {
 
           <h2>리 뷰</h2><br />
           <div className="reviewcard">
-            <CardGroup>
+          <CardGroup>
               <Card>
-                <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1-8noao2KTy9n3OWVfuMIVtSqZTgtQqCJ" width="300px" height="300px" />
-                <Card.Body>
-                  <Card.Title> <ResName /> </Card.Title>
-                  <Card.Text>
-                    <ReviewText />
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                <TopAlert/>
               </Card>
               <Card>
-                <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=15dW5OCXrACR-kg4oW3BueGjR81zIJLXv" width="300px" height="300px" />
-                <Card.Body>
-                  <Card.Title>고씨네</Card.Title>
-                  <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                <TopAlert/>
               </Card>
               <Card>
-                <Card.Img variant="top" src="http://drive.google.com/uc?export=view&id=1z18J_fnHBvtCnjSluv0oLwxLkFsB2OzZ" width="300px" height="300px" />
-                <Card.Body>
-                  <Card.Title>빨봉분식</Card.Title>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to
-                    show that equal height action.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                <TopAlert/>
               </Card>
             </CardGroup>
           </div>
