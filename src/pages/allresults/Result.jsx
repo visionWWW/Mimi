@@ -36,7 +36,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary" href={"/emotion"} > 분석 결과 보러가기 </Button>
+                                            <Button variant="secondary" href={"/emotion/full-happy"} > 분석 결과 보러가기 </Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                         </Col>
@@ -64,7 +64,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                            <Button variant="secondary" href={"/emotion/80-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                 </Col>
@@ -91,7 +91,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                            <Button variant="secondary" href={"/emotion/65-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                 </Col>
@@ -118,7 +118,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                            <Button variant="secondary" href={"/emotion/half-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                 </Col>
@@ -145,7 +145,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                            <Button variant="secondary" href={"/emotion/25-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                 </Col>
@@ -172,7 +172,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                            <Button variant="secondary" href={"/emotion/10-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                 </Col>
