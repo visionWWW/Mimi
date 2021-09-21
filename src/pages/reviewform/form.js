@@ -7,6 +7,10 @@ import WriteArea from "./textArea";
 import FileUpload from "./fileUpload";
 import Button from "react-bootstrap/Button";
 
+function alertClicked() {
+    alert('지원하지 않는 기능입니다. 시범 페이지로 이동합니다.');
+}
+
 const RvForm = () => (
     <>
         <Card>
@@ -25,7 +29,7 @@ const RvForm = () => (
             <h4 style={{textAlign:"center",marginTop:"50px",marginBottom:"30px"}}>리뷰를 작성해주세요</h4>
             <WriteArea></WriteArea>
             <FileUpload></FileUpload>
-            <Button variant="outline-primary" style={{display:"block",margin:"auto",marginTop:"30px",width:"300px",marginBottom:"30px"}}>업로드</Button>
+            <Button variant="outline-primary" style={{display:"block",margin:"auto",marginTop:"30px",width:"300px",marginBottom:"30px"}} onClick={alertClicked} href="/review/check">업로드</Button>
         </Card>
     </>
 );

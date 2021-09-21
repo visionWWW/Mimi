@@ -4,12 +4,15 @@ import RestaurantImg from "./restaurantImg";
 import Info from "./restaurantInfo";
 import NaviagtionBar from '../navbar';
 import Footer from "../footer/Footer";
+import TopAlert from '../reviewcheck/TopAlert'
 
 const Review = () => (
     <>
         <div>
         <NaviagtionBar/>
         </div>
+        <TopAlert></TopAlert>
+        <br/>
         <div>
             <RestaurantImg></RestaurantImg>
             <Info></Info>

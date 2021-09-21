@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-import { Card } from 'antd';
+import {Card} from 'antd';
 import 'antd/dist/antd.css';
 import Navbar from '../navbar';
 import Button from "react-bootstrap/Button";
 import './SurveyStyle.css';
 import Footer from "../footer/Footer";
 
+function alertClicked() {
+	alert('모든 문항에 응답하지 않았습니다.');
+}
 
 class Young extends Component {
 	state = {
@@ -37,6 +40,7 @@ class Young extends Component {
 		else if(result >= 12 && result <= 20) return  "/emotion/65-happy";
 		else if(result >= 21 && result <= 29) return  "/emotion/80-happy";
 		else if(result >= 30 && result <= 39) return  "/emotion/full-happy";
+		else alertClicked();
 	  }
 
   return (
@@ -44,7 +48,7 @@ class Young extends Component {
 	<Navbar></Navbar>
 	<div className="row mt-5">
 	<div className="col-sm-12">
-	<Card title="만족감질문입니다" style={{marginBottom:'30px'}}>
+	<Card title="만족감과 관련된 질문입니다" style={{marginBottom:'30px'}}>
     <Card type="inner" title="1. 나는 내 삶의 개인적인 측면에 대해 만족한다.">
 			<label>
 				1 <input type= "radio" value="1" name="satis_1" checked={satis_1 === "1"} onChange={this.onChange}/>
@@ -116,7 +120,7 @@ class Young extends Component {
     </Card>
   	</Card>
 
-  <Card title="감정 질문입니다" style={{marginBottom:'30px'}}>
+  <Card title="감정과 관련된 질문입니다" style={{marginBottom:'30px'}}>
     <Card type="inner" title="1. 나는 현재 즐거운 감정을 느끼고 있다.">
 		<label>
 			1 <input type= "radio" value="1" name="emo_1" checked={emo_1 === "1"} onChange={this.onChange}/>
@@ -258,7 +262,7 @@ class Young extends Component {
   </Card>
 
 	{/* 항목 선택 덜 했을 시 팝업창 띄우는 것 추가하면 좋을 듯 */}
-		<Button as="input" type="submit" value="Submit" style={{marginTop:'10px'}}
+		<Button variant="outline-secondary" as="input" type="submit" value="결과 확인하러 가기😎" style={{marginTop:'10px'}}
 		onClick={()=> {
 			this.props.history.push(toResult())
 		}
