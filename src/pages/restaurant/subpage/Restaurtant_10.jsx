@@ -40,7 +40,7 @@ class Restaurtant10 extends React.Component {
 
             <div>
               <Button variant="outline-secondary" className="button1" onClick={this.toggleState1}>사이공마켓 | 분짜</Button>
-              <Button variant="outline-secondary" className="button2" onClick={this.toggleState2}>갯마을칼국수 | 칼국ㅠ수</Button>
+              <Button variant="outline-secondary" className="button2" onClick={this.toggleState2}>갯마을칼국수 | 칼국수</Button>
               <Button variant="outline-secondary" className="button3" onClick={this.toggleState3}>어바웃샤브 | 칼국수</Button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_101 />}
