@@ -16,6 +16,12 @@ import Foodimg_103 from '../foodimg/Foodimg_10-3';
 import Map_101 from './map/Map_10-1.';
 import Map_102 from './map/Map_10-2';
 import Map_103 from './map/Map_10-3';
+import Foodimg_651 from '../foodimg/Foodimg_65-1';
+import Foodimg_652 from '../foodimg/Foodimg_65-2';
+import Foodimg_653 from '../foodimg/Foodimg_65-3';
+import Map_651 from './map/Map_65-1';
+import Map_652 from './map/Map_65-2';
+import Map_653 from './map/Map_65-3';
 
 
 const google = window.google;
@@ -44,13 +50,13 @@ class Restaurtant10 extends React.Component {
           <div className="parent">
 
             <div>
-              <button className="button1" onClick={this.toggleState1}>음식점이름 | 추천음식</button>
-              <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
-              <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
+              <button className="button1" onClick={this.toggleState1}>신내떡 | 와우홀릭세트</button>
+              <button className="button2" onClick={this.toggleState2}>샤오찬 | 마라탕</button>
+              <button className="button3" onClick={this.toggleState3}>청파멘션 | 카페오렌지비앙코</button>
               <br /><br />
-              {this.state.button1State === true && <Foodimg_101 />}
-              {this.state.button2State === true && <Foodimg_102 />}
-              {this.state.button3State === true && <Foodimg_103 />}
+              {this.state.button1State === true && <Foodimg_651 />}
+              {this.state.button2State === true && <Foodimg_652/>}
+              {this.state.button3State === true && <Foodimg_653 />}
             </div>
 
           </div>
@@ -70,9 +76,9 @@ class Restaurtant10 extends React.Component {
 
             </div>
             <div className="map">
-              {this.state.button1State === true && <Map_101 />}
-              {this.state.button2State === true && <Map_102 />}
-              {this.state.button3State === true && <Map_103 />}
+              {this.state.button1State === true && <Map_651 />}
+              {this.state.button2State === true && <Map_652 />}
+              {this.state.button3State === true && <Map_653 />}
 
             </div>
           </div>
