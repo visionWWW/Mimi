@@ -36,7 +36,7 @@ function Result() {
                                             <Card.Title></Card.Title>
                                             <Card.Text>
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                            <Button variant="primary" href={"/emotion"} > 분석 결과 보러가기 </Button>
                                         </Card.Body> </Card>
                             </div></div></div>
                         </Col>
