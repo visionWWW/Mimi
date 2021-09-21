@@ -139,7 +139,7 @@ class EightHappy extends React.Component {
                 </div>
 
 
-                <Button className="button" variant="outline-secondary" href={"/restaurant"} style={{
+                <Button className="button" variant="outline-secondary" href={"/restaurant/80"} style={{
                     marginBottom: '30px',
                     marginLeft: 'auto',
                     marginRight: 'auto',

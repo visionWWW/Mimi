@@ -21,9 +21,9 @@ class NaviagtionBar extends Component {
                 <Nav.Link href="/surveyIntro">검사하기</Nav.Link>
                 <Nav.Link href="/allresults">감정진단결과</Nav.Link>
               </Nav>
-              <Nav>
-                <Nav.Link href="/restaurant">음식점 보기</Nav.Link>
-              </Nav>
+              {/*<Nav>*/}
+              {/*  <Nav.Link href="/restaurant">음식점 보기</Nav.Link>*/}
+              {/*</Nav>*/}
             </Navbar.Collapse>
   
             <Navbar.Collapse className="justify-content-end">

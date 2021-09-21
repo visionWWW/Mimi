@@ -36,8 +36,8 @@ const Young = () => {
   
   return (
   	<>
-	  <div className="container">
-		  <NaviagtionBar/>
+		<NaviagtionBar/>
+	  	<div className="container">
 		  <Card style={{marginTop:"-5px"}}>
 		  <div class="container">
 			<section id="main" class="mx-auto my-5 py-5 px-3" style={{textAlign:"center"}}>

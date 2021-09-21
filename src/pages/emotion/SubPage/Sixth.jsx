@@ -145,7 +145,7 @@ class TenHappy extends React.Component {
                 </div>
 
 
-                <Button className="button" variant="outline-secondary" href={"/restaurant"} style={{
+                <Button className="button" variant="outline-secondary" href={"/restaurant/10"} style={{
                     marginBottom: '30px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
