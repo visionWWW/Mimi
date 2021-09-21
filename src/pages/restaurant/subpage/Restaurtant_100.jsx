@@ -10,13 +10,16 @@ import ResName from '../res_name';
 import ReviewText from '../reviewtext';
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
-import Foodimg_1001 from '../foodimg/Foodimg_100-1';
-import Foodimg_1002 from '../foodimg/Foodimg_100-2';
+import Map_1001 from './map/Map_100-1';
+import Map_1002 from './map/Map_100-2';
+import Map_1003 from './map/Map_100-3';
 import Foodimg_1003 from '../foodimg/Foodimg_100-3';
+import Foodimg_1002 from '../foodimg/Foodimg_100-2';
+import Foodimg_1001 from '../foodimg/Foodimg_100-1';
 
 const google = window.google;
 
-class Restaurtant100 extends React.Component{
+class Restaurtant80 extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
@@ -32,7 +35,7 @@ class Restaurtant100 extends React.Component{
   render() {
 
     return (
-      <div className = "app">
+      <div className="App">
       <header>
         <NaviagtionBar/>
 
@@ -40,9 +43,9 @@ class Restaurtant100 extends React.Component{
         <div className="parent">
         
         <div>                
-        <button className="button1" onClick={this.toggleState1}><ButtonName/></button>
-        <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
-        <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
+        <button className="button1" onClick={this.toggleState1}>버거인 | 지못미버거</button>
+        <button className="button2" onClick={this.toggleState2}>효이다방</button>
+        <button className="button3" onClick={this.toggleState3}>비일 | 뒥쉘</button>
         <br/><br/>
         {this.state.button1State===true && <Foodimg_1001/>}
         {this.state.button2State===true && <Foodimg_1002/>}
@@ -66,7 +69,10 @@ class Restaurtant100 extends React.Component{
 
           </div>
           <div className="map">
-          <MapContainer/>
+              {this.state.button1State === true && <Map_1001/>}
+              {this.state.button2State === true && <Map_1002/>}
+              {this.state.button3State === true && <Map_1003/>}
+            
           </div>
         </div>
 
@@ -153,4 +159,4 @@ toggleState3() {
 }
 
 
-export default Restaurtant100;
+export default Restaurtant80;

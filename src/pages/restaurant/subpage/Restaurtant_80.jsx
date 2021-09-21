@@ -32,7 +32,7 @@ class Restaurtant80 extends React.Component{
   render() {
 
     return (
-      <div className = "app">
+      <div className="App">
       <header>
         <NaviagtionBar/>
 
@@ -40,9 +40,9 @@ class Restaurtant80 extends React.Component{
         <div className="parent">
         
         <div>                
-        <button className="button1" onClick={this.toggleState1}><ButtonName/></button>
-        <button className="button2" onClick={this.toggleState2}>음식점이름 | 추천음식</button>
-        <button className="button3" onClick={this.toggleState3}>음식점이름 | 추천음식</button>
+        <button className="button1" onClick={this.toggleState1}>선다래 | 오므라이스</button>
+        <button className="button2" onClick={this.toggleState2}>마시바시 | 시금치파스타</button>
+        <button className="button3" onClick={this.toggleState3}>을의커피</button>
         <br/><br/>
         {this.state.button1State===true && <Foodimg_801/>}
         {this.state.button2State===true && <Foodimg_802/>}
