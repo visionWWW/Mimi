@@ -10,7 +10,7 @@ export default function AlertDismissibleExample() {
             <Alert variant="info" onClose={() => setShow(false)}>
                 <Alert.Heading>지금 단계에서는 지원하지 않는 페이지입니다.</Alert.Heading>
                 <p>
-                   올해 12월 사용자 테스트 때 만나요🤚🏻
+                   올해 11월 사용자 테스트 때 만나요🤚🏻
                 </p>
                 <div className="d-flex justify-content-end">
                     <Button onClick={() => setShow(false)} variant="info">

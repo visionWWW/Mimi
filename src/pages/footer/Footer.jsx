@@ -9,7 +9,7 @@ const Footer = () => {
                     ©MIMI Project Team <br/>
                     <br/>
                     ✉️ CONTACT US ✉️ <br/>
-                    저희 공용 이메일 주소 파야 될까요?<br/><br/>
+                    sookmyung-mimi-project@gmail.com<br/><br/>
                 </h6>
 
             </div>
