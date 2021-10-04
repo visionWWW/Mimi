@@ -12,13 +12,12 @@ function Result() {
 
                 <h2>감정결과</h2>
                 <div className="result">
-                    <Row>
-                        <Col xs={6} md={4}>
-
-                            <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ height: '32rem', width: '18rem', display: 'inline-block' }}>
+                    <div className = "warp">
+                <div div class="d-flex p-3">
+                            <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{flex:1, width: "70%", display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{height: '32rem', width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/100.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -30,7 +29,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{height: '32rem', width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_100.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -38,15 +37,13 @@ function Result() {
                                             </Card.Text>
                                             <Button variant="outline-secondary" href={"/emotion/full-happy"} > 분석 결과 보러가기 </Button>
                                         </Card.Body> </Card>
-                            </div></div></div>
-                        </Col>
-
-                <Col xs={6} md={4}>
-                
-                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display: 'inline-block' }}>
+                            </div></div>
+                   </div>
+              
+                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{flex:1, width: "70%", display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/80.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -58,7 +55,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_80.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -67,13 +64,11 @@ function Result() {
                                             <Button variant="outline-secondary" href={"/emotion/80-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
-                </Col>
-
-                <Col xs={6} md={4}>
-                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display: 'inline-block' }}>
+              
+                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{flex:1, width: "70%", display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/65.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -82,10 +77,9 @@ function Result() {
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
-
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_65.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -93,14 +87,15 @@ function Result() {
                                             </Card.Text>
                                             <Button variant="outline-secondary" href={"/emotion/65-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
-                            </div></div></div>
-                </Col>
-
-                <Col xs={6} md={4}>
-                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display: 'inline-block' }}>
+                            </div></div></div></div>
+               
+                </div>
+                
+                <div div class="d-flex p-3">
+                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{flex:1, width: "70%", display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/50.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -112,7 +107,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{  display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_50.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -121,13 +116,11 @@ function Result() {
                                             <Button variant="outline-secondary" href={"/emotion/half-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
-                </Col>
 
-                <Col xs={6} md={4}>
-                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display: 'inline-block' }}>
+                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{flex:1, width: "70%", display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/25.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -139,7 +132,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_25.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -148,13 +141,11 @@ function Result() {
                                             <Button variant="outline-secondary" href={"/emotion/25-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
-                </Col>
-
-                <Col xs={6} md={4}>
-                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display: 'inline-block' }}>
+    
+                <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{flex:1, width: "70%", display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/10.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -166,7 +157,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '18rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_10.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -175,8 +166,8 @@ function Result() {
                                             <Button variant="outline-secondary" href={"/emotion/10-happy"}>분석 결과 보러가기</Button>
                                         </Card.Body> </Card>
                             </div></div></div>
-                </Col>
-            </Row>
+               
+            </div>
             </div>
         </header>
     </div>
