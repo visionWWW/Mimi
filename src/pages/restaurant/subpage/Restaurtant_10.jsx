@@ -55,17 +55,17 @@ class Restaurtant10 extends React.Component {
 
           <div className="warp">
             <div className="preview">
-
               <div>
                 <TopAlert/>
               </div>
-
             </div>
+
             <div className="map">
               {this.state.button1State === true && <Map_101 />}
               {this.state.button2State === true && <Map_102 />}
               {this.state.button3State === true && <Map_103 />}
             </div>
+
           </div>
 
 
