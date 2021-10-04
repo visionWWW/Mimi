@@ -31,81 +31,101 @@ class FullHappy extends React.Component {
 
                 <h1 className="recwrap">추천성분</h1>
 
-                <div className="wrap">
-                    <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
-                        <div className="flipper">
-                            <div className="front">
-                                <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
-                                    <Card.Img style={{width:"150px"}}variant="top" src="/images/Selenium.png" />
-                                    <Card.Body>
-                                        <Card.Title>셀레늄</Card.Title>
-                                    </Card.Body> </Card>
+                <Container>
+                    <Row>
+                        <Col xs={2} md={4}>
+                            <div className="flip-container" onTouchStart="this.classList.toggle('hover');"
+                                 style={{width: '18rem', display: 'inline-block'}}>
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
+                                            <Card.Img style={{width: "150px"}} variant="top"
+                                                      src="/images/Selenium.png"/>
+                                            <Card.Body>
+                                                <Card.Title>셀레늄</Card.Title>
+                                            </Card.Body> </Card>
 
+                                    </div>
+                                    <div className="back">
+                                        <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
+                                            <Card.Body>
+                                                <Card.Title>셀레늄</Card.Title>
+                                                <Card.Text>
+                                                    <br/>
+                                                    계란에는 강력한 항산화작용을 <br/>
+                                                    하는 셀레늄이 있기에 <br/>
+                                                    긍정적인 감정을 <br/>
+                                                    유지 혹은 높여줄 수 있습니다. <br/><br/>
+                                                </Card.Text>
+                                            </Card.Body> </Card>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="back">
-                                <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
-                                    <Card.Body>
-                                        <Card.Title>셀레늄</Card.Title>
-                                        <Card.Text>
-                                            <br/>
-                                            계란에는 강력한 항산화작용을 <br/>
-                                            하는 셀레늄이 있기에 <br/>
-                                            긍정적인 감정을 <br/>
-                                            유지 혹은 높여줄 수 있습니다. <br/><br/>
-                                        </Card.Text>
-                                    </Card.Body> </Card>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
-                        <div className="flipper">
-                            <div className="front">
-                                <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
-                                    <Card.Img style={{width:"150px"}} variant="top" src="/images/Caffeine.png" />
-                                    <Card.Body>
-                                        <Card.Title>카페인</Card.Title>
-                                    </Card.Body> </Card>
-                            </div>
-                            <div className="back">
-                                <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
-                                    <Card.Body>
-                                        <Card.Title>카페인</Card.Title>
-                                        <Card.Text>
-                                            <br/>
-                                            카페인은 <br/>
-                                            감정을 <br/>
-                                            고조시켜주는 <br/>
-                                            효능이 있습니다. <br/><br/>
-                                        </Card.Text>
-                                    </Card.Body> </Card>
+                        </Col>
+                        <Col xs={2} md={4}>
+                            <div className="flip-container" onTouchStart="this.classList.toggle('hover');"
+                                 style={{width: '18rem', display: 'inline-block'}}>
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
+                                            <Card.Img style={{width: "150px"}} variant="top"
+                                                      src="/images/Caffeine.png"/>
+                                            <Card.Body>
+                                                <Card.Title>카페인</Card.Title>
+                                            </Card.Body> </Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
+                                            <Card.Body>
+                                                <Card.Title>카페인</Card.Title>
+                                                <Card.Text>
+                                                    <br/>
+                                                    카페인은 <br/>
+                                                    감정을 <br/>
+                                                    고조시켜주는 <br/>
+                                                    효능이 있습니다. <br/><br/>
+                                                </Card.Text>
+                                            </Card.Body> </Card>
 
+                                    </div>
+                                </div>
                             </div>
-                        </div></div>
-                    <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '18rem', display:'inline-block' }}>
-                        <div className="flipper">
-                            <div className="front">
-                                <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
-                                    <Card.Img style={{width:"200px"}} variant="top" src="/images/Serotonin.png" />
-                                    <Card.Body>
-                                        <Card.Title>세로토닌</Card.Title>
-                                    </Card.Body> </Card>
+                        </Col>
+                        <Col xs={2} md={4}>
+                            <div className="flip-container" onTouchStart="this.classList.toggle('hover');"
+                                 style={{width: '18rem', display: 'inline-block'}}>
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
+                                            <Card.Img style={{width: "200px"}} variant="top"
+                                                      src="/images/Serotonin.png"/>
+                                            <Card.Body>
+                                                <Card.Title>세로토닌</Card.Title>
+                                            </Card.Body> </Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
+                                            <Card.Body>
+                                                <Card.Title>세로토닌</Card.Title>
+                                                <Card.Text>
+                                                    <br/>
+                                                    탄수화물인 면의 세로토닌이 <br/>
+                                                    일반적인 식사 상황에서<br/>
+                                                    긍정적인 방향으로의 <br/>
+                                                    변화를 수반하는 것을 <br/>
+                                                    예상할 수 있습니다. <br/><br/>
+                                                </Card.Text>
+                                            </Card.Body> </Card>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="back">
-                                <Card className="card" style={{ width: '18rem', display:'inline-block' }}>
-                                    <Card.Body>
-                                        <Card.Title>세로토닌</Card.Title>
-                                        <Card.Text>
-                                            <br/>
-                                            탄수화물인 면의 세로토닌이 <br/>
-                                            일반적인 식사 상황에서<br/>
-                                            긍정적인 방향으로의 <br/>
-                                            변화를 수반하는 것을 <br/>
-                                            예상할 수 있습니다. <br/><br/>
-                                        </Card.Text>
-                                    </Card.Body> </Card>
-                            </div>
-                        </div></div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
+
+
+
+
 
                 <div className="wrap">
                     <h1 className="food">추천음식</h1>

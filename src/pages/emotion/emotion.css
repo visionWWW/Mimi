@@ -43,7 +43,7 @@ a{
 }
 .back {
   transform: rotateY(180deg);
-  width: 18rem;
+
 }
 .flip-container:hover .flipper, .flip-container.hover .flipper {
   transform: rotateY(180deg);
