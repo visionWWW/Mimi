@@ -4,7 +4,6 @@ import NickPw from "./nickPw";
 import RadioBt from "./radioBt";
 import Hashtag from "./hashtag";
 import WriteArea from "./textArea";
-import FileUpload from "./fileUpload";
 import Button from "react-bootstrap/Button";
 
 function alertClicked() {
@@ -28,8 +27,7 @@ const RvForm = () => (
 
             <h4 style={{textAlign:"center",marginTop:"50px",marginBottom:"30px"}}>리뷰를 작성해주세요</h4>
             <WriteArea></WriteArea>
-            <FileUpload></FileUpload>
-            <Button variant="outline-primary" style={{display:"block",margin:"auto",marginTop:"30px",width:"300px",marginBottom:"30px"}} onClick={alertClicked} href="/review/check">업로드</Button>
+            <Button variant="outline-secondary" style={{display:"block",margin:"auto",marginTop:"30px",width:"300px",marginBottom:"30px"}} onClick={alertClicked} href="/review/check">업로드</Button>
         </Card>
     </>
 );

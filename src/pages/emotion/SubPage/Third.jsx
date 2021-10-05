@@ -39,9 +39,9 @@ class SixtyFiveHappy extends React.Component {
 
                 <h1 className="recwrap">추천성분</h1>
 
-                <div className="wrap">
+                <Container style={{marginTop:"-50px",marginBottom:"300px"}}>
                     <div className="flip-container" onTouchStart="this.classList.toggle('hover');"
-                         style={{width: '18rem', display: 'inline-block'}}>
+                         style={{width: '18rem', display: 'block', marginRight:"auto",marginLeft:"auto"}}>
                         <div className="flipper">
                             <div className="front">
                                 <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
@@ -67,8 +67,11 @@ class SixtyFiveHappy extends React.Component {
                             </div>
                         </div>
                     </div>
+                </Container>
+
+                <Container style={{marginBottom:"300px"}}>
                     <div className="flip-container" onTouchStart="this.classList.toggle('hover');"
-                         style={{width: '18rem', display: 'inline-block'}}>
+                         style={{width: '18rem', display: 'block', marginRight:"auto",marginLeft:"auto"}}>
                         <div className="flipper">
                             <div className="front">
                                 <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
@@ -93,8 +96,11 @@ class SixtyFiveHappy extends React.Component {
                             </div>
                         </div>
                     </div>
+                </Container>
+
+                <Container style={{marginTop:"570px",marginBottom:"900px"}}>
                     <div className="flip-container" onTouchStart="this.classList.toggle('hover');"
-                         style={{width: '18rem', display: 'inline-block'}}>
+                         style={{width: '18rem', display: 'block', marginRight:"auto",marginLeft:"auto"}}>
                         <div className="flipper">
                             <div className="front">
                                 <Card className="card" style={{width: '18rem', display: 'inline-block'}}>
@@ -122,7 +128,7 @@ class SixtyFiveHappy extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Container>
 
                 <div className="wrap">
                     <h1 className="food">추천음식</h1>

@@ -4,7 +4,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import Button from "react-bootstrap/Button";
 
 const wrap = {
-    width:"500px",
+    width:"50%",
     float:"center",
     clear:"both",
     marginLeft: 'auto',
@@ -20,9 +20,9 @@ const Info = () => (
             <Card.Header><h4>가게 이름</h4></Card.Header>
             <Card.Body>
                 <blockquote className="blockquote mb-0">
-                    <h6>영업시간 : 몇시부터 몇시</h6>
-                    <h6>주소 : 지구</h6>
-                    <h6>대표 메뉴 : 음냠냠</h6>
+                    <h6 style={{fontSize:"13px"}}>영업시간 : 몇시부터 몇시</h6>
+                    <h6 style={{fontSize:"13px"}}>주소 : 지구</h6>
+                    <h6 style={{fontSize:"13px"}}>대표 메뉴 : 음냠냠</h6>
                     <br></br>
                     <footer className="blockquote-footer">
                         <div>
