@@ -10,7 +10,7 @@ class Main extends React.Component {
     render() {
         {
             const Wrap = {
-                width: '1000px',
+                width: '85%',
                 margin: 'auto'
             }
             const CarouselHeight = {
