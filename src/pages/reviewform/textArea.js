@@ -6,7 +6,7 @@ const TextArea = () => (
     <>
         <>
             <FloatingLabel controlId="floatingTextarea" label="Comments" style={{width:"800px",marginTop:"30px",margin:"auto"}}>
-                <Form.Control as="textarea" placeholder="100글자 이하로 작성해주세요." />
+                <Form.Control as="textarea" placeholder="100글자 이하로 작성해주세요."/>
             </FloatingLabel>
         </>
     </>
