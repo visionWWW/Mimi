@@ -13,6 +13,9 @@ import Restaurant_80 from "./pages/restaurant/subpage/Restaurtant_80";
 import Restaurant_100 from "./pages/restaurant/subpage/Restaurtant_100";
 import Allresults from "./pages/allresults/Result";
 import Reviewsee from "./pages/reviewsee/Reviewsee";
+import ReviewB1 from "./pages/reviewsee/sub_page/B1All";
+import ReviewCome from "./pages/reviewsee/sub_page/ComeAll";
+import ReviewMidam from "./pages/reviewsee/sub_page/MidamAll";
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
@@ -52,10 +55,13 @@ function App() {
           <Route path="/allresults" component={Allresults}></Route>
           <Route path="/review/check" component={ReviewCheck}></Route>
           <Route exact path="/review/:see" component={Reviewsee}></Route>
+            <Route path="/review/:see/B1" component={ReviewB1}></Route>
+            <Route path="/review/:see/come" component={ReviewCome}></Route>
+            <Route path="/review/:see/midam" component={ReviewMidam}></Route>
           <Route exact path="/review/see/form" component={ReviewForm}></Route>
-          <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
-          <Route path="/review/see/form/come" component={ReviewFormCome}></Route>
-          <Route path="/review/see/form/midam" component={ReviewFormMidam}></Route>
+            <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
+            <Route path="/review/see/form/come" component={ReviewFormCome}></Route>
+            <Route path="/review/see/form/midam" component={ReviewFormMidam}></Route>
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>
       </BrowserRouter>
