@@ -14,10 +14,10 @@ function Result() {
 
                 <div class="d-flex p-2">
                     <div className="wrap">
-                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '9rem', display: 'inline-block' }}>
+                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '7rem', display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/100.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -29,7 +29,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_100.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -38,10 +38,10 @@ function Result() {
                                 </div></div></div>
 
 
-                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '9rem', display: 'inline-block' }}>
+                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '7rem', display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/80.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -52,7 +52,7 @@ function Result() {
                                     </Card>
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_80.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -62,10 +62,10 @@ function Result() {
 
                 <div class="d-flex p-2">
                     <div className="wrap">
-                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '9rem', display: 'inline-block' }}>
+                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '7rem', display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/65.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -77,7 +77,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_65.png" />
                                         <Card.Body>
                                             <Card.Title>
@@ -87,10 +87,10 @@ function Result() {
                                 </div></div></div>
 
 
-                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '9rem', display: 'inline-block' }}>
+                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width:'7rem', display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/50.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -101,7 +101,7 @@ function Result() {
                                     </Card>
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_50.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -111,10 +111,10 @@ function Result() {
                 <div class="d-flex p-2">
                     <div className="wrap">
 
-                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '9rem', display: 'inline-block' }}>
+                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '7rem', display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/25.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -126,7 +126,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_25.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -136,10 +136,10 @@ function Result() {
                                         </Card.Body> </Card>
                                 </div></div></div>
 
-                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width: '9rem', display: 'inline-block' }}>
+                        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" style={{ width:'7rem', display: 'inline-block' }}>
                             <div className="flipper">
                                 <div className="front">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/10.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
@@ -151,7 +151,7 @@ function Result() {
 
                                 </div>
                                 <div className="back">
-                                    <Card className="card" style={{ width: '9rem', display: 'inline-block' }}>
+                                    <Card className="card" style={{ width: '7rem', display: 'inline-block' }}>
                                         <Card.Img variant="top" src="/images/back_10.png" />
                                         <Card.Body>
                                             <Card.Title></Card.Title>
