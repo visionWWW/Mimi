@@ -27,7 +27,7 @@ const RvForm = () => (
 
             <h4 style={{textAlign:"center",marginTop:"50px",marginBottom:"30px"}}>리뷰를 작성해주세요</h4>
             <WriteArea></WriteArea>
-            <Button variant="outline-secondary" style={{display:"block",margin:"auto",marginTop:"30px",width:"300px",marginBottom:"30px"}} onClick={alertClicked} href="/review/check">업로드</Button>
+            <Button variant="outline-secondary" style={{display:"block",margin:"auto",marginTop:"30px",width:"300px",marginBottom:"30px"}} onClick={alertClicked} href="/review">업로드</Button>
         </Card>
     </>
 );
