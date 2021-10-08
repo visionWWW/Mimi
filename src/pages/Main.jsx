@@ -5,6 +5,7 @@ import NaviagationBar from './navbar';
 import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Footer from "./footer/Footer";
+import './main.css';
 
 class Main extends React.Component {
     render() {
@@ -18,10 +19,18 @@ class Main extends React.Component {
                 margin: 'auto',
                 padding:'50px'
             }
+            const TabWrap={
+                //width: '28em'
+                //width: '100%'
+            }
             const TabMargin={
-                marginLeft:'20px',
-                marginRight:'20px',
-                marginTop:'10px'
+                // width: '1.8em',
+                fontSize: '1.5em',
+                margin: '0.1em',
+                //marginLeft:'5px',
+                //marginRight:'5px',
+                marginTop:'10px',
+                textAlign: 'center'
             }
             const ParaStyle={
                 textAlign:'center'
@@ -64,10 +73,12 @@ class Main extends React.Component {
                     <hr style={{marginTop:'50px',marginBottom:'10px', color:"lightgray"}}></hr>
                     <Tabs style={CarouselHeight}>
                         <TabList>
-                            <Tab> <h4 style={TabMargin}>About US</h4> </Tab>
+                            <div style={TabWrap}>
+                            <Tab> <h4 style={TabMargin} className="tabs">About US</h4> </Tab>
                             <Tab> <h4 style={TabMargin}>개발배경</h4> </Tab>
                             <Tab> <h4 style={TabMargin}>주요기능</h4> </Tab>
                             <Tab> <h4 style={TabMargin}>기대효과</h4> </Tab>
+                            </div>
                         </TabList>
 
                         <TabPanel>
@@ -128,6 +139,7 @@ class Main extends React.Component {
                             </p>
                         </TabPanel>
                     </Tabs>
+
                     <Footer></Footer>
                 </div>
 
