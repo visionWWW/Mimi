@@ -11,6 +11,9 @@ import Map_252 from './map/Map_25-2';
 import Map_253 from './map/Map_25-3';
 import Map_251 from './map/Map_25-1';
 import TopAlert from "../TopAlert";
+import Preview251 from './preview/Preview25-1';
+import Preview252 from './preview/Preview25-2';
+import Preview253 from './preview/Preview25-3';
 
 
 const google = window.google;
@@ -41,7 +44,7 @@ class Restaurtant25 extends React.Component {
             <div>
               <Button variant="outline-secondary" className="button1" onClick={this.toggleState1}>작은도쿄 | 텐동</Button>
               <Button variant="outline-secondary" className="button2" onClick={this.toggleState2}>가문의우동 | 냄비우동</Button>
-              <Button variant="outline-secondary" className="button3" onClick={this.toggleState3}>포35거리 | 쌀국수</Button>
+              <Button variant="outline-secondary" className="button3" onClick={this.toggleState3}>포36거리 | 쌀국수</Button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_251/>}
               {this.state.button2State === true && <Foodimg_252/>}
@@ -57,7 +60,9 @@ class Restaurtant25 extends React.Component {
             <div className="preview">
 
               <div>
-                <TopAlert/>
+              {this.state.button1State === true && <Preview251/>}
+              {this.state.button2State === true && <Preview252/>}
+              {this.state.button3State === true && <Preview253/>}
               </div>
 
             </div>

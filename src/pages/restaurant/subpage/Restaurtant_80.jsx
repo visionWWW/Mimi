@@ -11,6 +11,9 @@ import Map_801 from './map/Map_80-1';
 import Map_802 from './map/Map_80-2';
 import Map_803 from './map/Map_80-3';
 import TopAlert from "../TopAlert";
+import Preview801 from './preview/Preview80-1';
+import Preview802 from './preview/Preview80-2';
+import Preview803 from './preview/Preview80-3';
 
 const google = window.google;
 
@@ -39,7 +42,7 @@ class Restaurtant80 extends React.Component{
         
         <div>                
         <Button variant="outline-secondary" className="button3" onClick={this.toggleState1}>선다래 | 오므라이스</Button>
-        <Button variant="outline-secondary" className="button3" onClick={this.toggleState2}>마시바시 | 시금치파스타</Button>
+        <Button variant="outline-secondary" className="button3" onClick={this.toggleState2}>마시앤바시 | 시금치파스타</Button>
         <Button variant="outline-secondary" className="button3" onClick={this.toggleState3}>을의커피</Button>
         <br/><br/>
         {this.state.button1State===true && <Foodimg_801/>}
@@ -56,7 +59,9 @@ class Restaurtant80 extends React.Component{
           <div className="preview">
 
           <div>
-          <TopAlert/> 
+          {this.state.button1State === true && <Preview801/>}
+              {this.state.button2State === true && <Preview802 />}
+              {this.state.button3State === true && <Preview803/>}
         </div>
 
           </div>

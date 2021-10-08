@@ -11,6 +11,9 @@ import Foodimg_501 from '../foodimg/Foodimg_50-1';
 import Foodimg_502 from '../foodimg/Foodimg_50-2';
 import Foodimg_503 from '../foodimg/Foodimg_50-3';
 import TopAlert from "../TopAlert";
+import Preview501 from './preview/Preview50-1';
+import Preview502 from './preview/Preview50-2';
+import Preview503 from './preview/Preview50-3';
 
 
 const google = window.google;
@@ -57,7 +60,9 @@ class Restaurtant10 extends React.Component {
             <div className="preview">
 
               <div>
-              <TopAlert/>
+              {this.state.button1State === true && <Preview501/>}
+              {this.state.button2State === true && <Preview502/>}
+              {this.state.button3State === true && <Preview503/>}
               </div>
 
             </div>

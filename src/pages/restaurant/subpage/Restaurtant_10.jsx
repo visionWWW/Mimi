@@ -11,6 +11,8 @@ import Map_101 from './map/Map_10-1.';
 import Map_102 from './map/Map_10-2';
 import Map_103 from './map/Map_10-3';
 import TopAlert from "../TopAlert";
+import Preview101 from './preview/Preview10-1';
+import Preview102 from './preview/Preview10-2';
 
 
 const google = window.google;
@@ -56,7 +58,9 @@ class Restaurtant10 extends React.Component {
           <div className="warp">
             <div className="preview">
               <div>
-                <TopAlert/>
+              {this.state.button1State === true && <Preview101/>}
+              {this.state.button2State === true && <Preview102/>}
+              {this.state.button3State === true && <Preview102/>}
               </div>
             </div>
 

@@ -11,6 +11,9 @@ import Map_651 from './map/Map_65-1';
 import Map_652 from './map/Map_65-2';
 import Map_653 from './map/Map_65-3';
 import TopAlert from "../TopAlert";
+import Preview651 from './preview/Preview65-1';
+import Preview652 from './preview/Preview65-2';
+import Preview653 from './preview/Preview65-3';
 
 
 const google = window.google;
@@ -57,7 +60,9 @@ class Restaurtant10 extends React.Component {
             <div className="preview">
 
               <div>
-              <TopAlert/>
+              {this.state.button1State === true && <Preview651 />}
+              {this.state.button2State === true && <Preview652 />}
+              {this.state.button3State === true && <Preview653 />}
               </div>
 
             </div>
