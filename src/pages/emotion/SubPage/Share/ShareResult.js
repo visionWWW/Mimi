@@ -1,4 +1,5 @@
 const {Kakao, location} = window;
+Kakao.init('6b34431ff71070044c05466fbf892ab8');
 
 export const shareKakao = (title, imageUrl) => {
     const sharedUrl = location.href;
