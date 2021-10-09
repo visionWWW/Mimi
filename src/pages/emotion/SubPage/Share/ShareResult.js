@@ -1,5 +1,5 @@
 const {Kakao, location} = window;
-Kakao.init('6b34431ff71070044c05466fbf892ab8');
+Kakao.init('e10cb9a4335edeaa5726b6ab8e6536b9');
 
 export const shareKakao = (title, imageUrl) => {
     const sharedUrl = location.href;
@@ -8,7 +8,7 @@ export const shareKakao = (title, imageUrl) => {
         objectType: 'feed',
         content: {
             title: title,
-            description: '나와 잘 맞는 식물 친구는?',
+            description: '현재 내 감정 상태에 맞는 음식은?',
             imageUrl: imageUrl,
             link: {
                 webUrl: sharedUrl,
@@ -17,7 +17,7 @@ export const shareKakao = (title, imageUrl) => {
         },
         buttons: [
             {
-                title: '나도 테스트 해보기',
+                title: '감정 분석 결과 보러 가기 👀',
                 link: {
                     webUrl: sharedUrl,
                     mobileWebUrl: sharedUrl,
