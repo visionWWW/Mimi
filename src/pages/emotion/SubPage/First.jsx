@@ -8,11 +8,14 @@ import Image from 'react-bootstrap/Image'
 import NaviagtionBar from "../../navbar";
 import '../emotion.css'
 import Footer from "../../footer/Footer";
+import Share from "../SubPage/Share/Result"
 
 class FullHappy extends React.Component {
+
     render() {
         return (
             <div>
+                <Share></Share>
                 <NaviagtionBar/>
                 <h1>감정분석결과</h1>
                 <Col xs={12} md={12}>
