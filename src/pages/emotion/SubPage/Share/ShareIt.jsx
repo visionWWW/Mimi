@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import initialize from './lib/initialize';
+import initialize from './init';
 
 const App = () => {
     useEffect(() => {
