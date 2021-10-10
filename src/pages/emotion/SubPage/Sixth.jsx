@@ -8,6 +8,7 @@ import Image from 'react-bootstrap/Image'
 import NaviagtionBar from "../../navbar";
 import '../emotion.css'
 import Footer from "../../footer/Footer";
+import Share from "./Share/Result10";
 
 class TenHappy extends React.Component {
     render() {
@@ -36,6 +37,7 @@ class TenHappy extends React.Component {
                         우리 함께 먹으면서 기분 좋아지는 건 어때요? <br/>
                         <br></br>
                     </div>
+                    <Share></Share>
                 </div>
 
                 <h1 className="recwrap">추천성분</h1>

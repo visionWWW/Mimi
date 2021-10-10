@@ -8,14 +8,14 @@ import Image from 'react-bootstrap/Image'
 import NaviagtionBar from "../../navbar";
 import '../emotion.css'
 import Footer from "../../footer/Footer";
-import Share from "../SubPage/Share/Result"
+import Share from "../SubPage/Share/Result100"
 
 class FullHappy extends React.Component {
 
     render() {
         return (
             <div>
-                <Share></Share>
+
                 <NaviagtionBar/>
                 <h1>감정분석결과</h1>
                 <Col xs={12} md={12}>
@@ -30,6 +30,7 @@ class FullHappy extends React.Component {
                         이 음식을 먹으면 행복은 2배가 될거예요 :) <br/>
                         <br></br>
                     </div>
+                    <Share></Share>
                 </div>
 
                 <h1 className="recwrap">추천성분</h1>
