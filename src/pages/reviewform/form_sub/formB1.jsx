@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import NickPw from "../nickPw";
-import Hashtag from "../hashtag";
+import Hashtag from "../hashtag"
 import WriteArea from "../textArea";
 import Button from "react-bootstrap/Button";
 import SignUp from "../../sign-up/SignUp";
 import RadioBt from "../radioBt";
+
 import "../reviewform.css";
 
 function alertClicked() {

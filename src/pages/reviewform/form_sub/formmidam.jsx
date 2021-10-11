@@ -5,6 +5,7 @@ import NickPw from "../nickPw";
 import Hashtag from "../hashtag";
 import WriteArea from "../textArea";
 import Button from "react-bootstrap/Button";
+import RadioBt from "../radioBt";
 
 function alertClicked() {
     alert('지원하지 않는 기능입니다. 시범 페이지로 이동합니다.');
@@ -20,6 +21,7 @@ const RvForm = () => (
             <NickPw></NickPw>
 
             <h4 style={{textAlign:"center", marginTop:"50px"}}>만족도는 어떤가요?</h4>
+            <RadioBt></RadioBt>
 
             <h4 style={{textAlign:"center", marginTop:"50px"}}>해당 음식점에 맞는 키워드를 알려주세요</h4>
             <Hashtag></Hashtag>
