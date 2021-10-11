@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import NickPw from "./nickPw";
-import RadioBt from "./radioBt";
+
 import Hashtag from "./hashtag";
 import WriteArea from "./textArea";
 import Button from "react-bootstrap/Button";
+import RadioBt from "./radioBt";
 
 function alertClicked() {
     alert('지원하지 않는 기능입니다. 시범 페이지로 이동합니다.');

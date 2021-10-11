@@ -43,10 +43,7 @@ const SignUp = (props: any) => {
             .required("필수필드 입니다."),
           password: Yup.string()
             .required("Required")
-            .min(6, "6자이상 입력하세요"),
-          password2: Yup.string()
-            .oneOf([Yup.ref("password"), null], "패스워드가 일치하지 않습니다.")
-            .required("패스워드가 일치하지 않습니다."),
+            .min(6, "6자이상 입력하세요")
         })}>
         {
           ({values,
@@ -76,16 +73,7 @@ const SignUp = (props: any) => {
               { touched.password && !errors.password && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
               { touched.password && errors.password && <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback> }
             </Form.Group>
-            <Form.Group controlId="formGroupPassword2">
-              <Form.Label>confirm Password</Form.Label>
-              <Form.Control type="password" name="password2" placeholder="confirm Password"
-                            value={values.password2}
-                            onChange={handleChange} onBlur={handleBlur}
-                            isValid={touched.password2 && !errors.password2}
-                            isInvalid={touched.password2 && errors.password2 ? true : false} />
-              { touched.password2 && !errors.password2 && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
-              { touched.password2 && errors.password2 && <Form.Control.Feedback type="invalid">{errors.password2}</Form.Control.Feedback> }
-            </Form.Group>
+
             <Button variant="primary" type="submit" disabled={isSubmitting}>
               Submit
             </Button>
