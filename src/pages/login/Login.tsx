@@ -12,9 +12,9 @@ const Login = (props: any) => {
   console.log(props);
   const dispatch = useDispatch();
   const submit = async (values: any) => {
-    const {email, password} = values;
+    const {nickname, password} = values;
     try {
-      const {data} = await api.post('/api/auth/signin', {email, password});
+      const {data} = await api.post('/api/auth/signin', {nickname, password});
       console.log(data);
 
       dispatch(setToken(data.jwt))
@@ -58,11 +58,10 @@ const Login = (props: any) => {
       <Row className="justify-content-center">
         <Col xs={12} sm={10} md={8} lg={6} xl={4}>
           <Formik
-            initialValues={{email: '', password: ''}}
+            initialValues={{nickname: '', password: ''}}
             onSubmit={submit}
             validationSchema={Yup.object().shape({
-              email: Yup.string()
-                .email("이메일형식으로 입력하세요")
+              nickname: Yup.string()
                 .required("필수필드 입니다."),
               password: Yup.string()
                 .required("필수필드 입니다.")
@@ -77,17 +76,17 @@ const Login = (props: any) => {
                  handleSubmit,
                  isSubmitting
                }) => (<Form onSubmit={handleSubmit}>
-                <Form.Group controlId="email">
+                <Form.Group controlId="nickname">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control name="email" placeholder="Enter email"
-                                value={values.email}
+                  <Form.Control name="nickname" placeholder="Enter nickname"
+                                value={values.nickname}
                                 onChange={handleChange} onBlur={handleBlur}
-                                isValid={touched.email && !errors.email}
-                                isInvalid={touched.email && errors.email ? true : false}/>
-                  {touched.email && !errors.email &&
+                                isValid={touched.nickname && !errors.nickname}
+                                isInvalid={touched.nickname && errors.nickname ? true : false}/>
+                  {touched.nickname && !errors.nickname &&
                     <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback>}
-                  {touched.email && errors.email &&
-                    <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>}
+                  {touched.nickname && errors.nickname &&
+                    <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback>}
                 </Form.Group>
                 <Form.Group controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
