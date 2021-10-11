@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './re_main.css';
-import Input from "./input";
+import Input from "./Input.tsx";
 import Button from 'react-bootstrap/Button';
 
 class See extends Component {
