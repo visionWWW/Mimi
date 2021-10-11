@@ -8,9 +8,9 @@ import {toast} from 'react-toastify';
 const SignUp = (props: any) => {
     const submit = async (values: any) => {
       console.log(values);
-      const {nickname, password, username} = values;
+      const {nickname, password} = values;
       try {
-        await axios.post('/api/auth/signup', {nickname, password, username});
+        await axios.post('/api/auth/signup', {nickname, password});
   
         toast.success('회원등록하였습니다. 로그인하세요', {
           position: "top-center",
@@ -36,7 +36,7 @@ const SignUp = (props: any) => {
     }
     return (
       <Formik
-        initialValues={{ nickname: '', password: '', password2: '', username: ''}}
+        initialValues={{ nickname: '', password: '', password2: ''}}
         onSubmit={submit}
         validationSchema={Yup.object().shape({
           nickname: Yup.string()
@@ -47,8 +47,6 @@ const SignUp = (props: any) => {
           password2: Yup.string()
             .oneOf([Yup.ref("password"), null], "패스워드가 일치하지 않습니다.")
             .required("패스워드가 일치하지 않습니다."),
-          username: Yup.string()
-            .required("필수필드 입니다.")
         })}>
         {
           ({values,
@@ -87,16 +85,6 @@ const SignUp = (props: any) => {
                             isInvalid={touched.password2 && errors.password2 ? true : false} />
               { touched.password2 && !errors.password2 && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
               { touched.password2 && errors.password2 && <Form.Control.Feedback type="invalid">{errors.password2}</Form.Control.Feedback> }
-            </Form.Group>
-            <Form.Group controlId="formGroupName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" name="username" placeholder="enter username"
-                            value={values.username}
-                            onChange={handleChange} onBlur={handleBlur}
-                            isValid={touched.username && !errors.username}
-                            isInvalid={touched.username && errors.username ? true : false} />
-              { touched.username && !errors.username && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
-              { touched.username && errors.username && <Form.Control.Feedback type="invalid">{errors.username}</Form.Control.Feedback> }
             </Form.Group>
             <Button variant="primary" type="submit" disabled={isSubmitting}>
               Submit
