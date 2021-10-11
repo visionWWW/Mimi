@@ -3,9 +3,9 @@ import {Formik} from "formik";
 import * as Yup from "yup";
 import {Button, Col, Form, Row} from "react-bootstrap";
 import {toast} from "react-toastify";
+import {withRouter} from 'react-router-dom';
 import {useDispatch} from "react-redux";
 import {setToken} from "../../redux/reducers/AuthReducer";
-import queryString from "query-string";
 import api from "../../utils/api";
 
 const Login = (props: any) => {
@@ -18,12 +18,13 @@ const Login = (props: any) => {
             console.log(data);
 
             dispatch(setToken(data.jwt))
-            const {redirectUrl} = queryString.parse(props.location.search);
-
-            if (redirectUrl) {
+            const redirectUrl = './review/check';
+            console.log(data.nickname);
+            if (data.nickname) {
                 props.history.push(redirectUrl);
             } else {
-                props.history.push('/');
+                console.log(data.nickname);
+                alert("실패!");
             }
 
             toast.success('로그인하였습니다.', {
@@ -117,4 +118,4 @@ const Login = (props: any) => {
     );
 }
 
-export default Login;
+export default withRouter(Login);
