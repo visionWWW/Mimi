@@ -14,7 +14,7 @@ const Login = (props: any) => {
   const submit = async (values: any) => {
     const {nickname, password} = values;
     try {
-      const {data} = await api.post('/api/auth/signin', {nickname, password});
+      const {data} = await api.post('http://localhost:8080/api/sign-in', {nickname, password});
       console.log(data);
 
       dispatch(setToken(data.jwt))
