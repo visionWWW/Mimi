@@ -77,7 +77,7 @@ const Login = (props: any) => {
                  isSubmitting
                }) => (<Form onSubmit={handleSubmit}>
                 <Form.Group controlId="nickname">
-                  <Form.Label>Email address</Form.Label>
+                  <Form.Label>Nickname</Form.Label>
                   <Form.Control name="nickname" placeholder="Enter nickname"
                                 value={values.nickname}
                                 onChange={handleChange} onBlur={handleBlur}
