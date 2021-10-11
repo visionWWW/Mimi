@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import {toast} from "react-toastify";
 import * as Yup from "yup";
 import axios from "axios";
+import './reviewform.css';
 
 const RadioBt = (props: any) => {
     const submit = async (values: any) => {
@@ -40,29 +41,28 @@ const RadioBt = (props: any) => {
                 onSubmit={submit}>
                     {({ values }) => (
                     <Form>
-                        <div id="my-radio-group">Picked</div>
                         <div role="group" aria-labelledby="my-radio-group">
                 <label>
-                    <Field type="radio" name="grade" value="One" />
-                    One
+                    1
+                    <Field type="radio" name="grade" value="1" />
                 </label>
                 <label>
-                <Field type="radio" name="grade" value="Two" />
-                    Two
+                    2
+                <Field type="radio" name="grade" value="2" />
                 </label>
                 <label>
-                    <Field type="radio" name="grade" value="three" />
-                    Three
+                    3
+                    <Field type="radio" name="grade" value="3" />
                 </label>
                 <label>
-                    <Field type="radio" name="grade" value="four" />
-                    Four
+                    4
+                    <Field type="radio" name="grade" value="4" />
                 </label>
                 <label>
-                    <Field type="radio" name="grade" value="five" />
-                    Five
+                    5
+                    <Field type="radio" name="grade" value="5" />
                 </label>
-                    <div>Picked: {values.grade}</div>
+                    {/*<div>Picked: {values.grade}</div>*/}
                 </div>
             </Form>
             )}
