@@ -16,8 +16,7 @@ class See extends Component {
     render() {
         return (
             <div>
-                <Button variant="outline-secondary" id="button-addon2" id="see" onClick={this.toggleState}>내가 작성한 리뷰 보러가기</Button>
-                <br/><br/>
+                <Button variant="outline-secondary" id="button-addon2" id="see" style={{width:"13em"}}onClick={this.toggleState}>내가 작성한 리뷰 보러가기</Button>
                 {this.state.button1State===false&&<Input/>}
             </div>
         )
