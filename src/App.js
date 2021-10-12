@@ -21,7 +21,7 @@ import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
 import ReviewFormCome from "./pages/reviewform/sub/comeForm";
 import ReviewFormMidam from "./pages/reviewform/sub/midamForm";
-import ReviewCheck from "./pages/reviewcheck/reviewView";
+import ReviewCheck from "./pages/reviewcheck/reviewList.tsx";
 import FullHappy from "./pages/emotion/SubPage/First";
 import EightHappy from "./pages/emotion/SubPage/Second";
 import SixtyFiveHappy from "./pages/emotion/SubPage/Third";
