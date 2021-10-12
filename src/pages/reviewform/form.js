@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import NickPw from "./nickPw";
 
 import HashTag from "./hashtag"
-import WriteArea from "./textArea";
+import WriteArea from "./textarea";
 import Button from "react-bootstrap/Button";
 import RadioBt from "./radioBt";
 

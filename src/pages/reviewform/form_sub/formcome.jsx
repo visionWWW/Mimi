@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import NickPw from "../nickPw";
 import Hashtag from "../hashtag";
-import WriteArea from "../textArea";
+import WriteArea from "../textarea";
 import Button from "react-bootstrap/Button";
 
 function alertClicked() {
