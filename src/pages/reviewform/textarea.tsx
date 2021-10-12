@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Form} from "react-bootstrap";
-import {Board} from "../../dto/Board";
+import { Review } from '../../dto/Review';
 import api from "../../utils/api";
 import {useSelector} from "react-redux";
 
@@ -20,15 +20,15 @@ const WriteArea: React.FC = (props: any) => {
   
       setValidated(true);
       // Form.Grou의 controlid는 control의 id를 생성 => form[id] => control 노드 로 접근
-      const board = {
+      const explain = {
         content: form.contentText.value,
       }
-      console.log(board);
-      addBoard(board);
+      console.log(explain);
+      addReview(explain);
     };
   
-    const addBoard = async (board: Board) => {
-      const res = await api.post('http://localhost:8080/api/user', board);
+    const addReview = async (explain: Review) => {
+      const res = await api.post('http://localhost:8080/api/user', explain);
       console.log(res);
   
       props.history.push('/login');

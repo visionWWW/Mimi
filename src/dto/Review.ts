@@ -1,6 +1,6 @@
 import {User} from "./User";
 
-export interface Board {
+export interface Review {
   id?: number;
   content: string;
   created?: string;
