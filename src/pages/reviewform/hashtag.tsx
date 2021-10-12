@@ -38,8 +38,7 @@ const RvForm = (props: any) => {
     return (
         <>
             <Formik initialValues={{
-                toggle: false,
-                checked: [],
+                checked: []
             }}
                     onSubmit={async (values) => {
                         alert(JSON.stringify(values, null, 2));
