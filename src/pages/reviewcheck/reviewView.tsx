@@ -23,7 +23,10 @@ const ReviewView = ({match}: any) => {
         const res = await axios.get(`http://localhost:8080/api/review-find/${id}`);
         console.log("아니 님 데이터는 잘 가져오잖아여");
         console.log(res.data);
-        setReview(res.data);
+        for(const review of res.data){
+            setReview(review);
+        }
+        {/*setReview(res.data);*/}
     }
 
     return (
@@ -31,10 +34,10 @@ const ReviewView = ({match}: any) => {
             <Card>
                 <Card.Title>{review.restaurantName}</Card.Title>
                 <Card.Text>
-                    {review.explain}
+                    {review?.explain}
                     {console.log("근데 리뷰는 왜 그러는 건데여..")}
                     {console.log(review)}
-                    {console.log(review.restaurantName)}
+                    {console.log(review?.restaurantName)}
                 </Card.Text>
             </Card>
         </div>
