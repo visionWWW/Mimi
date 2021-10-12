@@ -1,6 +1,6 @@
-import { Formik } from 'formik';
+import {Formik} from 'formik';
 import React from 'react';
-import {Button, Col, Form, Row} from "react-bootstrap";
+import {Button, Form} from "react-bootstrap";
 import * as Yup from "yup";
 import axios from "axios";
 import {toast} from 'react-toastify';
@@ -10,7 +10,7 @@ const SignUp = (props: any) => {
       console.log(values);
       const {nickname, password} = values;
       try {
-        await axios.post('/api/auth/signup', {nickname, password});
+        await axios.post('/api/auth/user', {nickname, password});
   
         toast.success('회원등록하였습니다. 로그인하세요', {
           position: "top-center",

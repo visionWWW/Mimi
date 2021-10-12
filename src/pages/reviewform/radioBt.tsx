@@ -1,12 +1,9 @@
-import { Formik, Field, Form } from 'formik';
-import { Button } from "react-bootstrap";
-import React, { useState } from 'react';
+import {Field, Form, Formik} from 'formik';
+import {Button} from "react-bootstrap";
+import React from 'react';
 import 'antd/dist/antd.css';
-import { toast } from "react-toastify";
-import { Review } from '../../dto/Review';
-import api from "../../utils/api";
+import {toast} from "react-toastify";
 import axios from "axios";
-import { useSelector } from "react-redux";
 import './reviewform.css';
 
 const RadioBt = (props: any) => {
@@ -15,7 +12,7 @@ const RadioBt = (props: any) => {
         alert(JSON.stringify(values, null, 2));
         const { grade, hashtag } = values;
         try {
-            await axios.post('http://localhost:8080/api/user', { grade, hashtag });
+            await axios.post('http://localhost:8080/api/review', { grade, hashtag });
 
             toast.success('리뷰등록 성공', {
                 position: "top-center",
@@ -75,10 +72,8 @@ const RadioBt = (props: any) => {
                                     <Field type="radio" name="grade" value="5" />
                                 </label>
                                 <div>Picked: {values.grade}</div>
-
                             </div>
                         </Form>
-
                         <Form>
                             <div role="group" aria-labelledby="checkbox-group">
                                 <label>
