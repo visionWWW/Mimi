@@ -1,9 +1,10 @@
 import {User} from "./User";
 
 export interface Review {
-  id?: number;
-  content: string;
-  created?: string;
-  updated?: string;
-  user?: User;
+  id: number;
+  grade: number;
+  explain: string;
+  restaurantName:string;
+  hashtag: string;
+  user: User;
 }
