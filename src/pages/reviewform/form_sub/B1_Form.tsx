@@ -12,8 +12,8 @@ const FormB1 = (props: any) => {
         try {
             await axios
                 .all([
-                    axios.post('http://localhost:8080/api/auth/user', {nickname, password}),
-                    axios.post('http://localhost:8080/api/auth/review', {grade, explain, restaurant_name, hashtag, user_id})])
+                    axios.post('http://localhost:8080/api/user', {nickname, password}),
+                    axios.post('http://localhost:8080/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
                 .then(axios.spread((res1,res2)=>{
                     console.log(res1,res2);
                     }))
