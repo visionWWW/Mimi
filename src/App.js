@@ -21,7 +21,7 @@ import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
 import ReviewFormCome from "./pages/reviewform/sub/comeForm";
 import ReviewFormMidam from "./pages/reviewform/sub/midamForm";
-import ReviewCheck from "./pages/reviewcheck/reviewCheck";
+import ReviewCheck from "./pages/reviewcheck/reviewView";
 import FullHappy from "./pages/emotion/SubPage/First";
 import EightHappy from "./pages/emotion/SubPage/Second";
 import SixtyFiveHappy from "./pages/emotion/SubPage/Third";
@@ -57,7 +57,7 @@ function App() {
           <Route exaet path="/restaurant/10" component={Restaurant_10}></Route>
           
           <Route path="/allresults" component={Allresults}></Route>
-          <Route path="/review/check" component={ReviewCheck}></Route>
+          <Route path="/review/check/:id" component={ReviewCheck}></Route>
           <Route exact path="/review/:see" component={Reviewsee}></Route>
             <Route path="/review/:see/B1" component={ReviewB1}></Route>
             <Route path="/review/:see/come" component={ReviewCome}></Route>

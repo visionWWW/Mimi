@@ -7,6 +7,7 @@ import {useDispatch} from "react-redux";
 import {setToken} from "../../redux/reducers/AuthReducer";
 import api from "../../utils/api";
 import Card from "react-bootstrap/Card";
+import axios from "axios";
 
 const Login = (props: any) => {
     console.log(props);
@@ -19,9 +20,11 @@ const Login = (props: any) => {
 
             dispatch(setToken(data.jwt))
             const redirectUrl = './review/check';
-            console.log(data.nickname);
+            console.log(data.id);
             if (data.nickname) {
-                props.history.push(redirectUrl+"/"+`${data.nickname}`); // 그 사람의 닉네임으로 이동하게끔 해봤는데 이걸 쓸 일이 있을까요?
+                props.history.push(redirectUrl+"/"+`${data.id}`); // 그 사람의 닉네임으로 이동하게끔 해봤는데 이걸 쓸 일이 있을까요?
+                const res = await axios.get(`http://localhost:8080/api/review-find/${data.id}`);
+                console.log(res.data);
             } else {
                 console.log(data.nickname);
                 alert("로그인에 실패하셨습니다. 맞는 회원정보를 입력해주세요.");
