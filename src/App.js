@@ -20,7 +20,9 @@ import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
 import ReviewFormCome from "./pages/reviewform/sub/comeForm";
-import ReviewFormMidam from "./pages/reviewform/sub/midamForm";
+
+import LoginFormMidam from "./pages/reviewform/sub/midamForm";
+import ReviewFormMidam from "./pages/reviewform/sub/midamReview";
 
 import ReviewFormtest from "./pages/reviewform/form_sub/B1_Form";
 
@@ -61,15 +63,19 @@ function App() {
           
           <Route path="/allresults" component={Allresults}></Route>
           <Route path="/review/check/:id" component={ReviewCheck}></Route>
+
           <Route exact path="/review/:see" component={Reviewsee}></Route>
             <Route path="/review/:see/B1" component={ReviewB1}></Route>
             <Route path="/review/:see/come" component={ReviewCome}></Route>
             <Route path="/review/:see/midam" component={ReviewMidam}></Route>
+
           <Route exact path="/review/see/form" component={ReviewForm}></Route>
             <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
             <Route path="/review/see/form/test" component={ReviewFormtest}></Route>
             <Route path="/review/see/form/come" component={ReviewFormCome}></Route>
-            <Route path="/review/see/form/midam" component={ReviewFormMidam}></Route>
+            <Route path="/review/see/form/midam" component={LoginFormMidam}></Route>
+            <Route path="/review/see/form/midam-write" component={ReviewFormMidam}></Route>
+
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>
       </BrowserRouter>

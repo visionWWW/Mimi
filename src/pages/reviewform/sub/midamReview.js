@@ -1,9 +1,9 @@
 import React from 'react';
-import Form from "../form_sub/formmidam";
+import Form from "../form_sub/formmidamreview";
 import Navbar from "../../navbar";
 import Footer from "../../footer/Footer";
 
-const LoginFormMidam = () => (
+const ReviewFormMidam = () => (
     <>
         <Navbar></Navbar>
         <Form></Form>
@@ -11,4 +11,4 @@ const LoginFormMidam = () => (
     </>
 );
 
-export default LoginFormMidam;
+export default ReviewFormMidam;
