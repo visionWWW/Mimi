@@ -12,7 +12,7 @@ import Footer from "../../footer/Footer";
 const RvForm = (props: any) => {
     const submit = async (values: any) => {
         console.log(values);
-        const {nickname, password, grade, explain, hashtag, user_id} = values;
+        const {grade, explain, hashtag, user_id} = values;
         const restaurant_name="비일";
         try {
             await axios
