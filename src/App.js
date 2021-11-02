@@ -20,12 +20,9 @@ import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
 import ReviewFormCome from "./pages/reviewform/sub/comeForm";
-
-import LoginFormMidam from "./pages/reviewform/sub/midamForm";
-import ReviewFormMidam from "./pages/reviewform/sub/midamReview";
-
+import LoginFormMidam from "./pages/reviewform/form_sub/formmidam";
+import ReviewFormMidam from "./pages/reviewform/form_sub/formmidamreview";
 import ReviewFormtest from "./pages/reviewform/form_sub/B1_Form";
-
 import ReviewCheck from "./pages/reviewcheck/reviewList.tsx";
 import FullHappy from "./pages/emotion/SubPage/First";
 import EightHappy from "./pages/emotion/SubPage/Second";
