@@ -9,15 +9,13 @@ import Footer from "../../footer/Footer";
 const RvForm = (props: any) => {
     const submit = async (values: any) => {
         console.log(values);
-        const {nickname, password, grade, explain, hashtag, user_id} = values;
-        const restaurant_name="비";
+        const {nickname, password} = values;
         try {
             await axios
                 .all([
-                    axios.post('http://localhost:8080/api/user', {nickname, password}),
-                    axios.post('http://localhost:8080/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
-                .then(axios.spread((res1,res2)=>{
-                    console.log(res1,res2);
+                    axios.post('http://localhost:8080/api/user', {nickname, password})])
+                .then(axios.spread((res)=>{
+                    console.log(res);
                 }))
             props.history.push('/user');
         } catch(e) {
