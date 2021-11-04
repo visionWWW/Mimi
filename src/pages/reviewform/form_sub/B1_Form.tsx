@@ -2,33 +2,34 @@ import {Field, Formik} from 'formik';
 import React from 'react';
 import {Button, Form} from "react-bootstrap";
 import * as Yup from "yup";
-import axios from "axios";
 import Navbar from "../../navbar";
 import Footer from "../../footer/Footer";
+import NickPw from "../nickPw";
 
 const FormB1 = (props: any) => {
     const submit = async (values: any) => {
-        console.log(values);
-        const {nickname, password, grade, explain, hashtag, user_id} = values;
-        const restaurant_name="비일";
-        try {
-            await axios
-                .all([
-                    axios.post('http://localhost:8080/api/user', {nickname, password}),
-                    axios.post('http://localhost:8080/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
-                .then(axios.spread((res1,res2)=>{
-                    console.log(res1,res2);
-                    }))
-            props.history.push('/review');
-        } catch(e) {
-            console.log("error");
-        }
+        alert("등록 완료되었습니다!");
+        // console.log(values);
+        // const {nickname, password, grade, explain, hashtag, user_id} = values;
+        // const restaurant_name="비일";
+        // try {
+        //     await axios
+        //         .all([
+        //             axios.post('http://localhost:8080/api/user', {nickname, password}),
+        //             axios.post('http://localhost:8080/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
+        //         .then(axios.spread((res1,res2)=>{
+        //             console.log(res1,res2);
+        //             }))
+        //     props.history.push('/review');
+        // } catch(e) {
+        //     console.log("error");
+        // }
     }
     return (
      <>
          <Navbar></Navbar>
          <h5 style={{textAlign:"center", marginTop:"30px"}}>비일 | 음식점은 어떠셨나요?</h5>
-        <Formik
+         <Formik
             initialValues={{ nickname: '', password: '',
                 grade: '', toggle: false, checked: [],
                 explain:'', restaurant_name:"비일"
@@ -54,28 +55,27 @@ const FormB1 = (props: any) => {
                      isSubmitting }) =>
                     (
                         <Form onSubmit={handleSubmit}>
-                            <Form.Group controlId="nickname">
-                                <Form.Label style={{textAlign:"center", display:"block"}} >닉네임을 입력해주세요.</Form.Label>
-                                <Form.Control style={{display:"block",width:"50%",margin:"30px auto"}} name="nickname" placeholder="닉네임을 입력해주세요."
-                                              value={values.nickname}
-                                              onChange={handleChange} onBlur={handleBlur}
-                                              isValid={touched.nickname && !errors.nickname}
-                                              isInvalid={touched.nickname && errors.nickname ? true : false} />
-                                { touched.nickname && !errors.nickname && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
-                                { touched.nickname && errors.nickname && <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback> }
-                            </Form.Group>
-                            <Form.Group controlId="formGroupPassword">
-                                <Form.Label style={{textAlign:"center", display:"block"}} >비밀번호를 입력해주세요.</Form.Label>
-                                <Form.Control
-                                              style={{margin:"30px auto", width:"50%", display:"block"}}
-                                              name="password" placeholder="비밀번호를 입력해주세요."
-                                              value={values.password}
-                                              onChange={handleChange} onBlur={handleBlur}
-                                              isValid={touched.password && !errors.password}
-                                              isInvalid={touched.password && errors.password ? true : false} />
-                                { touched.password && !errors.password && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
-                                { touched.password && errors.password && <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback> }
-                            </Form.Group>
+                            <NickPw></NickPw>
+                            {/*<Form.Group controlId="nickname">*/}
+                            {/*    <Form.Label style={{textAlign:"center", display:"block"}} >닉네임을 입력해주세요.</Form.Label>*/}
+                            {/*    <Form.Control style={{display:"block",width:"50%",margin:"30px auto"}} name="nickname" placeholder="닉네임을 입력해주세요."*/}
+                            {/*                  value={values.nickname}*/}
+                            {/*                  onChange={handleChange} onBlur={handleBlur}*/}
+                            {/*                  isValid={touched.nickname && !errors.nickname}*/}
+                            {/*                  isInvalid={touched.nickname && errors.nickname ? true : false} />*/}
+                            {/*    { touched.nickname && !errors.nickname && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }*/}
+                            {/*    { touched.nickname && errors.nickname && <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback> }*/}
+                            {/*</Form.Group>*/}
+                            {/*<Form.Group controlId="formGroupPassword">*/}
+                            {/*    <Form.Label>Password</Form.Label>*/}
+                            {/*    <Form.Control type="password" name="password" placeholder="enter Password"*/}
+                            {/*                  value={values.password}*/}
+                            {/*                  onChange={handleChange} onBlur={handleBlur}*/}
+                            {/*                  isValid={touched.password && !errors.password}*/}
+                            {/*                  isInvalid={touched.password && errors.password ? true : false} />*/}
+                            {/*    { touched.password && !errors.password && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }*/}
+                            {/*    { touched.password && errors.password && <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback> }*/}
+                            {/*</Form.Group>*/}
                             <div role="group" aria-labelledby="my-radio-group" style={{textAlign:"center", marginBottom:"30px"}}>
                                 <h6 style={{textAlign:"center", fontSize:"14px", marginBottom:"20px"}}>만족도를 입력해주세요.</h6>
                                 <label>
@@ -142,17 +142,19 @@ const FormB1 = (props: any) => {
                                 { touched.explain && !errors.explain && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
                                 { touched.explain && errors.explain && <Form.Control.Feedback type="invalid">{errors.explain}</Form.Control.Feedback> }
                             </Form.Group>
-                            <Button variant="outline-secondary" type="submit" disabled={isSubmitting} style={{display:"block",margin:"auto"}}>
-                                리뷰 등록하기📝
-                            </Button>
                 </Form>
                     )
             }
         </Formik>
+
          <br/><br/><br/><br/><br/><br/>
          <br/><br/><br/><br/><br/><br/>
          <br/><br/><br/><br/><br/><br/>
-         <br/><br/><br/><br/><br/><br/>
+         <br/>
+         <Button href={"/review"} variant="outline-secondary" onClick={()=>alert("등록 완료되었습니다!")} style={{display:"block",margin:"auto",width:"30%"}}>
+             리뷰 등록하기📝
+         </Button>
+         <br/>
          <br/><br/><br/>
          <Footer></Footer>
      </>
