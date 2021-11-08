@@ -64,8 +64,9 @@ const Login = (props: any) => {
                 isSubmitting
             }) => (<Form onSubmit={handleSubmit}>
             <Form.Group controlId="nickname">
-            <Form.Label>nickname</Form.Label>
+            <Form.Label style={{textAlign:"center", display:"block"}}>nickname</Form.Label>
         <Form.Control name="nickname" placeholder="Enter nickname"
+            style={{margin:"30px auto", width:"50%", display:"block"}}
             value={values.nickname}
             onChange={handleChange} onBlur={handleBlur}
             isValid={touched.nickname && !errors.nickname}
@@ -76,8 +77,9 @@ const Login = (props: any) => {
         <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback>}
             </Form.Group>
             <Form.Group controlId="formGroupPassword">
-            <Form.Label>Password</Form.Label>
+            <Form.Label style={{textAlign:"center", display:"block"}}>Password</Form.Label>
             <Form.Control type="password" name="password" placeholder="enter Password"
+            style={{margin:"30px auto", width:"50%", display:"block"}}
             value={values.password}
             onChange={handleChange} onBlur={handleBlur}
             isValid={touched.password && !errors.password}
@@ -87,11 +89,12 @@ const Login = (props: any) => {
                 {touched.password && errors.password &&
                 <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback>}
                     </Form.Group>
-                    <Button variant="primary" type="submit" disabled={isSubmitting}>
-                    로그인
+                <br></br>
+                    <Button variant="primary" type="submit" disabled={isSubmitting} style={{display:"block",margin:"auto"}}>
+                        로그인
                     </Button>
-                    <Button variant="primary" type="submit" href="./Signup">
-                        회원가입
+                    <Button variant="link" type="submit" href="./Signup" style={{display:"block",margin:"auto"}}>
+                        회원가입하러 가기
                     </Button>
                     </Form>)
                 }
