@@ -30,7 +30,7 @@ import SixtyFiveHappy from "./pages/emotion/SubPage/Third";
 import HalfHappy from "./pages/emotion/SubPage/Fourth";
 import TwentyFiveHappy from "./pages/emotion/SubPage/Fifth";
 import TenHappy from "./pages/emotion/SubPage/Sixth";
-import SignUp from './pages/sign-up/SignUp';
+import Signup from './pages/login/Signup';
 import Login from './pages/login/Login';
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Main}></Route>
-          <Route exact path="/sign-up" component={SignUp}></Route>
+          <Route exact path="/signup" component={Signup}></Route>
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/emotion" component={Emotion}></Route>
             <Route path="/emotion/full-happy" component={FullHappy}></Route>

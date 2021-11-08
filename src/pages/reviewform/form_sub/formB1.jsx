@@ -4,7 +4,6 @@ import NickPw from "../nickPw";
 import Hashtag from "../hashtag"
 import WriteArea from "../textarea";
 import Button from "react-bootstrap/Button";
-import SignUp from "../../sign-up/SignUp";
 import RadioBt from "../radioBt";
 
 import "../reviewform.css";
@@ -20,8 +19,6 @@ const RvForm = () => (
                 <h4 style={{marginTop:"20px"}}>🍽 음식점 | 비일 🍽 </h4>
                 <h6 style={{marginBottom:"20px"}}>어땠나요?</h6>
             </div>
-            {/*<NickPw></NickPw>*/}
-            <SignUp></SignUp>
 
             <h4 style={{textAlign:"center", marginTop:"50px"}}>만족도는 어떤가요?</h4>
             <div className="radio">

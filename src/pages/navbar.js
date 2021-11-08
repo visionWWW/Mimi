@@ -21,12 +21,10 @@ class NaviagtionBar extends Component {
                 <Nav.Link href="/surveyIntro">검사하기</Nav.Link>
                 <Nav.Link href="/allresults">감정진단결과</Nav.Link>
               </Nav>
-              {/*<Nav>*/}
-              {/*  <Nav.Link href="/restaurant">음식점 보기</Nav.Link>*/}
-              {/*</Nav>*/}
             </Navbar.Collapse>
   
             <Navbar.Collapse className="justify-content-end">
+                <Nav.Link href="/login" className="ha">로그인</Nav.Link>
               <Nav.Link href="/review" className="ha">리뷰 작성하기</Nav.Link>
             </Navbar.Collapse></Navbar>
         )
