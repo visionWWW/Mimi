@@ -33,7 +33,7 @@ const Info = () => (
                                 starCount={5}
                                 value={3.7}
                             />
-                            <Button href="/review/see/form/midam" variant="secondary" style={{display:"block",margin:"auto"}}>리뷰 폼 작성하러 가기 📝</Button>
+                            <Button href="/review/see/form/midam-write" variant="secondary" style={{display:"block",margin:"auto"}}>리뷰 폼 작성하러 가기 📝</Button>
                         </div>
                     </footer>
                 </blockquote>

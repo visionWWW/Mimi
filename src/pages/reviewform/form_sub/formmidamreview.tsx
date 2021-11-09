@@ -18,8 +18,8 @@ const RvForm = (props: any) => {
             await axios
                 .all([
                     axios.post('http://localhost:8080/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
-                .then(axios.spread((res1,res2)=>{
-                    console.log(res1,res2);
+                .then(axios.spread((res)=>{
+                    console.log(res);
                     }))
             props.history.push('/review');
         } catch(e) {
@@ -37,11 +37,6 @@ const RvForm = (props: any) => {
             }}
             onSubmit={submit}
             validationSchema={Yup.object().shape({
-                nickname: Yup.string()
-                    .required("필수필드 입니다."),
-                password: Yup.string()
-                    .required("Required")
-                    .min(6, "6자이상 입력하세요"),
                 explain: Yup.string()
                     .required("Required")
                     .max(100, "100자 미만으로 입력하세요")
