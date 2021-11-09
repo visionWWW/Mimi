@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Formik} from "formik";
 import * as Yup from "yup";
 import {Button, Col, Form, Row} from "react-bootstrap";
@@ -11,7 +11,13 @@ const Login = (props: any) => {
     const submit = async (values: any) => {
         const {nickname, password} = values;
         try {
+            const saveData = () => {
+                const userObj = { nickname: nickname};
+                window.localStorage.setItem("nickname", JSON.stringify(userObj));
+            };
+
             const {data} = await axios.post('http://localhost:8080/api/sign-in', {nickname, password});
+            saveData();
             console.log(data);
 
             toast.success('로그인하였습니다.', {
