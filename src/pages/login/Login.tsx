@@ -1,24 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Formik} from "formik";
 import * as Yup from "yup";
 import {Button, Col, Form, Row} from "react-bootstrap";
 import axios from "axios";
 import {toast} from "react-toastify";
 import Navbar from "../navbar";
-import Footer from "../footer/Footer";
 
 const Login = (props: any) => {
     const submit = async (values: any) => {
-        const {nickname, password} = values;
+        const {id,nickname, password} = values;
         try {
+            //const {data} = await axios.post('http://localhost:8080/api/sign-in', {id,nickname, password});
+            await axios
+                .all([
+                    axios.post('http://localhost:8080/api/sign-in', {id, nickname, password}),
+                    axios.post('http://localhost:8080/api/login', {nickname})])
+                .then(axios.spread((res1,res2)=>{
+                    //console.log(res1,res2);
+                    console.log("==data==")
+                    console.log(res2.data);
+                }))
             const saveData = () => {
                 const userObj = { nickname: nickname};
+                const userObj2 = { id: id};
+                //console.log(userObj2)
                 window.localStorage.setItem("nickname", JSON.stringify(userObj));
             };
-
-            const {data} = await axios.post('http://localhost:8080/api/sign-in', {nickname, password});
             saveData();
-            console.log(data);
+            //console.log(data);
 
             toast.success('로그인하였습니다.', {
                 position: "top-center",
