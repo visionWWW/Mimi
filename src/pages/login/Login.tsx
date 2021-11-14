@@ -9,6 +9,7 @@ import Navbar from "../navbar";
 const Login = (props: any) => {
     const submit = async (values: any) => {
         const {id,nickname, password} = values;
+        //let login_id;
         try {
             //const {data} = await axios.post('http://localhost:8080/api/sign-in', {id,nickname, password});
             await axios
@@ -19,6 +20,9 @@ const Login = (props: any) => {
                     //console.log(res1,res2);
                     console.log("==data==")
                     console.log(res2.data);
+                    const login_id=res2.data.id;
+                    console.log(login_id);
+                    window.localStorage.setItem("id", JSON.stringify(login_id));
                 }))
             const saveData = () => {
                 const userObj = { nickname: nickname};
