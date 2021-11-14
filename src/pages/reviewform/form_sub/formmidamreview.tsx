@@ -6,7 +6,6 @@ import axios from "axios";
 import Navbar from "../../navbar";
 import Footer from "../../footer/Footer";
 
-
 const RvForm = (props: any) => {
     let id;
     const getData = () => {
@@ -38,7 +37,7 @@ const RvForm = (props: any) => {
             <Formik
                 initialValues={{
                     grade: '', hashtag: [],
-                    explain:'', restaurant_name:"비일", user_id: id
+                    explain:'', restaurant_name:"비일", user_id: getData
                 }}
                 onSubmit={submit}
                 validationSchema={Yup.object().shape({
