@@ -8,10 +8,14 @@ import Footer from "../../footer/Footer";
 
 
 const RvForm = (props: any) => {
+    let id;
+    const getData = () => {
+        id = localStorage.getItem("id");
+    };
     const submit = async (values: any) => {
         console.log(values);
-        const {grade, explain, hashtag, user_id} = values;
-        const restaurant_name="비일";
+
+        const {grade, explain, hashtag, restaurant_name, user_id} = values;
         try {
             await axios
                 .all([
@@ -20,6 +24,8 @@ const RvForm = (props: any) => {
                     console.log(res);
                 }))
             props.history.push('/review');
+
+
         } catch(e) {
             console.log("error");
         }
@@ -28,10 +34,11 @@ const RvForm = (props: any) => {
         <>
             <Navbar></Navbar>
             <h5 style={{textAlign:"center", marginTop:"30px"}}>비일 | 음식점은 어떠셨나요?</h5>
+            {getData()}
             <Formik
                 initialValues={{
-                    grade: '', toggle: false, checked: [],
-                    explain:'', restaurant_name:"비일"
+                    grade: '', hashtag: [],
+                    explain:'', restaurant_name:"비일", user_id: id
                 }}
                 onSubmit={submit}
                 validationSchema={Yup.object().shape({
@@ -75,31 +82,31 @@ const RvForm = (props: any) => {
                                 <div role="group" aria-labelledby="checkbox-group" style={{display:"block",margin:"30px auto",textAlign:"center", fontSize:"14px", marginBottom:"20px"}}>
                                     <h6 style={{textAlign:"center", fontSize:"14px", marginBottom:"30px"}}>음식점을 대표할 대표어를 골라주세요.</h6>
                                     <label style={{marginRight:"20px"}}>
-                                        <Field type="checkbox" name="checked" value="가정식" />
+                                        <Field type="checkbox" name="hashtag" value="가정식" />
                                         가정식
                                     </label>
                                     <label style={{marginRight:"20px"}}>
-                                        <Field type="checkbox" name="checked" value="혼밥" />
+                                        <Field type="checkbox" name="hashtag" value="혼밥" />
                                         혼밥
                                     </label>
                                     <label style={{marginRight:"20px"}}>
-                                        <Field type="checkbox" name="checked" value="포장가능한" />
+                                        <Field type="checkbox" name="hashtag" value="포장가능한" />
                                         포장가능한
                                     </label>
                                     <label style={{marginRight:"20px"}}>
-                                        <Field type="checkbox" name="checked" value="비건" />
+                                        <Field type="checkbox" name="hashtag" value="비건" />
                                         비건
                                     </label>
                                     <label style={{marginRight:"20px"}}>
-                                        <Field type="checkbox" name="checked" value="대식가" />
+                                        <Field type="checkbox" name="hashtag" value="대식가" />
                                         대식가
                                     </label>
                                     <label style={{marginRight:"20px"}}>
-                                        <Field type="checkbox" name="checked" value="가성비" />
+                                        <Field type="checkbox" name="hashtag" value="가성비" />
                                         가성비
                                     </label>
                                     <label>
-                                        <Field type="checkbox" name="checked" value="웨이팅" />
+                                        <Field type="checkbox" name="hashtag" value="웨이팅" />
                                         웨이팅
                                     </label>
                                 </div>
@@ -130,5 +137,5 @@ const RvForm = (props: any) => {
             <Footer></Footer>
         </>
     );
-}
+};
 export default RvForm;
