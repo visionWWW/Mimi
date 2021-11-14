@@ -11,10 +11,15 @@ const RvForm = (props: any) => {
         console.log(values);
         const {nickname, password} = values;
         try {
-            console.log("??");
-            await axios.post('http://localhost:8080/api/user', {nickname, password});
+            await axios
+                .all([
+                    axios.post('http://localhost:8080/api/user', {nickname, password}),
+                    axios.post('http://localhost:8080/api/user-find/:id', {nickname})])
+                .then(axios.spread((res1,res2)=>{
+                    console.log(res1,res2);
+                }))
             props.history.push('/review/see/form/midam-write');
-        } catch(e) {
+         } catch(e) {
             console.log("error");
         }
     }
