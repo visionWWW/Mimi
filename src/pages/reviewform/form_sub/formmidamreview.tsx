@@ -28,12 +28,11 @@ const RvForm = (props: any) => {
     return (
         <>
             <Navbar></Navbar>
-            <h5 style={{textAlign:"center", marginTop:"30px"}}>비일 | 음식점은 어떠셨나요?</h5>
-            {/*{getData()}*/}
+            <h5 style={{textAlign:"center", marginTop:"30px"}}>음식미담 | 음식점은 어떠셨나요?</h5>
             <Formik
                 initialValues={{
                     grade: '', hashtag: [],
-                    explain:'', restaurant_name:"비일", user_id: localStorage.getItem("id")
+                    explain:'', restaurant_name:"음식미담", user_id: localStorage.getItem("id")
                 }}
                 onSubmit={submit}
                 validationSchema={Yup.object().shape({
