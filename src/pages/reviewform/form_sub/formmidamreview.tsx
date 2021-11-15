@@ -7,10 +7,6 @@ import Navbar from "../../navbar";
 import Footer from "../../footer/Footer";
 
 const RvForm = (props: any) => {
-    let id;
-    const getData = () => {
-        id = localStorage.getItem("id");
-    };
     const submit = async (values: any) => {
         console.log(values);
 
@@ -33,11 +29,11 @@ const RvForm = (props: any) => {
         <>
             <Navbar></Navbar>
             <h5 style={{textAlign:"center", marginTop:"30px"}}>비일 | 음식점은 어떠셨나요?</h5>
-            {getData()}
+            {/*{getData()}*/}
             <Formik
                 initialValues={{
                     grade: '', hashtag: [],
-                    explain:'', restaurant_name:"비일", user_id: getData
+                    explain:'', restaurant_name:"비일", user_id: localStorage.getItem("id")
                 }}
                 onSubmit={submit}
                 validationSchema={Yup.object().shape({
