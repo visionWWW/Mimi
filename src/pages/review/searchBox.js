@@ -25,7 +25,9 @@ class SearchBox extends Component {
                         }}
                         onChange={
                             value=>{
-                                    if(value==="음식미담"||value==="비일"||value==="또와또"){
+                                    if(value==="음식미담"||value==="비일"||value==="또와또"
+
+                                    ||value==="가문의우동"||value==="갯마을칼국수"||value==="디어파인"||value==="몬스터플레이스"||value==="마시앤바시"){
                                         console.log(value)
                                         this.state.value=value
                                     }
@@ -54,6 +56,21 @@ class SearchBox extends Component {
                             }
                             else if(this.state.value==="또와또"){
                                 this.props.history.push("review/see/come")
+                            }
+                            else if(this.state.value==="가문의우동"){
+                                this.props.history.push("review/see/gamoon")
+                            }
+                            else if(this.state.value==="갯마을칼국수"){
+                                this.props.history.push("review/see/gatmael")
+                            }
+                            else if(this.state.value==="디어파인"){
+                                this.props.history.push("review/see/dear")
+                            }
+                            else if(this.state.value==="몬스터플레이스"){
+                                this.props.history.push("review/see/monster")
+                            }
+                            else if(this.state.value==="마시앤바시"){
+                                this.props.history.push("review/see/masi")
                             }
                             else if(this.state.value===""){
                                 alert("음식점 이름을 작성해주세요.")
