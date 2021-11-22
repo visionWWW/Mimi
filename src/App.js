@@ -29,6 +29,8 @@ import ReviewShaochan from "./pages/reviewsee/sub_page/ShaochanAll";
 import ReviewSundarae from "./pages/reviewsee/sub_page/SundaraeAll";
 import ReviewSinna from "./pages/reviewsee/sub_page/SinnaAll";
 
+import ReviewAboutShabu from "./pages/reviewsee/sub_page/AboutShabuAll";
+
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
@@ -122,6 +124,8 @@ function App() {
             <Route path="/review/see/form/shaochan-write" component={ReviewFormShaochan}></Route>
             <Route path="/review/see/form/sundarae-write" component={ReviewFormSundarae}></Route>
             <Route path="/review/see/form/sinna-write" component={ReviewFormSinna}></Route>
+
+          <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
 
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>
