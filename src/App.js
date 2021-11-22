@@ -23,6 +23,12 @@ import ReviewDear from "./pages/reviewsee/sub_page/DearAll";
 import ReviewMonster from "./pages/reviewsee/sub_page/MonsterAll";
 import ReviewMasi from "./pages/reviewsee/sub_page/MasiAll";
 
+import ReviewBurgerIn from "./pages/reviewsee/sub_page/BurgerInAll";
+import ReviewSaigong from "./pages/reviewsee/sub_page/SaigongAll";
+import ReviewShaochan from "./pages/reviewsee/sub_page/ShaochanAll";
+import ReviewSundarae from "./pages/reviewsee/sub_page/SundaraeAll";
+import ReviewSinna from "./pages/reviewsee/sub_page/SinnaAll";
+
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
@@ -36,6 +42,11 @@ import ReviewFormDear from "./pages/reviewform/form_sub/FormDearReview";
 import ReviewFormMonster from "./pages/reviewform/form_sub/FormMonsterReview";
 import ReviewFormGatmael from "./pages/reviewform/form_sub/FormGatmaelReview";
 
+import ReviewFormBurgerin from "./pages/reviewform/form_sub/FormBurgerinReview";
+import ReviewFormSaigong from "./pages/reviewform/form_sub/FormSaigongReview";
+import ReviewFormShaochan from "./pages/reviewform/form_sub/FormShaochanReview";
+import ReviewFormSundarae from "./pages/reviewform/form_sub/FormSundaraeReview";
+import ReviewFormSinna from "./pages/reviewform/form_sub/FormSinnaReview";
 
 import ReviewFormtest from "./pages/reviewform/form_sub/B1_Form";
 import ReviewCheck from "./pages/reviewcheck/reviewList.tsx";
@@ -80,11 +91,18 @@ function App() {
             <Route path="/review/:see/B1" component={ReviewB1}></Route>
             <Route path="/review/:see/come" component={ReviewCome}></Route>
             <Route path="/review/:see/midam" component={ReviewMidam}></Route>
+
             <Route path="/review/:see/gamoon" component={ReviewGamoon}></Route>
             <Route path="/review/:see/gatmael" component={ReviewGatmael}></Route>
             <Route path="/review/:see/dear" component={ReviewDear}></Route>
             <Route path="/review/:see/monster" component={ReviewMonster}></Route>
             <Route path="/review/:see/masi" component={ReviewMasi}></Route>
+
+            <Route path="/review/:see/burgerin" component={ReviewBurgerIn}></Route>
+            <Route path="/review/:see/saigong" component={ReviewSaigong}></Route>
+            <Route path="/review/:see/shaochan" component={ReviewShaochan}></Route>
+            <Route path="/review/:see/sundarae" component={ReviewSundarae}></Route>
+            <Route path="/review/:see/sinna" component={ReviewSinna}></Route>
 
           <Route exact path="/review/see/form" component={ReviewForm}></Route>
             <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
@@ -99,8 +117,11 @@ function App() {
             <Route path="/review/see/form/dear-write" component={ReviewFormDear}></Route>
             <Route path="/review/see/form/monster-write" component={ReviewFormMonster}></Route>
 
-
-
+            <Route path="/review/see/form/burgerin-write" component={ReviewFormBurgerin}></Route>
+            <Route path="/review/see/form/saigong-write" component={ReviewFormSaigong}></Route>
+            <Route path="/review/see/form/shaochan-write" component={ReviewFormShaochan}></Route>
+            <Route path="/review/see/form/sundarae-write" component={ReviewFormSundarae}></Route>
+            <Route path="/review/see/form/sinna-write" component={ReviewFormSinna}></Route>
 
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>

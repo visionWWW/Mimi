@@ -27,7 +27,9 @@ class SearchBox extends Component {
                             value=>{
                                     if(value==="음식미담"||value==="비일"||value==="또와또"
 
-                                    ||value==="가문의우동"||value==="갯마을칼국수"||value==="디어파인"||value==="몬스터플레이스"||value==="마시앤바시"){
+                                    ||value==="가문의우동"||value==="갯마을칼국수"||value==="디어파인"||value==="몬스터플레이스"||value==="마시앤바시"
+
+                                    ||value==="버거인"||value==="사이공마켓"||value==="샤오촨"||value==="선다래"||value==="와우신내떡"){
                                         console.log(value)
                                         this.state.value=value
                                     }
@@ -72,6 +74,26 @@ class SearchBox extends Component {
                             else if(this.state.value==="마시앤바시"){
                                 this.props.history.push("review/see/masi")
                             }
+
+
+                            else if(this.state.value==="버거인"){
+                                this.props.history.push("review/see/burgerin")
+                            }
+                            else if(this.state.value==="사이공마켓"){
+                                this.props.history.push("review/see/saigong")
+                            }
+                            else if(this.state.value==="샤오촨"){
+                                this.props.history.push("review/see/shaochan")
+                            }
+                            else if(this.state.value==="선다래"){
+                                this.props.history.push("review/see/sundarae")
+                            }
+                            else if(this.state.value==="와우신내떡"){
+                                this.props.history.push("review/see/sinna")
+                            }
+
+
+
                             else if(this.state.value===""){
                                 alert("음식점 이름을 작성해주세요.")
                             }
