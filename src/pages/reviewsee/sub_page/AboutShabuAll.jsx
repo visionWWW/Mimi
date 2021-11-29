@@ -1,6 +1,6 @@
 import React from 'react';
 import RestaurantImg from "./AboutShabuImg";
-import Info from "./B1info";
+import Info from "./AboutShabuInfo";
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
 

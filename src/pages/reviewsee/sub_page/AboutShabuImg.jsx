@@ -22,8 +22,8 @@ const RestraurantImg = () => (
                 <Carousel.Item>
                     <Image
                         className="d-block w-100"
-                        src="/images/aboutShabu_02.png"
-                        alt="First slide"
+                        src="/images/aboutShabu_02.jpg"
+                        alt="Second slide"
                     />
                 </Carousel.Item>
             </Carousel>

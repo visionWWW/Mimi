@@ -111,6 +111,7 @@ function App() {
             <Route path="/review/:see/dear" component={ReviewDear}></Route>
             <Route path="/review/:see/monster" component={ReviewMonster}></Route>
             <Route path="/review/:see/masi" component={ReviewMasi}></Route>
+            <Route path="/review/:see/aboutShabu" component={ReviewAboutShabu}></Route>
 
             <Route path="/review/:see/burgerin" component={ReviewBurgerIn}></Route>
             <Route path="/review/:see/saigong" component={ReviewSaigong}></Route>
