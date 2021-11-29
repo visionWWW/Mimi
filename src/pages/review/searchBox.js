@@ -94,11 +94,22 @@ class SearchBox extends Component {
                             else if(this.state.value==="와우신내떡"){
                                 this.props.history.push("review/see/sinna")
                             }
+
                             else if(this.state.value==="을의커피"){
                                 this.props.history.push("review/see/ell")
                             }
-
-
+                            else if(this.state.value==="작은도쿄"){
+                                this.props.history.push("review/see/tokyo")
+                            }
+                            else if(this.state.value==="청파멘션"){
+                                this.props.history.push("review/see/mansion")
+                            }
+                            else if(this.state.value==="포36거리"){
+                                this.props.history.push("review/see/pho36")
+                            }
+                            else if(this.state.value==="효이다방"){
+                                this.props.history.push("review/see/hyo")
+                            }
 
                             else if(this.state.value===""){
                                 alert("음식점 이름을 작성해주세요.")

@@ -32,6 +32,8 @@ import ReviewSinna from "./pages/reviewsee/sub_page/SinnaAll";
 import ReviewAboutShabu from "./pages/reviewsee/sub_page/AboutShabuAll";
 
 import ReviewEll from "./pages/reviewsee/sub_page/EllAll";
+import ReviewTokyo from "./pages/reviewsee/sub_page/TokyoAll";
+import ReviewMansion from "./pages/reviewsee/sub_page/MensionAll";
 
 
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
@@ -54,6 +56,8 @@ import ReviewFormSundarae from "./pages/reviewform/form_sub/FormSundaraeReview";
 import ReviewFormSinna from "./pages/reviewform/form_sub/FormSinnaReview";
 
 import ReviewFormEll from "./pages/reviewform/form_sub/FormEllReview";
+import ReviewFormTokyo from "./pages/reviewform/form_sub/FormTokyoReview";
+import ReviewFormMansion from "./pages/reviewform/form_sub/FormMensionReview";
 
 import ReviewFormtest from "./pages/reviewform/form_sub/B1_Form";
 import ReviewCheck from "./pages/reviewcheck/reviewList.tsx";
@@ -112,7 +116,8 @@ function App() {
             <Route path="/review/:see/sinna" component={ReviewSinna}></Route>
 
             <Route path="/review/:see/ell" component={ReviewEll}></Route>
-
+            <Route path="/review/:see/tokyo" component={ReviewTokyo}></Route>
+            <Route path="/review/:see/mansion" component={ReviewMansion}></Route>
 
           <Route exact path="/review/see/form" component={ReviewForm}></Route>
             <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
@@ -136,6 +141,8 @@ function App() {
             <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
 
             <Route path="/review/see/form/ell-write" component={ReviewFormEll}></Route>
+            <Route path="/review/see/form/tokyo-write" component={ReviewFormTokyo}></Route>
+            <Route path="/review/see/form/mansion-write" component={ReviewFormMansion}></Route>
 
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>
