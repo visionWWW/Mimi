@@ -31,6 +31,12 @@ import ReviewSinna from "./pages/reviewsee/sub_page/SinnaAll";
 
 import ReviewAboutShabu from "./pages/reviewsee/sub_page/AboutShabuAll";
 
+import ReviewEll from "./pages/reviewsee/sub_page/EllAll";
+import ReviewTokyo from "./pages/reviewsee/sub_page/TokyoAll";
+import ReviewMansion from "./pages/reviewsee/sub_page/MensionAll";
+import ReviewPho36 from "./pages/reviewsee/sub_page/Pho36All";
+import ReviewHyo from "./pages/reviewsee/sub_page/HyoAll";
+
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
@@ -49,6 +55,12 @@ import ReviewFormSaigong from "./pages/reviewform/form_sub/FormSaigongReview";
 import ReviewFormShaochan from "./pages/reviewform/form_sub/FormShaochanReview";
 import ReviewFormSundarae from "./pages/reviewform/form_sub/FormSundaraeReview";
 import ReviewFormSinna from "./pages/reviewform/form_sub/FormSinnaReview";
+
+import ReviewFormEll from "./pages/reviewform/form_sub/FormEllReview";
+import ReviewFormTokyo from "./pages/reviewform/form_sub/FormTokyoReview";
+import ReviewFormMansion from "./pages/reviewform/form_sub/FormMensionReview";
+import ReviewFormPho36 from "./pages/reviewform/form_sub/FormPho36Review";
+import ReviewFormHyo from "./pages/reviewform/form_sub/FormHyoReview";
 
 import ReviewFormtest from "./pages/reviewform/form_sub/B1_Form";
 import ReviewCheck from "./pages/reviewcheck/reviewList.tsx";
@@ -106,6 +118,12 @@ function App() {
             <Route path="/review/:see/sundarae" component={ReviewSundarae}></Route>
             <Route path="/review/:see/sinna" component={ReviewSinna}></Route>
 
+            <Route path="/review/:see/ell" component={ReviewEll}></Route>
+            <Route path="/review/:see/tokyo" component={ReviewTokyo}></Route>
+            <Route path="/review/:see/mansion" component={ReviewMansion}></Route>
+            <Route path="/review/:see/pho36" component={ReviewPho36}></Route>
+            <Route path="/review/:see/hyo" component={ReviewHyo}></Route>
+
           <Route exact path="/review/see/form" component={ReviewForm}></Route>
             <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
             <Route path="/review/see/form/test" component={ReviewFormtest}></Route>
@@ -125,7 +143,13 @@ function App() {
             <Route path="/review/see/form/sundarae-write" component={ReviewFormSundarae}></Route>
             <Route path="/review/see/form/sinna-write" component={ReviewFormSinna}></Route>
 
-          <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
+            <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
+
+            <Route path="/review/see/form/ell-write" component={ReviewFormEll}></Route>
+            <Route path="/review/see/form/tokyo-write" component={ReviewFormTokyo}></Route>
+            <Route path="/review/see/form/mansion-write" component={ReviewFormMansion}></Route>
+            <Route path="/review/see/form/pho36-write" component={ReviewFormPho36}></Route>
+            <Route path="/review/see/form/hyo-write" component={ReviewFormHyo}></Route>
 
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>
