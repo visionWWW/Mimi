@@ -31,6 +31,9 @@ import ReviewSinna from "./pages/reviewsee/sub_page/SinnaAll";
 
 import ReviewAboutShabu from "./pages/reviewsee/sub_page/AboutShabuAll";
 
+import ReviewEll from "./pages/reviewsee/sub_page/EllAll";
+
+
 import SurveyIntro from "./pages/surveyIntro/surveyIntro";
 import ReviewForm from "./pages/reviewform/ReviewForm";
 import ReviewFormB1 from "./pages/reviewform/sub/b1Form";
@@ -49,6 +52,8 @@ import ReviewFormSaigong from "./pages/reviewform/form_sub/FormSaigongReview";
 import ReviewFormShaochan from "./pages/reviewform/form_sub/FormShaochanReview";
 import ReviewFormSundarae from "./pages/reviewform/form_sub/FormSundaraeReview";
 import ReviewFormSinna from "./pages/reviewform/form_sub/FormSinnaReview";
+
+import ReviewFormEll from "./pages/reviewform/form_sub/FormEllReview";
 
 import ReviewFormtest from "./pages/reviewform/form_sub/B1_Form";
 import ReviewCheck from "./pages/reviewcheck/reviewList.tsx";
@@ -106,6 +111,9 @@ function App() {
             <Route path="/review/:see/sundarae" component={ReviewSundarae}></Route>
             <Route path="/review/:see/sinna" component={ReviewSinna}></Route>
 
+            <Route path="/review/:see/ell" component={ReviewEll}></Route>
+
+
           <Route exact path="/review/see/form" component={ReviewForm}></Route>
             <Route path="/review/see/form/B1" component={ReviewFormB1}></Route>
             <Route path="/review/see/form/test" component={ReviewFormtest}></Route>
@@ -125,7 +133,9 @@ function App() {
             <Route path="/review/see/form/sundarae-write" component={ReviewFormSundarae}></Route>
             <Route path="/review/see/form/sinna-write" component={ReviewFormSinna}></Route>
 
-          <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
+            <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
+
+            <Route path="/review/see/form/ell-write" component={ReviewFormEll}></Route>
 
           <Route path="/surveyIntro" component={SurveyIntro}></Route>
         </Switch>
