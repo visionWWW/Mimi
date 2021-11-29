@@ -55,7 +55,6 @@ class Restaurtant10 extends React.Component {
 
           <h2>음 식 점 정 보</h2> <br />
 
-          <div className="warp">
             <div className="preview">
               <div>
               {this.state.button1State === true && <Preview101/>}
@@ -64,29 +63,15 @@ class Restaurtant10 extends React.Component {
               </div>
             </div>
 
+            <div className="warp">
             <div className="map">
+              <div>
               {this.state.button1State === true && <Map_101 />}
               {this.state.button2State === true && <Map_102 />}
               {this.state.button3State === true && <Map_103 />}
+              </div>
             </div>
-
-          </div>
-
-
-          <h2>리 뷰</h2><br />
-          <div className="reviewcard">
-            <CardGroup>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-            </CardGroup>
-          </div>
+            </div>
         </header>
         <Footer></Footer>
       </div>

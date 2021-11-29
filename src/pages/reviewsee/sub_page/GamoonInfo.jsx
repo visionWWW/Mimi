@@ -31,7 +31,7 @@ const Info = () => (
                                 editing={false}
                                 renderStarIcon={() => <span>★</span>}
                                 starCount={5}
-                                value={3.7}
+                                value={4.42}
                             />
                             <Button href="/review/see/form/gamoon-write" variant="secondary" style={{display:"block",margin:"auto"}}>리뷰 폼 작성하러 가기 📝</Button>
                         </div>
