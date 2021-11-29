@@ -49,15 +49,19 @@
   }
 
   .preview{
-    float: left;
-    width:40%;
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
     box-sizing: border-box;
   }
 
   .map{
-    float: right;
-    width:50%;
-    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    position: center;
+    height: 500px;
+    text-align: center;
+    margin: 10%;
   }
     
   
