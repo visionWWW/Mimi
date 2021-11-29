@@ -27,7 +27,7 @@ const WriteArea: React.FC = (props: any) => {
     };
   
     const addReview = async (explain: { explain: any }) => {
-      const res = await api.post('http://localhost:8080/api/user', explain);
+      const res = await api.post('http://localhost:5000/api/user', explain);
       console.log(res);
   
       props.history.push('/login');

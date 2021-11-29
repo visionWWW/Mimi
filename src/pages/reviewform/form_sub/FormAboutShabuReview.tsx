@@ -14,7 +14,7 @@ const RvForm = (props: any) => {
         try {
             await axios
                 .all([
-                    axios.post('http://localhost:8080/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
+                    axios.post('http://localhost:5000/api/review', {grade, explain, restaurant_name, hashtag, user_id})])
                 .then(axios.spread((res)=>{
                     console.log(res);
                 }))

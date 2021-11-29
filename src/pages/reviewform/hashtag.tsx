@@ -11,7 +11,7 @@ const RvForm = (props: any) => {
         console.log(values);
         const {hashtag} = values;
         try {
-            await axios.post('http://localhost:8080/api/user', {hashtag});
+            await axios.post('http://localhost:5000/api/user', {hashtag});
 
             toast.success('리뷰등록 성공', {
                 position: "top-center",

@@ -12,7 +12,7 @@ const BoardList: React.FC = ({match}: any) => {
     }, []);
 
     const getBoardList = async (id: string) => {
-        let res = await axios.get(`http://localhost:8080/api/review-find/${id}`);
+        let res = await axios.get(`http://localhost:5000/api/review-find/${id}`);
         console.log(res);
         setBoardList(res.data);
     }
