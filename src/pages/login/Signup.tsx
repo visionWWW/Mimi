@@ -27,12 +27,13 @@ const RvForm = (props: any) => {
   }
 
   const checkId = async (values: any) => {
-        console.log("check Id 되니");
-      const {nickname} = values;
+      console.log("check Id 되니");
+      console.log(values);
+      const nickname = values;
       const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
-        console.log(nickname);
+      console.log(data.data.nickname);
       if(data === nickname) {
-
+          console.log("???");
           alert("엥");
           isCheckedId = false;
       }
@@ -74,7 +75,7 @@ const RvForm = (props: any) => {
                                       onChange={handleChange} onBlur={handleBlur}
                                       isValid={touched.nickname && !errors.nickname}
                                       isInvalid={touched.nickname && errors.nickname ? true : false} />
-                          <Button variant="outline-secondary" type="submit" onClick={checkId} >
+                          <Button variant="outline-secondary" type="submit" onClick={() => { console.log("???");console.log(values.nickname); checkId(values.nickname) } } >
                               중복확인
                           </Button>
                         { touched.nickname && !errors.nickname && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
