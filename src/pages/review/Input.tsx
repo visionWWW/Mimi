@@ -15,7 +15,7 @@ const Login = (props: any) => {
     const submit = async (values: any) => {
         const {nickname, password} = values;
         try {
-            const {data} = await api.post('http://localhost:5000/api/sign-in', {nickname, password});
+            const {data} = await api.post('http://mimi-project.kr:5000/api/sign-in', {nickname, password});
             console.log(data);
 
             dispatch(setToken(data.jwt))
@@ -23,7 +23,7 @@ const Login = (props: any) => {
             console.log(data.id);
             if (data.nickname) {
                 props.history.push(redirectUrl+"/"+`${data.id}`); // 그 사람의 닉네임으로 이동하게끔 해봤는데 이걸 쓸 일이 있을까요?
-                const res = await axios.get(`http://localhost:5000/api/review-find/${data.id}`);
+                const res = await axios.get(`http://mimi-project.kr:5000/api/review-find/${data.id}`);
                 console.log(res.data);
             } else {
                 console.log(data.nickname);

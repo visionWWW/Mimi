@@ -13,8 +13,8 @@ const RvForm = (props: any) => {
         try {
             await axios
                 .all([
-                    axios.post('http://localhost:5000/api/user', {nickname, password}),
-                    axios.post('http://localhost:8080/api/user-find/:id', {nickname})])
+                    axios.post('http://mimi-project.kr:5000/api/user', {nickname, password}),
+                    axios.post('http://mimi-project.kr:5000/api/user-find/:id', {nickname})])
                 .then(axios.spread((res1,res2)=>{
                     console.log(res1,res2);
                 }))

@@ -1,6 +1,4 @@
 import React from "react";
-import {ToggleButtonGroup} from "react-bootstrap";
-import ToggleButton from "react-bootstrap/ToggleButton";
 import axios from "axios";
 import {toast} from "react-toastify";
 import {Field, Form, Formik} from "formik";
@@ -11,7 +9,7 @@ const RvForm = (props: any) => {
         console.log(values);
         const {hashtag} = values;
         try {
-            await axios.post('http://localhost:5000/api/user', {hashtag});
+            await axios.post('http://mimi-project.kr:5000/api/user', {hashtag});
 
             toast.success('리뷰등록 성공', {
                 position: "top-center",

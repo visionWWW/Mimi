@@ -14,8 +14,8 @@ const Login = (props: any) => {
             //const {data} = await axios.post('http://localhost:8080/api/sign-in', {id,nickname, password});
             await axios
                 .all([
-                    axios.post('http://localhost:5000/api/sign-in', {id, nickname, password}),
-                    axios.post('http://localhost:5000/api/login', {nickname})])
+                    axios.post('http://mimi-project.kr:5000/api/sign-in', {id, nickname, password}),
+                    axios.post('http://mimi-project.kr:5000/api/login', {nickname})])
                 .then(axios.spread((res1,res2)=>{
                     //console.log(res1,res2);
                     console.log("==data==")

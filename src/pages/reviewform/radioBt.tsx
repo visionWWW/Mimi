@@ -12,7 +12,7 @@ const RadioBt = (props: any) => {
         alert(JSON.stringify(values, null, 2));
         const { grade, hashtag } = values;
         try {
-            await axios.post('http://localhost:5000/api/review', { grade, hashtag });
+            await axios.post('http://mimi-project.kr:5000/api/review', { grade, hashtag });
 
             toast.success('리뷰등록 성공', {
                 position: "top-center",

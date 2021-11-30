@@ -12,7 +12,7 @@ const RvForm = (props: any) => {
     const {nickname, password} = values;
     try {
       console.log("??");
-      await axios.post('http://localhost:5000/api/user', {nickname, password});
+      await axios.post('http://mimi-project.kr:5000/api/user', {nickname, password});
       props.history.push('/');
     } catch(e) {
       console.log("error");
