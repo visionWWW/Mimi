@@ -27,10 +27,12 @@ const RvForm = (props: any) => {
   }
 
   const checkId = async (values: any) => {
+        console.log("check Id 되니");
       const {nickname} = values;
       const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
-
+        console.log(nickname);
       if(data === nickname) {
+
           alert("엥");
           isCheckedId = false;
       }
