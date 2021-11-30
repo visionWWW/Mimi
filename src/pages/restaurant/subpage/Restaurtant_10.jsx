@@ -1,7 +1,7 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../rst.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, CardGroup } from "react-bootstrap";
+import { Button, Card, CardGroup, Container } from "react-bootstrap";
 import NaviagtionBar from '../../navbar';
 import Footer from "../../footer/Footer";
 import Foodimg_101 from '../foodimg/Foodimg_10-1';
@@ -54,6 +54,7 @@ class Restaurtant10 extends React.Component {
           <br /><br /><br />
 
           <h2>음 식 점 정 보</h2> <br />
+          
 
             <div className="preview">
               <div>
@@ -62,17 +63,18 @@ class Restaurtant10 extends React.Component {
               {this.state.button3State === true && <Preview102/>}
               </div>
             </div>
+            
 
-            <div className="warp">
-            <div className="map">
-              <div>
-              {this.state.button1State === true && <Map_101 />}
-              {this.state.button2State === true && <Map_102 />}
-              {this.state.button3State === true && <Map_103 />}
+              <div className="map">
+                <div>
+                {this.state.button1State === true && <Map_101 />}
+                {this.state.button2State === true && <Map_102 />}
+                {this.state.button3State === true && <Map_103 />}
+                </div>
               </div>
-            </div>
-            </div>
+          
         </header>
+        
         <Footer></Footer>
       </div>
     )

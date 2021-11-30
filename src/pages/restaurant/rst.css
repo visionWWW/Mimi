@@ -1,3 +1,4 @@
+
   .button1{
     flex:1;
     width: 30%;
@@ -42,26 +43,15 @@
     margin: 10px auto;
   }
 
-  .warp{
-    width: 80%;
-    height: 500px;
-    margin: 10px auto;
-  }
-
   .preview{
     width: 80%;
-    height: 500px;
+    height: 150px;
     margin: 10px auto;
     box-sizing: border-box;
   }
 
   .map{
-    width: 500px;
-    height: 500px;
-    position: center;
-    height: 500px;
     text-align: center;
-    margin: 10%;
   }
     
   

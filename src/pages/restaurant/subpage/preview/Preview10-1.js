@@ -5,9 +5,8 @@ class Preview101 extends Component {
         return(
         <div>
             <p>평점: 4.46</p>
-            <p>메뉴: 쌀국수</p>
+            <p>메뉴: 월남뽕(쌀국수)</p>
             <p>가격: 7000</p> 
-            <p>#키워드 #키워드 #키워드</p> 
         </div>
         )
     }

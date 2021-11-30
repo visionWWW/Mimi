@@ -4,10 +4,9 @@ class Preview252 extends Component {
     render(){
         return(
         <div>
-            <p>평점: </p>
-            <p>메뉴: 냄비우동</p>
-            <p>가격: 7000</p> 
-            <p>#키워드 #키워드 #키워드</p> 
+            <p>평점: 4.4</p>
+            <p>메뉴: 김치냄비우동</p>
+            <p>가격: 7000</p>  
         </div>
         )
     }

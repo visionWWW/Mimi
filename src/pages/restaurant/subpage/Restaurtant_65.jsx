@@ -42,8 +42,8 @@ class Restaurtant10 extends React.Component {
           <div className="parent">
 
             <div>
-              <Button variant="outline-secondary" className="button3" onClick={this.toggleState1}>신내떡 | 와우홀릭세트</Button>
-              <Button variant="outline-secondary" className="button3" onClick={this.toggleState2}>샤오찬 | 마라탕</Button>
+              <Button variant="outline-secondary" className="button3" onClick={this.toggleState1}>와우신내떡 | 와우홀릭세트</Button>
+              <Button variant="outline-secondary" className="button3" onClick={this.toggleState2}>샤오촨 | 마라탕</Button>
               <Button variant="outline-secondary" className="button3" onClick={this.toggleState3}>청파멘션 | 카페오렌지비앙코</Button>
               <br /><br />
               {this.state.button1State === true && <Foodimg_651 />}
@@ -74,20 +74,7 @@ class Restaurtant10 extends React.Component {
           </div>
 
 
-          <h2>리 뷰</h2><br />
-          <div className="reviewcard">
-          <CardGroup>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-            </CardGroup>
-          </div>
+          
         </header>
         <Footer></Footer>
       </div>

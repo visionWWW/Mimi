@@ -70,26 +70,13 @@ class Restaurtant25 extends React.Component {
               {this.state.button1State === true && <Map_251/>}
               {this.state.button2State === true && <Map_252/>}
               {this.state.button3State === true && <Map_253/>}
-
             </div>
           </div>
 
 
-          <h2>리 뷰</h2><br />
-          <div className="reviewcard">
-          <CardGroup>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-            </CardGroup>
-          </div>
+          
         </header>
+        
         <Footer></Footer>
       </div>
     )

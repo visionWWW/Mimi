@@ -73,20 +73,6 @@ class Restaurtant80 extends React.Component{
         </div>
 
 
-        <h2>리 뷰</h2><br />
-        <div className="reviewcard"> 
-        <CardGroup>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-              <Card>
-                <TopAlert/>
-              </Card>
-            </CardGroup>
-        </div>
       </header>
       <Footer></Footer>
     </div>
