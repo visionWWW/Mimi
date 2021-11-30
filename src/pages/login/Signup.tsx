@@ -22,24 +22,31 @@ const RvForm = (props: any) => {
           }
       }
       else{
+          console.log("이후");
+          console.log(isCheckedId);
           alert("닉네임 확인필요");
       }
   }
 
   const checkId = async (values: any) => {
-      console.log("check Id 되니");
-      console.log(values);
-      const nickname = values;
-      const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
-      console.log(data);
-      if(data) {
-          console.log("???");
-          alert("엥");
-          isCheckedId = false;
-      }
-      else {
+      try {
+          console.log("check Id 되니");
+          console.log(values);
+          const nickname = values;
+          const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
+          console.log(data);
+          if(data) {
+              console.log("???");
+              alert("엥");
+              isCheckedId = false;
+          }
+
+      } catch(e) {
+          console.log("이전");
+          console.log(isCheckedId);
           isCheckedId = true;
       }
+
   }
 
   return (
@@ -75,7 +82,7 @@ const RvForm = (props: any) => {
                                       onChange={handleChange} onBlur={handleBlur}
                                       isValid={touched.nickname && !errors.nickname}
                                       isInvalid={touched.nickname && errors.nickname ? true : false} />
-                          <Button variant="outline-secondary" type="submit" onClick={() => { console.log("???");console.log(values.nickname); checkId(values.nickname) } } >
+                          <Button variant="outline-secondary" onClick={() => { console.log("???");console.log(values.nickname); checkId(values.nickname) } } >
                               중복확인
                           </Button>
                         { touched.nickname && !errors.nickname && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
