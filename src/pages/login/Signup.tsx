@@ -7,17 +7,38 @@ import Navbar from "../navbar";
 import Footer from "../footer/Footer";
 
 const RvForm = (props: any) => {
-  const submit = async (values: any) => {
-    console.log(values);
-    const {nickname, password} = values;
-    try {
-      console.log("??");
-      await axios.post('http://mimi-project.kr:5000/api/user', {nickname, password});
-      props.history.push('/');
-    } catch(e) {
-      console.log("error");
-    }
+
+    let isCheckedId = false;
+
+    const submit = async (values: any) => {
+      if(isCheckedId){
+          console.log(values);
+          const {nickname, password} = values;
+          try {
+              await axios.post('http://mimi-project.kr:5000/api/user', {nickname, password});
+              props.history.push('/');
+          } catch(e) {
+              console.log("error");
+          }
+      }
+      else{
+          alert("닉네임 확인필요");
+      }
   }
+
+  const checkId = async (values: any) => {
+      const {nickname} = values;
+      const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
+
+      if(data === nickname) {
+          alert("엥");
+          isCheckedId = false;
+      }
+      else {
+          isCheckedId = true;
+      }
+  }
+
   return (
       <>
         <Navbar></Navbar>
@@ -46,14 +67,18 @@ const RvForm = (props: any) => {
                     <Form onSubmit={handleSubmit}>
                       <Form.Group controlId="nickname">
                         <Form.Label style={{textAlign:"center", display:"block"}} >닉네임을 입력해주세요.</Form.Label>
-                        <Form.Control style={{display:"block",width:"50%",margin:"30px auto"}} name="nickname" placeholder="닉네임을 입력해주세요."
+                        <Form.Control style={{display:"inline-block",width:"50%",margin:"30px auto"}} name="nickname" placeholder="닉네임을 입력해주세요."
                                       value={values.nickname}
                                       onChange={handleChange} onBlur={handleBlur}
                                       isValid={touched.nickname && !errors.nickname}
                                       isInvalid={touched.nickname && errors.nickname ? true : false} />
+                          <Button variant="outline-secondary" type="submit" onClick={checkId} >
+                              중복확인
+                          </Button>
                         { touched.nickname && !errors.nickname && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
                         { touched.nickname && errors.nickname && <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback> }
                       </Form.Group>
+
                       <Form.Group controlId="formGroupPassword">
                         <Form.Label style={{textAlign:"center", display:"block"}} >비밀번호를 입력해주세요.</Form.Label>
                         <Form.Control
