@@ -31,8 +31,8 @@ const RvForm = (props: any) => {
       console.log(values);
       const nickname = values;
       const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
-      console.log(data.data.nickname);
-      if(data === nickname) {
+      console.log(data);
+      if(data) {
           console.log("???");
           alert("엥");
           isCheckedId = false;
