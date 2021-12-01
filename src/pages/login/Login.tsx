@@ -83,8 +83,8 @@ const Login = (props: any) => {
                 isSubmitting
             }) => (<Form onSubmit={handleSubmit}>
             <Form.Group controlId="nickname">
-            <Form.Label style={{textAlign:"center", display:"block"}}>nickname</Form.Label>
-        <Form.Control name="nickname" placeholder="Enter nickname"
+            <Form.Label style={{textAlign:"center", display:"block"}}>닉네임</Form.Label>
+        <Form.Control name="nickname" placeholder="닉네임을 입력해주세요."
             style={{margin:"30px auto", width:"50%", display:"block"}}
             value={values.nickname}
             onChange={handleChange} onBlur={handleBlur}
@@ -96,8 +96,8 @@ const Login = (props: any) => {
         <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback>}
             </Form.Group>
             <Form.Group controlId="formGroupPassword">
-            <Form.Label style={{textAlign:"center", display:"block"}}>Password</Form.Label>
-            <Form.Control type="password" name="password" placeholder="enter Password"
+            <Form.Label style={{textAlign:"center", display:"block"}}>비밀번호</Form.Label>
+            <Form.Control type="password" name="password" placeholder="비밀번호를 입력해주세요"
             style={{margin:"30px auto", width:"50%", display:"block"}}
             value={values.password}
             onChange={handleChange} onBlur={handleBlur}
@@ -109,10 +109,10 @@ const Login = (props: any) => {
                 <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback>}
                     </Form.Group>
                 <br></br>
-                    <Button variant="primary" type="submit" disabled={isSubmitting} style={{display:"block",margin:"auto"}}>
+                    <Button variant="outline-secondary" type="submit" disabled={isSubmitting} style={{display:"block",margin:"auto"}}>
                         로그인
                     </Button>
-                    <Button variant="link" type="submit" href="./Signup" style={{display:"block",margin:"auto"}}>
+                    <Button variant="link" type="submit" href="./Signup" style={{display:"block",margin:"auto", color:"gray"}}>
                         회원가입하러 가기
                     </Button>
                     </Form>)

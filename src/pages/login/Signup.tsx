@@ -22,9 +22,7 @@ const RvForm = (props: any) => {
           }
       }
       else{
-          console.log("이후");
-          console.log(isCheckedId);
-          alert("닉네임 확인필요");
+          alert("다른 사람이 사용하고 있는 닉네임입니다. 다른 닉네임을 사용해주세요.");
       }
   }
 
@@ -36,14 +34,11 @@ const RvForm = (props: any) => {
           const data = await axios.post('http://mimi-project.kr:5000/api/login', {nickname});
           console.log(data);
           if(data) {
-              console.log("???");
-              alert("엥");
+              alert("중복된 닉네임입니다.");
               isCheckedId = false;
           }
 
       } catch(e) {
-          console.log("이전");
-          console.log(isCheckedId);
           isCheckedId = true;
       }
 
@@ -77,16 +72,18 @@ const RvForm = (props: any) => {
                     <Form onSubmit={handleSubmit}>
                       <Form.Group controlId="nickname">
                         <Form.Label style={{textAlign:"center", display:"block"}} >닉네임을 입력해주세요.</Form.Label>
-                        <Form.Control style={{display:"inline-block",width:"50%",margin:"30px auto"}} name="nickname" placeholder="닉네임을 입력해주세요."
+                        <Form.Control style={{display:"inline-block",width:"50%", marginLeft:"10%"}} name="nickname" placeholder="닉네임을 입력해주세요."
                                       value={values.nickname}
                                       onChange={handleChange} onBlur={handleBlur}
                                       isValid={touched.nickname && !errors.nickname}
                                       isInvalid={touched.nickname && errors.nickname ? true : false} />
-                          <Button variant="outline-secondary" onClick={() => { console.log("???");console.log(values.nickname); checkId(values.nickname) } } >
+                          <Button variant="outline-secondary"
+                                  style={{margin:"10px"}}
+                                  onClick={() => { console.log("???");console.log(values.nickname); checkId(values.nickname) } } >
                               중복확인
                           </Button>
-                        { touched.nickname && !errors.nickname && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
-                        { touched.nickname && errors.nickname && <Form.Control.Feedback type="invalid">{errors.nickname}</Form.Control.Feedback> }
+                        { touched.nickname && !errors.nickname && <Form.Control.Feedback style={{textAlign:"center"}}type="valid">Looks good!</Form.Control.Feedback> }
+                        { touched.nickname && errors.nickname && <Form.Control.Feedback style={{textAlign:"center"}}type="invalid">{errors.nickname}</Form.Control.Feedback> }
                       </Form.Group>
 
                       <Form.Group controlId="formGroupPassword">
@@ -98,8 +95,8 @@ const RvForm = (props: any) => {
                             onChange={handleChange} onBlur={handleBlur}
                             isValid={touched.password && !errors.password}
                             isInvalid={touched.password && errors.password ? true : false} />
-                        { touched.password && !errors.password && <Form.Control.Feedback type="valid">Looks good!</Form.Control.Feedback> }
-                        { touched.password && errors.password && <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback> }
+                        { touched.password && !errors.password && <Form.Control.Feedback style={{textAlign:"center"}}type="valid">Looks good!</Form.Control.Feedback> }
+                        { touched.password && errors.password && <Form.Control.Feedback style={{textAlign:"center"}}type="invalid">{errors.password}</Form.Control.Feedback> }
                       </Form.Group>
                       <Button variant="outline-secondary" type="submit" disabled={isSubmitting} style={{display:"block",margin:"auto"}}>
                         회원가입 완료
