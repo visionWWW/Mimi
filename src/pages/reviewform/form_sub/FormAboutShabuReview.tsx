@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import Navbar from "../../navbar";
 import Footer from "../../footer/Footer";
+import "../../../App.css";
 
 const RvForm = (props: any) => {
     const submit = async (values: any) => {
