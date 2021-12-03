@@ -1,6 +1,6 @@
 import {Field, Formik} from 'formik';
 import React from 'react';
-import {Button, Form} from "react-bootstrap";
+import {Button, Col, Form, Row} from "react-bootstrap";
 import * as Yup from "yup";
 import axios from "axios";
 import Navbar from "../../navbar";
@@ -30,6 +30,8 @@ const RvForm = (props: any) => {
         <>
             <Navbar></Navbar>
             <h5 style={{textAlign:"center", marginTop:"30px"}}>어바웃샤브 | 음식점은 어떠셨나요?</h5>
+            <Row className="justify-content-center">
+            <Col xs={12} sm={10} md={8} lg={6} xl={4}>
             <Formik
                 initialValues={{
                     grade: '', hashtag: [],
@@ -125,6 +127,8 @@ const RvForm = (props: any) => {
                         )
                 }
             </Formik>
+            </Col>
+            </Row>
             <br/><br/><br/><br/><br/><br/>
             <br/><br/><br/><br/><br/><br/>
             <br/><br/><br/><br/><br/><br/>
