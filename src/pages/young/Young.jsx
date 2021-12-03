@@ -49,6 +49,7 @@ class Young extends Component {
 	<div className="row mt-5">
 	<div className="col-sm-12">
 	<Card title="만족감과 관련된 질문입니다" style={{marginBottom:'30px'}}>
+		<p className="card-text">1로 갈수록 "전혀 그렇지 않다" 7로 갈수록 "매우 그렇다"</p>
     <Card type="inner" title="1. 나는 내 삶의 개인적인 측면에 대해 만족한다.">
 			<label>
 				1 <input type= "radio" value="1" name="satis_1" checked={satis_1 === "1"} onChange={this.onChange}/>
@@ -121,6 +122,7 @@ class Young extends Component {
   	</Card>
 
   <Card title="감정과 관련된 질문입니다" style={{marginBottom:'30px'}}>
+	  <p className="card-text">1로 갈수록 "전혀 느끼지 않았다" 7로 갈수록 "항상 느꼈다"</p>
     <Card type="inner" title="1. 나는 현재 즐거운 감정을 느끼고 있다.">
 		<label>
 			1 <input type= "radio" value="1" name="emo_1" checked={emo_1 === "1"} onChange={this.onChange}/>
