@@ -107,6 +107,7 @@ const RvForm = (props: any) => {
                                 </div>
                                 <Form.Group controlId="explain" style={{display:"block", margin:"30px auto"}}>
                                     <Form.Label style={{display:"block", margin:"30px auto", textAlign:"center"}}>리뷰 작성 (100자 이내)</Form.Label>
+                                    <p className={"test"}></p>
                                     <Form.Control
                                         style={{width:"80%", margin:"auto"}}
                                         as={"textarea"} name="explain" placeholder="리뷰에 대한 설명을 입력해주세요."
