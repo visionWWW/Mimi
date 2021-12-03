@@ -109,7 +109,7 @@ const RvForm = (props: any) => {
                                     <Form.Label style={{display:"block", margin:"30px auto", textAlign:"center"}}>리뷰 작성 (100자 이내)</Form.Label>
                                     <p className={"test"}></p>
                                     <Form.Control
-                                        style={{width:"80%", margin:"auto"}}
+                                        style={{width:"80%", margin:"auto", userSelect: "auto", WebkitUserSelect:"text"}}
                                         as={"textarea"} name="explain" placeholder="리뷰에 대한 설명을 입력해주세요."
                                         value={values.explain}
                                         onChange={handleChange} onBlur={handleBlur}
