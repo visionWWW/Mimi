@@ -55,7 +55,7 @@ import ReviewFormSaigong from "./pages/reviewform/form_sub/FormSaigongReview";
 import ReviewFormShaochan from "./pages/reviewform/form_sub/FormShaochanReview";
 import ReviewFormSundarae from "./pages/reviewform/form_sub/FormSundaraeReview";
 import ReviewFormSinna from "./pages/reviewform/form_sub/FormSinnaReview";
-
+import ReviewFormAboutShabu from "./pages/reviewform/form_sub/FormAboutShabuReview";
 import ReviewFormEll from "./pages/reviewform/form_sub/FormEllReview";
 import ReviewFormTokyo from "./pages/reviewform/form_sub/FormTokyoReview";
 import ReviewFormMansion from "./pages/reviewform/form_sub/FormMensionReview";
@@ -144,7 +144,7 @@ function App() {
             <Route path="/review/see/form/sundarae-write" component={ReviewFormSundarae}></Route>
             <Route path="/review/see/form/sinna-write" component={ReviewFormSinna}></Route>
 
-            <Route path="/review/see/form/aboutShabu-write" component={ReviewAboutShabu}></Route>
+            <Route path="/review/see/form/aboutShabu-write" component={ReviewFormAboutShabu}></Route>
 
             <Route path="/review/see/form/ell-write" component={ReviewFormEll}></Route>
             <Route path="/review/see/form/tokyo-write" component={ReviewFormTokyo}></Route>

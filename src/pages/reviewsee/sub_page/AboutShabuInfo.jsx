@@ -33,7 +33,7 @@ const Info = () => (
                                 starCount={5}
                                 value={4.5}
                             />
-                            <Button href="/review/see/form/AboutShabu" variant="secondary" style={{display:"block",margin:"auto"}}>리뷰 폼 작성하러 가기 📝</Button>
+                            <Button href="/review/see/form/aboutShabu-write" variant="secondary" style={{display:"block",margin:"auto"}}>리뷰 폼 작성하러 가기 📝</Button>
                         </div>
                     </footer>
                 </blockquote>
