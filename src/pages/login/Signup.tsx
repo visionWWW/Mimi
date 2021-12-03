@@ -59,6 +59,7 @@ const RvForm = (props: any) => {
               password: Yup.string()
                   .required("Required")
                   .min(6, "6자이상 입력하세요")
+                  .max(12, '11자이하 입력하세요')
             })}>
           {
             ({values,
